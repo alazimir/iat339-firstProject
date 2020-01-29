@@ -1,0 +1,8 @@
+This is text file 2. 
+
+Edit 1: something else
+
+Edit 2: branch1 edit
+
+
+Try to edit this file on the branch
