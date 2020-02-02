@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+      
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Hind:400,500&display=swap" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+        <section id="top-nav">
+          <nav>
+              <a class="main-nav-text"href=#>Styleguide</a>
+              <a class="main-nav-text"href="wireframes.html">Wireframes</a>
+              <a href="interactiveWireframe.html">Wire Flows</a>
+              <a class="main-nav-text"href="citations.html">Citations</a>
+        </nav>
+      </section>
+      
+      
+    <section>
+        <h1>Style Guide</h1>
+        
+        
+
+        <p>Instructions and examples for the styling of the website "We Sell Hot Sauce". </p>
+
+        <p>
+            Go to:
+            <a class="intext-link" href="#interactive_elements">Interactive Elements</a>,
+            <a class="intext-link"  href="#text_elements">Text Elements</a>,
+            <a class="intext-link"  href="#combined_elements">Combined Elements</a>,
+        </p>
+
+
+    </section>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-nav"&gt;Button Text&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button-nav" href="#">Button Text</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+          
+        <h3>CSS selector:</h3>
+        <p>.intext-link</p>
+
+        <h3>Sample code:</h3>
+        <code>This is a &lt;a href="#" class="intext-link"&gt;Link&lt;/a&gt; inside some other text</code>
+
+        <h3>Rendered element:</h3>
+        This is a <a class="intext-link" href="#">Link</a> inside some other text
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+          
+        <h3>CSS selector:</h3>
+        <p>.button-submit</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button-submit" href="#">Submit</a>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+          
+        <h3>CSS selector:</h3>
+        <p>.input-text</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;input class="input-text" type="text" name="input"&gt;</code>
+
+        <h3>Rendered element:</h3>
+          
+        <input class="input-text" type="text" name="input">
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+        <h3>CSS selector:</h3>
+        <p>none</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;Heading 1&lt;h1&gt;</code>
+        <code>&lt;h2&gt;Heading 2&lt;h2&gt;</code>
+        <code>&lt;h3&gt;Heading 3&lt;h3&gt;</code>
+
+        <h3>Rendered elements:</h3>
+          
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+        <h3>CSS selector:</h3>
+        <p>none</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt;This is a paragraph. It's a longer bit of type.&lt;p&gt;</code>
+        <h3>Rendered element:</h3>
+        <p>This is a paragraph. It's a longer bit of type.</p>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+          
+        <h3>CSS selector:</h3>
+        <p>.bullet-list</p>
+        <p>.bullet-list-item</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ul class="bullet-list"&gt;
+              <br> &nbsp; &nbsp; &lt;li class="bullet-list-item"&gt;Item 1&lt;/li&gt;
+              <br> &nbsp; &nbsp; &lt;li class="bullet-list-item"&gt;Item 2&lt;/li&gt;
+              <br> &nbsp; &nbsp; &lt;li class="bullet-list-item"&gt;Item 3&lt;/li&gt;
+          <br>&lt;/ul&gt;</code>
+          
+          <h3>Rendered element:</h3>
+          <ul class="bullet-list">
+              <li class="bullet-list-item">Item 1</li>
+              <li class="bullet-list-item">Item 2</li>
+              <li class="bullet-list-item">Item 3</li>
+          </ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+          
+        <h3>CSS selector:</h3>
+        <p>.numbered-list</p>
+        <p>.numbered-list-item</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ul class="numbered-list"&gt;
+              <br> &nbsp; &nbsp; &lt;li class="numbered-list-item"&gt;Item 1&lt;/li&gt;
+              <br> &nbsp; &nbsp; &lt;li class="numbered-list-item"&gt;Item 2&lt;/li&gt;
+              <br> &nbsp; &nbsp; &lt;li class="numbered-list-item"&gt;Item 3&lt;/li&gt;
+          <br>&lt;/ul&gt;</code>
+          
+          <h3>Rendered element:</h3>
+          <ol class="numbered-list">
+              <li class="numbered-list-item">Item 1</li>
+              <li class="numbered-list-item">Item 2</li>
+              <li class="numbered-list-item">Item 3</li>
+          </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+          
+          <h3>CSS selector:</h3>
+          <p>nav tag</p>
+          
+          <h3>Sample code:</h3>
+          <code>
+            &lt;nav&gt; <br>
+              &nbsp; &lt;a href="#"&gt;Home&lt;/a&gt; <br>
+              &nbsp; &lt;a href="#"&gt;Products&lt;/a&gt;<br> &nbsp;
+              &lt;a href="#"&gt;About&lt;/a&gt; <br> &nbsp;
+              &lt;a href="#"&gt;Support&lt;/a&gt; <br>
+          &lt;/nav&gt;
+          </code>
+          
+           <h3>Rendered element:</h3>
+          <nav>
+              <a href="#">Home</a>
+              <a href="#">Products</a>
+              <a href="#">About</a>
+              <a href="#">Support</a>
+          </nav>
+          
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+          
+          <h3>CSS selector:</h3>
+          <p>.product-card</p>
+          
+          <h3>Sample code:</h3>
+          <code>
+            &lt;div class="product-card"&gt; <br> &nbsp;
+            &lt;img src="img/hot_sauce_1.png"&gt; <br> &nbsp;
+            &lt;h3&gt; Title&lt;/h3&gt;
+              &lt;h3 class="product-price"&gt;price$&lt;/h3&gt;<br> &nbsp;
+              
+            &lt;p>Description&lt;/p&gt; <br>
+              &lt;/div&gt;
+            
+          </code>
+          
+           <h3>Rendered element:</h3>
+          
+          <div class="product-card">
+            <img src="img/hot_sauce_1.png">
+            <h3> Cajun Hot Sauce</h3>
+              <h3 class="product-price">12.00$</h3>
+              
+            <p>Brief description of the product here. Talking about the composition and flavour notes.</p>
+            
+          </div>
+          
+      </section>
+        
+        <section>
+            <h2>Grid Structure</h2>
+            <img id="grid_img" src="img/Grid.png">
+        
+        </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+      
+      <!-- Color Swatches section -->
+      <section>
+          <h2>Colours</h2>
+                <img src="svg/richRed.svg" alt="Dark Red Circle">
+                <h3>Rich Red</h3>
+                <p>#F43C40 <br> rgb (244,60,64) <br> Accent color for interactable text/buttons.</p>
+            
+
+
+            
+                <img src="svg/lightRed.svg" alt="Light Red Circle">
+                <h3>Light Red</h3>
+                <p>#F66366 <br> rgb (246,99,102) <br> Outline color.</p>
+           
+
+           
+                <img src="svg/black.svg" alt="Black Circle">
+                <h3>Charcole</h3>
+                <p>#212121 <br> rgb (33,33,33) <br> Text color.</p>
+            
+
+            
+                <img src="svg/backgroundColor.svg" alt="Cream Circle">
+                <h3>Cream</h3>
+                <p>#FCF9F9 <br> rgb (252, 249, 249) <br> Background color.</p>
+    </section>
+      
+      <!-- Inspo Pictures -->
+      
+      <section class=brand-direction>
+          <h2>Brand Direction Images</h2>
+          
+          <img src="img/Inspo2.jpg">
+          <img src="img/Inspo1.jpg">
+          <img src="img/Inspo3.jpg">
+          <img src="img/Inspo4.jpg">
+          <img src="img/Inspo5.jpg">
+          <img src="img/Inspo6.jpg">
+          
+      
+      </section>
+
+
+  </body>
+</html>

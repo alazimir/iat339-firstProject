@@ -1,5 +1,0 @@
-This is text file 3. 
-
-Also editing on the branch
-
-
