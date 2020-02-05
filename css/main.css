@@ -10,9 +10,9 @@
 }
 
 body {
-  background-color: #FCF9F9;
-  padding: 1rem 2rem;
-    margin: auto;
+      background-color: #F8FAA4;
+      padding: 1rem 2rem;  
+      margin: auto;
 }
 
 html {
@@ -190,23 +190,54 @@ h3 {
 */
 
 nav a {
-    background-color: #F43C40;
-    color: white;
+    background-color: #FFFFFF;
+    position: relative;
+    color: #000000;
     padding: 0.8rem 1.5rem;
     display: inline;
     text-decoration: none;
-    font-family: 'Hind', sans-serif;
-    font-size: 1.125rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    z-index: 2;
 }
 
 nav a:hover {
-    background-color: #e03c3e;
+/*    background-color: #AAAAAA;*/
+    color: #000;
+}
+
+/* Underline Animation https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+*/
+nav a::before {
+    content: "";
+    position: absolute;
+    margin-left:25%;
+    width: 50%;
+    height: 3px;
+    bottom: 18px;
+    left: 0;
+    background-color: #FF3637;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    z-index: -1;
+}
+
+nav a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+    z-index: -1;
 }
 
 nav {
     display:flex;
     flex-wrap: wrap;
 }
+
 
 /* Help on how to make product cards from https://www.w3schools.com/howto/howto_css_product_card.asp */
 
@@ -235,6 +266,7 @@ nav {
     box-sizing:border-box;
     padding:10px;
     border: 10px solid #41354D;
+    margin: 1rem 0rem;
     background-color:#FFD195;
 }
 
@@ -381,5 +413,9 @@ nav {
     }
     
     .size1of8 {
+        width:100%;
+    }
+    
+    #top-nav a {
         width:100%;
     }
