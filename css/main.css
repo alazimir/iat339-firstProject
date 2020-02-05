@@ -20,7 +20,7 @@
         }
         
         #top-nav a {
-            width: 25%;
+            width: 20%;
             text-align: center;
         }
         
@@ -51,6 +51,12 @@
             margin: 0.5rem;
             display: block;
         }
+        
+        .sitemap-image {
+            width:100%;
+        }
+
+
         /* 
   INTERACTIVE ELEMENTS -------------------
 */
