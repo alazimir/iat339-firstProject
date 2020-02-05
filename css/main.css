@@ -214,8 +214,8 @@
             /*    background-color: #AAAAAA;*/
             color: #000;
         }
-        /* Underline Animation https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
-*/
+        /* Underline Animation Modified from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+        */
         
         nav a::before {
             content: "";
@@ -229,7 +229,7 @@
             visibility: hidden;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
-            -webkit-transition: all 0.s ease-in-out 0s;
+            -webkit-transition: all 0s ease-in-out 0s;
             transition: all 0.2s ease-in-out 0s;
             z-index: -1;
         }
@@ -426,3 +426,4 @@
             #top-nav a {
                 width: 100%;
             }
+}
