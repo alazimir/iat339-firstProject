@@ -8,11 +8,11 @@
     -webkit-box-sizing: border-box;
     
 }
+
 body {
   background-color: #FCF9F9;
   padding: 1rem 2rem;
     margin: auto;
-  
 }
 
 html {
@@ -26,17 +26,18 @@ html {
 
 section nav {
     margin: 2rem auto;
-    width:75%;
+    width:100%;
 }
-
 
 section:not([id]) {
       margin: 2rem auto;
       padding: 2rem;
       border: 3px solid #555;
       background: #FFF;
-      width:75%;
+      width:100%;
 }
+
+
 
 section h3 {
   margin-bottom: 0.5rem;
@@ -92,8 +93,7 @@ section code {
 
 .intext-link {
     color: #F43C40;
-    text-decoration: none;
-    
+    text-decoration: none; 
     -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
     
@@ -118,8 +118,6 @@ section code {
     border: 2px solid #9AB29A;
     outline:none;
 }
-
-
 
 /* 
   TEXT ELEMENTS -------------------
@@ -185,7 +183,6 @@ h3 {
 }
 
 
-
 /* 
   COMBINED ELEMENTS -------------------
 */
@@ -222,6 +219,65 @@ nav {
 
 .product-card img {
     width: 100%;
+}
+
+/* Grid stuff */
+
+.container {
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content:space-between;
+}
+
+.container div  {
+    box-sizing:border-box;
+    padding:10px;
+    border: 10px solid #41354D;
+    background-color:#FFD195;
+}
+
+/*Sizes from MailChips style guide https://ux.mailchimp.com/patterns/grid*/
+
+.size1of8 {
+    width:12.5%;
+}
+
+.size1of4, .size2of8 {
+    width:25%;
+}
+
+.size1of3 {
+    width:33.33%;
+}
+
+.size3of8 {
+    width:37.5%;
+}
+
+.size1of2, .size2of4, size4of8 {
+   width: 50%;
+}
+
+.size5of8 {
+    width:62.5%;
+}
+
+.size2of3 {
+    width:66.67%;
+}
+
+.size3of4, size6of8 {
+    width:75%;
+}
+
+.size7of8 {
+    width:87.5%;
+}
+
+.size1of1, .size2of2, .size3of3, .size4of4, .size8of8 {
+    width:100%;
 }
 
 /* Underline color help https://www.w3schools.com/cssref/css3_pr_text-decoration-color.asp
@@ -264,3 +320,66 @@ nav {
     margin: 0;
     padding: 0;
 }
+
+
+/* Media queries */
+@media(min-width:1200px){
+    section:not([id]){
+        max-width: 1200px;
+    }
+    
+    section nav {
+        max-width:1200px;
+    }
+}
+
+@media(max-width:1000px){
+    .size1of8 {
+        width:25%;
+    }
+
+    .size1of4, .size2of8 {
+        width:50%;
+    }
+
+    .size1of3 {
+        width:100%;
+    }
+
+    .size3of8 {
+    /*    width:37.5%; Not sure what to do about this*/
+    }
+
+    .size1of2, .size2of4, size4of8 {
+       width: 100%;
+    }
+
+    .size5of8 {
+        width:100%; 
+    }
+
+    .size2of3 {
+        width:100%;
+    }
+
+    .size3of4, size6of8 {
+        width:100%;
+    }
+
+    .size7of8 {
+        width:100%;
+    }
+
+    .size1of1, .size2of2, .size3of3, .size4of4, .size8of8 {
+        width:100%;
+    }
+}
+
+@media(max-width:600px){
+    .size1of4, .size2of8 {
+        width:100%;
+    }
+    
+    .size1of8 {
+        width:100%;
+    }
