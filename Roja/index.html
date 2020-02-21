@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Hind:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,600|Hind:400,500,600&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
@@ -16,43 +16,38 @@
 
 <body>
     <div class="main-container">
-        <section class="top-logo-section">
-            <a href="#"><img class="top-logo" src="images/logo.svg" alt="Logo of company, Roja"> </a>
-        </section>
         <section id="top-nav">
+            <a href="#"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
             <nav>
                 <a class="main-nav-text" href=#>home</a>
                 <a class="main-nav-text" href=store.html>store</a>
                 <a class="main-nav-text" href="about.html">about</a>
-                <a href="contact.html">contact</a>
+                <a class="main-nav-text" href="contact.html">contact</a>
+                <a href="cart.html"><button class="button-cart" >cart<img src="images/shoppingCartIcon.svg" alt="Shopping cart">0</button></a>
             </nav>
         </section>
 
-        <section id="hero">
-            <img class="hero-image" src="images/wireframe_hero.svg">
-            <div class="hero-text">
-                <h2>Promotion Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate commodo arcu, sit amet egestas nisl feugiat luctus. Vestibulum ac hendrerit diam. Fusce dolor justo, volutpat nec mi id, sodales viverra mi. D</p>
-            </div>
-        </section>
+        <div class="hero" >
+            <img src="images/heroImage.svg" alt= "New hot sauces added ad">
+        </div>
 
-        <section id="store-cards">
-            <h2 style="text-align: center;">Our flavours</h2>
+        <section class="store-cards">
+            <h2 style="text-align: center;">Whatever your <span class="red-bold-text">spice level</span>, we've got you covered.</h2>
             <div class="container">
 
-                <div class="category-card size1of3">
+                <a href="product-1.html"><div class="category-card size1of4">
                     <div class="category-card-background">
-                        <img src="images/hot_sauce_1.png">
+                        <img src="images/mildHotSauce.jpg">
                         <h3> Mild Spice</h3>
                         <p>
                             An alii facilisis suavitate sed, dolor omnes ea duo, cu mucius facilisi nec. Ei aperiri alterum instructior his, mel et graeci accusamus. Equidem intellegebat eu eos. </p>
                         <a href="product-1.html">Choose!</a>
                     </div>
-                </div>
+                    </div></a>
 
-                <div class="category-card size1of3">
+                <div class="category-card size1of4">
                     <div class="category-card-background">
-                        <img src="images/hot_sauce_1.png">
+                        <img src="images/mediumHotSauce.jpg">
                         <h3> Medium Spice</h3>
                         <p>
                             An alii facilisis suavitate sed, dolor omnes ea duo, cu mucius facilisi nec. Ei aperiri alterum instructior his, mel et graeci accusamus. Equidem intellegebat eu eos. </p>
@@ -60,40 +55,20 @@
                     </div>
                 </div>
 
-                <div class="category-card size1of3">
+                <div class="category-card size1of4">
                     <div class="category-card-background">
-                        <img src="images/hot_sauce_1.png">
+                        <img src="images/hotHotSauce.jpg">
                         <h3> Hot Spice</h3>
                         <p>
                             An alii facilisis suavitate sed, dolor omnes ea duo, cu mucius facilisi nec. Ei aperiri alterum instructior his, mel et graeci accusamus. Equidem intellegebat eu eos. </p>
                         <a href="product-1.html">Choose!</a>
                     </div>
                 </div>
-
-                <div class="category-card size1of3">
+                
+                <div class="category-card size1of4">
                     <div class="category-card-background">
-                        <img src="images/hot_sauce_1.png">
-                        <h3> All Hot Sauces</h3>
-                        <p>
-                            An alii facilisis suavitate sed, dolor omnes ea duo, cu mucius facilisi nec. Ei aperiri alterum instructior his, mel et graeci accusamus. Equidem intellegebat eu eos. </p>
-                        <a href="product-1.html">Choose!</a>
-                    </div>
-                </div>
-
-                <div class="category-card size1of3">
-                    <div class="category-card-background">
-                        <img src="images/hot_sauce_1.png">
-                        <h3> All Hot Sauces</h3>
-                        <p>
-                            An alii facilisis suavitate sed, dolor omnes ea duo, cu mucius facilisi nec. Ei aperiri alterum instructior his, mel et graeci accusamus. Equidem intellegebat eu eos. </p>
-                        <a href="product-1.html">Choose!</a>
-                    </div>
-                </div>
-
-                <div class="category-card size1of3">
-                    <div class="category-card-background">
-                        <img src="images/hot_sauce_1.png">
-                        <h3> All Hot Sauces</h3>
+                        <img src="images/insaneHotSauce.jpg">
+                        <h3> Insane Spice</h3>
                         <p>
                             An alii facilisis suavitate sed, dolor omnes ea duo, cu mucius facilisi nec. Ei aperiri alterum instructior his, mel et graeci accusamus. Equidem intellegebat eu eos. </p>
                         <a href="product-1.html">Choose!</a>
