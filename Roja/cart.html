@@ -15,18 +15,194 @@
 </head>
 
 <body>
-    <section id="topLogo">
-        <a href="index.html"><img class="top-logo" src="images/logo.svg" alt="Logo of company, Roja"> </a>
-    </section>
-    <section id="top-nav">
-        <nav>
-            <a class="main-nav-text" href=index.html>home</a>
-            <a class="main-nav-text" href=store.html>store</a>
-            <a class="main-nav-text" href="about.html">about</a>
-            <a href="#">contact</a>
-        </nav>
-    </section>
+    <div class="main-container">
+        <section class="top-nav">
+            <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+            <nav>
+                <a class="main-nav-text" href=#>home</a>
+                <a class="main-nav-text" href=store.html>store</a>
+                <a class="main-nav-text" href="about.html">about</a>
+                <a class="main-nav-text" href="contact.html">contact</a>
+                <a href="cart.html"><button class="button-cart" >cart<img src="images/shoppingCartIcon.svg" alt="Shopping cart">0</button></a>
+            </nav>
+        </section>
 
+        <section>
+            <div class="container">
+
+                <!-- header text -->
+                <div class="size1of1" style="text-align: center;">
+                    <h1>Your Cart</h1>
+                </div>
+
+                <!-- CART Header START-->
+
+                <div class="size2of3">
+                    <div class="container">
+                        <div class="size5of8">
+                            <h3 style="color: #b3b3b3;">Product</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3 style="color: #b3b3b3;">Price</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3 style="color: #b3b3b3;">Quantity</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3 style="color: #b3b3b3;">Total</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CART Header END-->
+
+                <!-- CART START -->
+
+
+                <div class="size2of3">
+
+                    <!-- SINGLE PRODUCT START -->
+                    <div class="container">
+                        <div class="size5of8">
+                            <div class="container">
+                                <div class="size1of3">
+                                    <img src="images/insaneHotSauce.jpg" style="width: 50%;" alt="insane hot sauce product image">
+                                </div>
+                                <div class="size2of3">
+                                    <h3>insane hot suace</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size1of8">
+                            <h3>$5.99</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3>1</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3>$5.99</h3>
+                        </div>
+                    </div>
+                    <!-- SINGLE PRODUCT END -->
+
+                    <!-- SINGLE PRODUCT -->
+                    <!-- 
+                    <div class="container">
+                        <div class="size5of8">
+                            <div class="container">
+                                <div class="size1of2">
+                                    <img src="images/insaneHotSauce.jpg" style="width: 50%;" alt="insane hot sauce product image">
+                                </div>
+                                <div class="size1of2">
+                                    <h3>insane hot suace</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size1of8">
+                            <h3>$5.99</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3>1</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3>$5.99</h3>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <!-- Cart END -->
+
+                <!--
+                <div class="size2of3">
+                    <div class="container">
+                        <div class="size5of8">
+                            <h3>Product</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3>Price</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3>Quantity</h3>
+                        </div>
+                        <div class="size1of8">
+                            <h3>Total</h3>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+
+
+                <!-- Cart Summary START -->
+                <div class="size1of3">
+                    <section style="background-color: #e6e6e6; padding: 0; margin: 0;">
+                        <div class="container">
+                            <div class="size1of1">
+                                <h2 style="text-align: left;">Order Summary</h2>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="size1of2" style="text-align: left;">
+                                <p>Product Name</p>
+                            </div>
+                            <div class="size1of2" style="text-align: right;">
+                                <p>Price</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="size1of2" style="text-align: left;">
+                                <p>Product Name</p>
+                            </div>
+                            <div class="size1of2" style="text-align: right;">
+                                <p>Price</p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="size1of2" style="text-align: left;">
+                                <p>Product Name</p>
+                            </div>
+                            <div class="size1of2" style="text-align: right;">
+                                <p>Price</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section style="background-color: #cccccc; padding: 0; margin: 0;">
+                        <div class="container">
+                            <div class="size1of1">
+                                <div class="container">
+                                    <div class="size1of2" style="text-align: left;">
+                                        <p>Total</p>
+                                    </div>
+                                    <div class="size1of2" style="text-align: right;">
+                                        <p>Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <input style="width: 100%; color: white; background-color: red; padding: 1em;" type="submit" value="Submit">
+                </div>
+
+                <!-- Cart Summary End-->
+            </div>
+
+
+    </div>
+
+    <div id="footer">
+        <section>
+            <img src="images/logo-icon.png" alt="Roja Logo Icon">
+            <p><strong>© 2020 Roja Hot Sauce, Inc. All Rights Reserved.</strong></p>
+            <a href="citations.html">citations</a>
+            <a href="about.html">about us</a>
+            <a href="contact.html">contact us</a>
+        </section>
+    </div>
 </body>
 
 </html>
