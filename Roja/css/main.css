@@ -32,6 +32,22 @@
                 display: flex;
             }
             
+            .top-nav-spread {
+                display: flex;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                background-color: white;
+                -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.33);
+                -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.33);
+                box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.33);
+            }
+            
+            .top-nav-spread nav {
+                margin-right: 2em;
+            }
+            
             .top-logo {
                 margin-left: 2rem
             }
@@ -137,7 +153,7 @@
             section p {
                 margin-top: 0;
             }
-            /*---------Contact Form---------*/
+            /*---------CONTACT FORM START---------*/
             
             .contact-container {
                 text-align: right;
@@ -168,6 +184,41 @@
                 color: #FFF;
                 width: 100%;
             }
+            /*---------CONTACT FORM END---------*/
+            /*---------CART START---------*/
+            
+            .cart-header {
+                border-bottom: 1px solid #ccc !important;
+            }
+            
+            .cart-product {
+                padding: 2em 0em;
+            }
+            
+            .cart-header h3 {
+                color: #b3b3b3;
+            }
+            /*---------CART END---------*/
+            /*---------CART SUMNMARY START---------*/
+            
+            .cart-summary {
+                background-color: #e6e6e6;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .cart-summary .container {
+                padding: 0.5em 1em;
+            }
+            
+            .cart-summary a {
+                width: 100%;
+                color: white;
+                background-color: red;
+                padding: 1em;
+                text-align: center;
+            }
+            /*---------CART SUMNMARY END---------*/
             /*  INTERACTIVE ELEMENTS ------------------- */
             /* Styling for the navigation button */
             /*.button-nav {
