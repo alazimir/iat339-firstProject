@@ -131,9 +131,36 @@
             section p {
                 margin-top: 0;
             }
-            /* 
-  INTERACTIVE ELEMENTS -------------------
-*/
+            /*---------Contact Form---------*/
+            
+            .contact-container {
+                text-align: right;
+                padding: 0.5em 1em;
+            }
+            
+            .contact-label {
+                background-color: #042A2B;
+                padding: 0.5em 2em;
+                color: #FFF;
+                text-align: center;
+            }
+            
+            .contact-small-input {
+                width: 75%;
+                height: 110%;
+            }
+            
+            .contact-large-input {
+                width: 75%;
+                height: 200px;
+            }
+            
+            .contact-submit-button {
+                background-color: #FF220C;
+                padding: 0.5em 2em;
+                color: #FFF;
+            }
+            /*  INTERACTIVE ELEMENTS ------------------- */
             /* Styling for the navigation button */
             /*.button-nav {
                 display: inline-block;
@@ -286,7 +313,7 @@
                 text-decoration: none;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 z-index: 2;
                 transition: 0.4s;
                 /*https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
