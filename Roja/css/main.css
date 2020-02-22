@@ -1,6 +1,4 @@
-            /*
-  Started from "Style Guide Template. Made by Paul Brokenshire at SFU for SFU-IAT339
-*/
+            /* Started from "Style Guide Template. Made by Paul Brokenshire at SFU for SFU-IAT339 */
             
             * {
                 /*Set everything to use border-box model*/
@@ -11,12 +9,6 @@
             
             body {
                 background-color: #FFF;
-                /*background-color: #F8FAA4;*/
-                /*
-                background-color: #F8FAA4;
-                padding: 0rem 1rem 0rem 1rem;
-                margin: auto;
-*/
             }
             
             .main-container {
@@ -52,7 +44,7 @@
                 margin-left: 2rem
             }
             /*To center with "margin:auto" an  img needs to be set to display block otherwise its inline by default and has no margin
-    https://stackoverflow.com/questions/3015223/why-doesnt-marginauto-center-an-image*/
+            https://stackoverflow.com/questions/3015223/why-doesnt-marginauto-center-an-image*/
             /*.top-logo-section {
                 margin: ;
                 padding: 0;
@@ -220,6 +212,18 @@
                 text-align: center;
             }
             /*---------CART SUMNMARY END---------*/
+            /*--------- CONTENT BANNER START---------*/
+            
+            .content-banner {
+                background-color: #042A2B;
+            }
+            
+            .content-banner article {
+                padding: 2em;
+            }
+            
+            .content-banner div {}
+            /*--------- CONTENT BANNER END---------*/
             /*  INTERACTIVE ELEMENTS ------------------- */
             /* Styling for the navigation button */
             /*.button-nav {
@@ -317,9 +321,7 @@
                 border: 2px solid #9AB29A;
                 outline: none;
             }
-            /* 
-  TEXT ELEMENTS -------------------
-*/
+            /* ------------------- TEXT ELEMENTS -------------------*/
             
             p,
             h1,
@@ -378,8 +380,7 @@
                 list-style: none;
                 padding: 0 1rem;
             }
-            /* How to color bullet points https://www.w3schools.com/howto/howto_css_bullet_color.asp
-*/
+            /* How to color bullet points https://www.w3schools.com/howto/howto_css_bullet_color.asp*/
             
             .bullet-list-item::before {
                 content: "\2022";
@@ -392,11 +393,8 @@
             .numbered-list {
                 list-style: upper-roman
             }
-            /* 
-  COMBINED ELEMENTS -------------------
-*/
-            /* How to make nav from https://www.w3docs.com/learn-html/html-nav-tag.html
-*/
+            /* ------------------- COMBINED ELEMENTS ------------------- */
+            /* How to make nav from https://www.w3docs.com/learn-html/html-nav-tag.html*/
             
             nav {
                 display: flex;
@@ -424,8 +422,7 @@
                 /*    background-color: #AAAAAA;*/
                 color: #fff;
             }
-            /* Underline Animation Modified from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
-        */
+            /* Underline Animation Modified from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/*/
             
             nav a.main-nav-text::before {
                 content: "";
@@ -522,8 +519,7 @@
             .size8of8 {
                 width: 100%;
             }
-            /* Underline color help https://www.w3schools.com/cssref/css3_pr_text-decoration-color.asp
-*/
+            /* Underline color help https://www.w3schools.com/cssref/css3_pr_text-decoration-color.asp*/
             
             .product-card h3 {
                 margin: 1rem;
@@ -562,7 +558,7 @@
                     justify-content: center;
                     text-decoration: none;
                 }
-                /*                Reduce the spacing between the links on the smaller screen so they don't reflow as early. */
+                /* Reduce the spacing between the links on the smaller screen so they don't reflow as early. */
                 .main-nav-text {
                     margin: 0.5rem 0.5rem;
                 }
@@ -585,7 +581,7 @@
                     width: 100%;
                 }
                 .size3of8 {
-                    /*    width:37.5%; Not sure what to do about this*/
+                    /*width:37.5%; Not sure what to do about this*/
                 }
                 .size1of2,
                 .size2of4,
