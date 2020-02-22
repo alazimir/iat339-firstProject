@@ -47,7 +47,7 @@
                 margin-left: 2rem;
                 margin-top: 0.5rem;
                 margin-top: 0.5rem;
-                    
+
             }
 
             /*To center with "margin:auto" an  img needs to be set to display block otherwise its inline by default and has no margin
@@ -160,12 +160,12 @@
 
             .contact-label-container {
                 text-align: right;
-                padding: 0.5em 1em;
+                padding: 0.5em 0 0.5rem 2rem;
             }
 
-.contact-field-container {
-    padding-right: 2rem;
-}
+            .contact-field-container {
+                padding: 0 2rem 0 0.5rem;
+            }
 
             .contact-label {
                 background-color: #042A2B;
@@ -176,18 +176,37 @@
 
             .contact-small-input {
                 width: 100%;
-                height: 110%;
+                height: 100%;
+                padding: 0.6rem;
+                border: 2px solid #BFBFBF;
+                color: white;
+
+            }
+
+            .contact-small-input:focus {
+                border: 2px solid #042A2B;
+                outline: none;
             }
 
             .contact-large-input {
                 width: 100%;
                 height: 200px;
+                padding: 0.6rem;
+                border: 2px solid #BFBFBF;
+                resize: none;
+                color: white;
+            }
+
+            .contact-large-input:focus {
+                border: 2px solid #042A2B;
+                outline: none;
             }
 
             .contact-submit-button {
                 background-color: #FF220C;
                 border: none;
                 padding: 1em 2em;
+                margin-top: 1rem;
                 color: #FFF;
                 width: 100%;
             }
@@ -252,12 +271,12 @@
 */
             /* Styling for buttons */
             /*Shopping Cart Button*/
-div.button-cart {
-    position: relative;
-}
+            div.button-cart {
+                position: relative;
+            }
 
             button.button-cart {
-                background: rgba(0,0,0,0);
+                background: rgba(0, 0, 0, 0);
                 padding: 0 0 0rem 0.9rem;
                 border: 1px solid #FF220C;
                 border-radius: 5px;
@@ -269,7 +288,7 @@ div.button-cart {
                 text-align: left;
                 height: 2.75rem;
                 width: 7.5rem;
-                
+
                 position: relative;
             }
 
@@ -278,7 +297,7 @@ div.button-cart {
             }
 
             .button-cart img {
-                right:0.9rem;
+                right: 0.9rem;
                 top: 0.75rem;
                 position: absolute;
             }
@@ -463,7 +482,7 @@ div.button-cart {
                 margin-left: -15%;
                 width: 130%;
                 height: 34px;
-                bottom: -4px;
+                bottom: -6px;
                 left: 0;
                 background-color: #FF3637;
                 visibility: hidden;
@@ -626,12 +645,25 @@ div.button-cart {
                 }
 
                 .top-logo {
-                    width: 300px;
+                    width: 260px;
+                    margin-right: 0;
+                    margin-left: 0;
+                    
                 }
 
                 .hero img {
                     width: 100%;
                     min-width: 900px;
+                }
+
+                .contact-label-container {
+                    text-align: left;
+/*                    padding: 0.5em 0 0.5rem 2rem;*/
+                    padding: 0.5rem 8rem 0.5rem 8rem;
+                }
+
+                .contact-field-container {
+                    padding: 0 8rem 0 8rem;
                 }
 
                 .size1of8 {
@@ -689,10 +721,31 @@ div.button-cart {
                 }
 
                 .top-logo {
+                    width: 220px;
                 }
 
                 .hero img {
                     min-width: 720px;
+                }
+                
+                .contact-label-container {
+                    display: none;
+                }
+                
+                .contact-field-container {
+                    padding: 0;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                
+/*                This makes the placeholder text visible by changing the color from white. Bit of a hack but it's the only way*/
+/*                https://www.w3schools.com/howto/howto_css_placeholder.asp*/
+                .contact-small-input {
+                    color: #042A2B;
+                }
+                
+                .contact-large-input {
+                    color: #042A2B;
                 }
 
                 .size1of4,
