@@ -13,6 +13,8 @@
 
             .main-container {
                 margin: auto;
+                min-height: 100vh;
+                position: relative;
             }
 
             html {
@@ -156,16 +158,20 @@
 
             /*---------CONTACT FORM START---------*/
 
-            .contact-container {
+            .contact-label-container {
                 text-align: right;
                 padding: 0.5em 1em;
             }
+
+.contact-field-container {
+    padding-right: 2rem;
+}
 
             .contact-label {
                 background-color: #042A2B;
                 padding: 0.5em 2em;
                 color: #FFF;
-                text-align: center;
+                text-align: right;
             }
 
             .contact-small-input {
