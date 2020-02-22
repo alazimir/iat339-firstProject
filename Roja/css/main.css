@@ -28,9 +28,8 @@
             }
             /*---------Home Page---------*/
             
-            #top-nav {
+            .top-nav {
                 display: flex;
-                justify-content: right;
             }
             
             .top-logo {
@@ -65,6 +64,11 @@
                 padding: 0rem;
                 margin-top: 4rem;
             }
+
+.store-cards h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
             
             .category-card {}
             
@@ -449,6 +453,33 @@
             }
             
             @media(max-width:1000px) {
+            
+                
+                nav {
+                    justify-content: center;
+                }
+                
+                .top-nav {
+                    flex-direction: column;
+                    
+                }
+                
+                .top-nav a {
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                }
+                
+/*                Reduce the spacing between the links on the smaller screen so they don't reflow as early. */
+                .main-nav-text {
+                    margin: 0.5rem 0.5rem;
+                }
+                
+                .top-logo {
+                    width: 40%;
+                    margin: 0;
+                }
+                
                 .hero img {
                     width: 100%;
                     min-width: 900px;
@@ -493,7 +524,15 @@
                 }
             }
             
-            @media(max-width:600px) {
+            @media(max-width:640px) {
+                .top-nav nav {
+                    flex-direction: column;
+                }
+                
+                .top-logo {
+                    width:70%;
+                }
+                
                 .hero img {
                     min-width: 720px;
                 }
