@@ -191,6 +191,12 @@
                 margin-top: 0;
             }
 
+.product-listing a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
                 opacity: 0;
