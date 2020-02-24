@@ -122,10 +122,10 @@
             }
 
             .side-menu {
-                padding: 1rem 2rem 0 2rem;
+                padding: 1rem 1.5rem 0 2rem;
                 width: 20%;
                 height: 100vh;
-                box-shadow: 10px 0px 5px -2px #888888;
+                box-shadow: 6px 0px 10px -5px #888888;
                 /*Box Shaddow only on one side     https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element*/
                 position: fixed;
                 z-index: 3;
@@ -135,14 +135,27 @@
                 border-bottom: 2px solid #999;
                 /*                border-top: 2px solid #999;*/
                 padding-left: 1rem;
+                margin-right: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 0.6rem;
+                margin-right: 1rem;
+                
+                line-height: 2.5rem;
             }
 
             .side-menu h3 {
                 color: #555;
                 padding-left: 1rem;
+                padding-right: 2rem;
+                margin-top: 0.5rem;
+                text-align: right;
             }
 
-.selected-side-nav {
+.side-menu h3:hover {
+    color: #FF220C;
+}
+
+#selected-side-nav {
     color: #FF220C;
 }
 
@@ -150,7 +163,8 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 80%;
-                padding-top: 3rem;
+                padding: 3rem 3rem 0 3rem;
+                
 
             }
 
@@ -159,17 +173,22 @@
                 text-align: center;
                 display: flex;
                 flex-direction: column;
+                margin-top: 2rem;
             }
 
             .product-listing img {
                 width: 100%;
-                margin: 0;
+                margin: 1rem 0 0 0;
                 padding: 0;
             }
 
-            .product-listing h3 {}
+            .product-listing h3 {
+                margin-top: 0.3rem;
+}
 
-            .product-listing h4 {}
+            .product-listing h4 {
+                margin-top: 0;
+}
 
             /*Footer Start*/
 
@@ -697,7 +716,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                     flex-direction: column;
                     justify-content: center;
                     position: sticky;
-                    top: -9rem;
+                    top: -8rem;
                 }
 
                 .top-nav-spread nav {
@@ -721,12 +740,6 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .hero img {
                     width: 100%;
                     min-width: 900px;
-                }
-                
-                .side-menu {
-                    width: 100%;
-    height: auto;
-    position: relative;
                 }
 
                 .contact-label-container {
