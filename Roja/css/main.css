@@ -115,6 +115,62 @@
                 text-decoration: none;
             }
 
+            /*Store Start*/
+
+            .side-menu-container {
+                width: 20%;
+            }
+
+            .side-menu {
+                padding: 1rem 2rem 0 2rem;
+                width: 20%;
+                height: 100vh;
+                box-shadow: 10px 0px 5px -2px #888888;
+                /*Box Shaddow only on one side     https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element*/
+                position: fixed;
+                z-index: 3;
+            }
+
+            .side-menu h2 {
+                border-bottom: 2px solid #999;
+                /*                border-top: 2px solid #999;*/
+                padding-left: 1rem;
+            }
+
+            .side-menu h3 {
+                color: #555;
+                padding-left: 1rem;
+            }
+
+.selected-side-nav {
+    color: #FF220C;
+}
+
+            .product-area-container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                padding-top: 3rem;
+
+            }
+
+            .product-listing {
+/*                width: 25%;*/
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .product-listing img {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .product-listing h3 {}
+
+            .product-listing h4 {}
+
             /*Footer Start*/
 
             #footer {
@@ -181,13 +237,17 @@
                 border: 2px solid #BFBFBF;
             }
 
-.contact-small-input::placeholder {
-    color: #fff;
-}
+            /*
+How to change the input placeholder color 
+https://www.w3schools.com/howto/howto_css_placeholder.asp
+*/
+            .contact-small-input::placeholder {
+                color: #fff;
+            }
 
-.contact-large-input::placeholder {
-    color: #fff;
-}
+            .contact-large-input::placeholder {
+                color: #fff;
+            }
 
             .contact-small-input:focus {
                 border: 2px solid #042A2B;
@@ -293,7 +353,7 @@
                 text-align: left;
                 height: 2.75rem;
                 width: 7.5rem;
-                
+
                 cursor: pointer;
 
                 position: relative;
@@ -655,23 +715,35 @@
                     width: 260px;
                     margin-right: 0;
                     margin-left: 0;
-                    
+
                 }
 
                 .hero img {
                     width: 100%;
                     min-width: 900px;
                 }
+                
+                .side-menu {
+                    width: 100%;
+    height: auto;
+    position: relative;
+                }
 
                 .contact-label-container {
                     text-align: left;
-/*                    padding: 0.5em 0 0.5rem 2rem;*/
+                    /*                    padding: 0.5em 0 0.5rem 2rem;*/
                     padding: 0.5rem 8rem 0.5rem 8rem;
                 }
 
                 .contact-field-container {
                     padding: 0 8rem 0 8rem;
                 }
+
+/*
+                .product-listing {
+                    width: 50%;
+                }
+*/
 
                 .size1of8 {
                     width: 25%;
@@ -734,27 +806,27 @@
                 .hero img {
                     min-width: 720px;
                 }
-                
+
                 .contact-label-container {
                     display: none;
                 }
-                
+
                 .contact-field-container {
                     padding: 0;
                     width: 80%;
                     margin: 0 auto;
                 }
-                
-/*                This makes the placeholder text visible by changing the color from white. Bit of a hack but it's the only way*/
-/*                https://www.w3schools.com/howto/howto_css_placeholder.asp*/
-                
+
+                /*                This makes the placeholder text visible by changing the color from white. Bit of a hack but it's the only way*/
+                /*                https://www.w3schools.com/howto/howto_css_placeholder.asp*/
+
                 .contact-small-input::placeholder {
-    color: #042A2B;
-}
-                
+                    color: #042A2B;
+                }
+
                 .contact-large-input::placeholder {
-    color: #042A2B;
-}
+                    color: #042A2B;
+                }
 
                 .size1of4,
                 .size2of8 {
