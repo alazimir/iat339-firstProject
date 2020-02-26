@@ -50,13 +50,8 @@
 
             }
 
-            /*To center with "margin:auto" an  img needs to be set to display block otherwise its inline by default and has no margin
-            https://stackoverflow.com/questions/3015223/why-doesnt-marginauto-center-an-image*/
-            /*.top-logo-section {
-                margin: ;
-                padding: 0;
-            }
-            Hero Section*/
+
+            /*---------HERO START---------*/
 
             .hero {
                 margin: 1rem auto;
@@ -68,7 +63,9 @@
                 max-width: 1200px;
             }
 
-            /*Cards to store categories*/
+            /*---------HERO END---------*/
+
+            /*---------HOME CARDS TO STORE START---------*/
             /*How to select text in other text: https://stackoverflow.com/questions/4622808/html-changing-colors-of-specific-words-in-a-string-of-text/4622818*/
 
             .red-bold-text {
@@ -88,6 +85,10 @@
 
             .category-card {
                 margin-bottom: 2rem;
+            }
+
+            .category-card p {
+                padding-top: 0;
             }
 
 
@@ -114,7 +115,50 @@
                 text-decoration: none;
             }
 
-            /*Store Start*/
+            /*---------HOME CARDS TO STORE END---------*/
+
+            /*---------OUR STORY BANNER START---------*/
+.our-story-banner {
+    
+}
+
+.our-story-banner article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 6rem 4rem;
+}
+
+.our-story-banner button {
+    color: white;
+    background-color: Transparent;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    
+    -webkit-transition: border-color 0.1s ease-in;
+    transition: border-color 0.1s ease-in;
+}
+
+.our-story-banner a {
+     margin-left: auto;
+}
+
+.our-story-banner button:hover {
+    border-color:#FE210B;
+}
+
+.our-story-banner img {
+    display: block;
+}
+
+            /*---------OUR STORY BANNER END---------*/
+
+            /*---------STORE START---------*/
 
             .side-menu-container {
                 width: 20%;
@@ -191,11 +235,11 @@
                 margin-top: 0;
             }
 
-.product-listing a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+            .product-listing a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
 
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
@@ -360,10 +404,6 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 background-color: #042A2B;
             }
 
-            .content-banner article {
-                padding: 2em;
-            }
-
             .content-banner div {}
 
             /*--------- CONTENT BANNER END---------*/
@@ -413,7 +453,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
 
             .button-shop {
                 display: inline-block;
-                padding: 0.6rem 1rem;
+                padding: 0.7rem 1.5rem;
                 color: #fff;
                 background-color: #FE210C;
                 border-radius: 0.25em;
@@ -772,6 +812,10 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .contact-field-container {
                     padding: 0 8rem 0 8rem;
                 }
+                
+                .our-story-banner img {
+    display: none;
+}
 
                 /*
                 .product-listing {
