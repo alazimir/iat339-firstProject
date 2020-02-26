@@ -1,25 +1,44 @@
 //JavaScript file
 
-var i = 0;
-    function increaseQuantNum() {
-        i++;
-        document.getElementById('inc').innerHTML = i;
-    }
+var itemQuant = 0;
 
-    function decreaseQuantNum() {
-        if(i > 0){
-            i--;
-            document.getElementById('inc').innerHTML = i;
-        }
+function increaseQuantNum() {
+    itemQuant++;
+    document.getElementById('inc').innerHTML = itemQuant;
+}
+
+function decreaseQuantNum() {
+    if (i > 0) {
+        itemQuant--;
+        document.getElementById('inc').innerHTML = itemQuant;
     }
+}
 
 function addToCart() {
-//    var cartVal = document.getElementById('cart').innerHTML;
-//    console.log(cartVal);
-    
-    document.getElementById('cart').innerHTML = "cart " + i;
-    
-    document.getElementById("cartIcon").src = "images/shoppingCartIconRed.svg";
-    
-    window.alert("Added to cart!");
+    if(itemQuant > 0){
+        document.getElementById('cart').innerHTML = "cart " + itemQuant;
+
+        //    How to change src with JS https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
+        document.getElementById("cartIcon").src = "images/shoppingCartIconRed.svg";
+
+        //    window.alert("Added to cart!");
+        showImage();
+    }
+}
+
+//Popup Added to cart message
+function showImage() {
+    document.getElementById("added-tocart-popup").style.display = "block";
+
+    hideImage();
+}
+
+//How to set a timer to call a function https://www.w3schools.com/jsref/met_win_settimeout.asp
+function hideImage() {
+    //  5000 = 5 seconds
+    setTimeout(doHide, 3000);
+}
+
+function doHide() {
+    document.getElementById("added-tocart-popup").style.display = "none";
 }
