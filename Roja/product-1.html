@@ -24,7 +24,7 @@
             <a class="main-nav-text" href="contact.html">contact</a>
             <div class="button-cart">
                 <img src="images/shoppingCartIcon.svg" alt="Shopping cart">
-                <a href="cart.html"><button class="button-cart">cart 0</button></a>
+                <a href="cart.html"><button class="button-cart" id="cart">cart 0</button></a>
             </div>
         </nav>
     </div>
@@ -54,20 +54,23 @@
                         <h6>CAD</h6>
                     </div>
                     <div class="quantity">
+
                         <h6>Quantity</h6>
-                        <button>-</button>
-                        <h6>1</h6>
-                        <button>+</button>
+                        <button onclick="decreaseQuantNum();">-</button>
+
+                        <h6 id="inc">0</h6>
+
+                        <button onclick="increaseQuantNum();">+</button>
                     </div>
                 </div>
                 <div class="add-to-cart">
-                    <button>Add to Cart</button>
+                    <button onclick="addToCart();">Add to Cart</button>
                 </div>
             </div>
         </div>
 
     </div>
-
+<script src="js/main.js"></script>
 </body>
 
 </html>
