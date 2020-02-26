@@ -8,7 +8,7 @@ function increaseQuantNum() {
 }
 
 function decreaseQuantNum() {
-    if (i > 0) {
+    if (itemQuant > 0) {
         itemQuant--;
         document.getElementById('inc').innerHTML = itemQuant;
     }
