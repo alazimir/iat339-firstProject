@@ -34,23 +34,23 @@
         <div class="side-menu-container">
             <div class="side-menu">
                 <h2>Sauces</h2>
-                <h3 id="selected-side-nav">All Sauces</h3>
+                <h3 id="selected-side-nav" onclick="showAll();">All Sauces</h3>
                 <a href="#">
                     <h3>On Sale</h3>
                 </a>
 
                 <h2>Heat</h2>
                 <a href="#">
-                    <h3>Mild heat</h3>
+                    <h3 onclick="showOnlyMild(this);">Mild heat</h3>
                 </a>
                 <a href="#">
-                    <h3>Medium heat</h3>
+                    <h3 onclick="showOnlyMedium();">Medium heat</h3>
                 </a>
                 <a href="#">
-                    <h3>Hot heat</h3>
+                    <h3 onclick="showOnlyHot();">Hot heat</h3>
                 </a>
                 <a href="#">
-                    <h3>Insane heat</h3>
+                    <h3 onclick="showOnlyInsane();">Insane heat</h3>
                 </a>
 
                 <h2>Brands</h2>
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="product-area-container">
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing hot-heat">
                 <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -79,7 +79,7 @@
                 <h4><strong>$12</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing insane-heat">
                 <img src="images/insaneHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -91,7 +91,7 @@
                 <h4><strong>$14</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing medium-heat">
                 <img src="images/mediumHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -103,7 +103,7 @@
                 <h4><strong>$10</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing mild-heat">
                 <img src="images/mildHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -115,7 +115,7 @@
                 <h4><strong>$9</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing hot-heat">
                 <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -127,7 +127,7 @@
                 <h4><strong>$12</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing insane-heat">
                 <img src="images/insaneHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -139,7 +139,7 @@
                 <h4><strong>$14</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing medium-heat">
                 <img src="images/mediumHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -151,7 +151,7 @@
                 <h4><strong>$10</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing mild-heat">
                 <img src="images/mildHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -162,8 +162,8 @@
                 <h3>Buffalo Sauce | Tessemae's</h3>
                 <h4><strong>$9</strong></h4>
             </div>
-
-            <div class="size1of4 product-listing">
+            
+            <div class="size1of4 product-listing hot-heat">
                 <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -175,7 +175,7 @@
                 <h4><strong>$12</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing insane-heat">
                 <img src="images/insaneHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -187,7 +187,7 @@
                 <h4><strong>$14</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing medium-heat">
                 <img src="images/mediumHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -199,7 +199,7 @@
                 <h4><strong>$10</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing">
+            <div class="size1of4 product-listing mild-heat">
                 <img src="images/mildHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -215,6 +215,7 @@
 
 
     <!--    </section>-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
