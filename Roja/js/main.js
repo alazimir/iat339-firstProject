@@ -5,24 +5,22 @@ var itemCount = 0;
 
 function increaseQuantNum() {
     itemCount++;
-    document.getElementById('inc').innerHTML = itemCount;
+    document.getElementById('numItems').innerHTML = itemCount;
 }
 
 function decreaseQuantNum() {
     if (itemCount > 0) {
         itemCount--;
-        document.getElementById('inc').innerHTML = itemCount;
+        document.getElementById('numItems').innerHTML = itemCount;
     }
 }
 
 function addToCart() {
     if (itemCount > 0) {
         var preCartNum = document.getElementById("cartNum").innerHTML;
-        
-        console.log(preCartNum);
-        
+
         preCartNumParsed = parseInt(preCartNum);
-        
+
         newNum = preCartNumParsed + itemCount;
 
         document.getElementById('cartNum').innerHTML = newNum;
@@ -30,20 +28,26 @@ function addToCart() {
         //    How to change src with JS https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
         document.getElementById("cartIcon").src = "images/shoppingCartIconRed.svg";
 
-        //    window.alert("Added to cart!");
-        showImage();
+        showDiv();
+
     }
+
+    //How to store values across pages
+    //https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+    console.log(newNum);
+    sessionStorage.setItem("cartNumItems", newNum);
+    console.log(sessionStorage.getItem("cartNumItems"));
 }
 
 //Popup Added to cart message
-function showImage() {
+function showDiv() {
     document.getElementById("added-tocart-popup").style.opacity = 1;
 
-    hideImage();
+    hideDiv();
 }
 
 //How to set a timer to call a function https://www.w3schools.com/jsref/met_win_settimeout.asp
-function hideImage() {
+function hideDiv() {
     //  5000 = 5 seconds
     setTimeout(doHide, 3000);
 }
@@ -155,128 +159,15 @@ function showOnly(element, select) {
     }
 }
 
-//Old way to do it. New way is condenced into one function
-//
-//function showAll(element) {
-//    var allFilterText = document.getElementById("sideMenu").querySelectorAll("h3");
-//
-//    for (var i = 0; i < allFilterText.length; i++) {
-//        allFilterText[i].classList.remove("selected-side-nav");
-//    }
-//
-//    element.classList.add("selected-side-nav");
-//
-//    var mild = document.getElementsByClassName("mild-heat");
-//    var medium = document.getElementsByClassName("medium-heat");
-//    var hot = document.getElementsByClassName("hot-heat");
-//    var insane = document.getElementsByClassName("insane-heat");
-//
-//    for (var i = 0; i < mild.length; i++) {
-//        mild[i].style.display = "flex";
-//    }
-//
-//    for (var i = 0; i < medium.length; i++) {
-//        medium[i].style.display = "flex";
-//    }
-//
-//    for (var i = 0; i < hot.length; i++) {
-//        hot[i].style.display = "flex";
-//    }
-//
-//    for (var i = 0; i < insane.length; i++) {
-//        insane[i].style.display = "flex";
-//    }
-//}
-//function showOnlyMedium(element) {
-//    var allFilterText = document.getElementById("sideMenu").querySelectorAll("h3");
-//
-//    for (var i = 0; i < allFilterText.length; i++) {
-//        allFilterText[i].classList.remove("selected-side-nav");
-//    }
-//
-//    element.classList.add("selected-side-nav");
-//
-//    var mild = document.getElementsByClassName("mild-heat");
-//    var medium = document.getElementsByClassName("medium-heat");
-//    var hot = document.getElementsByClassName("hot-heat");
-//    var insane = document.getElementsByClassName("insane-heat");
-//
-//    for (var i = 0; i < mild.length; i++) {
-//        mild[i].style.display = "none";
-//    }
-//
-//    for (var i = 0; i < medium.length; i++) {
-//        medium[i].style.display = "flex";
-//    }
-//
-//    for (var i = 0; i < hot.length; i++) {
-//        hot[i].style.display = "none";
-//    }
-//
-//    for (var i = 0; i < insane.length; i++) {
-//        insane[i].style.display = "none";
-//    }
-//}
-//
-//function showOnlyHot(element) {
-//    var allFilterText = document.getElementById("sideMenu").querySelectorAll("h3");
-//
-//    for (var i = 0; i < allFilterText.length; i++) {
-//        allFilterText[i].classList.remove("selected-side-nav");
-//    }
-//
-//    element.classList.add("selected-side-nav");
-//
-//    var mild = document.getElementsByClassName("mild-heat");
-//    var medium = document.getElementsByClassName("medium-heat");
-//    var hot = document.getElementsByClassName("hot-heat");
-//    var insane = document.getElementsByClassName("insane-heat");
-//
-//    for (var i = 0; i < mild.length; i++) {
-//        mild[i].style.display = "none";
-//    }
-//
-//    for (var i = 0; i < medium.length; i++) {
-//        medium[i].style.display = "none";
-//    }
-//
-//    for (var i = 0; i < hot.length; i++) {
-//        hot[i].style.display = "flex";
-//    }
-//
-//    for (var i = 0; i < insane.length; i++) {
-//        insane[i].style.display = "none";
-//    }
-//}
-//
-//function showOnlyInsane(element) {
-//    var allFilterText = document.getElementById("sideMenu").querySelectorAll("h3");
-//
-//    for (var i = 0; i < allFilterText.length; i++) {
-//        allFilterText[i].classList.remove("selected-side-nav");
-//    }
-//
-//    element.classList.add("selected-side-nav");
-//
-//    var mild = document.getElementsByClassName("mild-heat");
-//    var medium = document.getElementsByClassName("medium-heat");
-//    var hot = document.getElementsByClassName("hot-heat");
-//    var insane = document.getElementsByClassName("insane-heat");
-//
-//    for (var i = 0; i < mild.length; i++) {
-//        mild[i].style.display = "none";
-//    }
-//
-//    for (var i = 0; i < medium.length; i++) {
-//        medium[i].style.display = "none";
-//    }
-//
-//    for (var i = 0; i < hot.length; i++) {
-//        hot[i].style.display = "none";
-//    }
-//
-//    for (var i = 0; i < insane.length; i++) {
-//        insane[i].style.display = "flex";
-//    }
-//}
-//Store filtering
+//On page load to set the number of items in cart
+
+function setCartNumItems() {
+    if(isNaN(sessionStorage.getItem('cartNumItems'))){
+        sessionStorage.setItem("cartNumItems", 0);
+    }
+    document.getElementById("cartNum").innerHTML = sessionStorage.getItem('cartNumItems');
+    
+    if(parseInt(sessionStorage.getItem('cartNumItems')) > 0){
+        document.getElementById("cartIcon").src = "images/shoppingCartIconRed.svg";
+    }
+}

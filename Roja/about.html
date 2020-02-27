@@ -12,9 +12,10 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
+    <script src="js/main.js"></script>
 </head>
 
-<body>
+<body onload="setCartNumItems();">
     <div class="top-nav-spread">
     <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
     <nav>
@@ -23,8 +24,8 @@
         <a class="main-nav-text" href="#">about</a>
         <a class="main-nav-text" href="contact.html">contact</a>
         <div class="button-cart">
-                <img src="images/shoppingCartIcon.svg" alt="Shopping cart">
-                <a href="cart.html"><button class="button-cart">cart 0</button></a>
+                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+            <a href="cart.html"><button class="button-cart">cart <span id="cartNum">0</span></button></a>
             </div>
     </nav>
 </div>

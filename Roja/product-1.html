@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body onload="setCartNumItems();">
     <div class="top-nav-spread">
         <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
         <nav>
@@ -61,7 +61,7 @@
                         <h6>Quantity</h6>
                         <button onclick="decreaseQuantNum();">-</button>
 
-                        <h6 id="inc">0</h6>
+                        <h6 id="numItems">0</h6>
 
                         <button onclick="increaseQuantNum();">+</button>
                     </div>
