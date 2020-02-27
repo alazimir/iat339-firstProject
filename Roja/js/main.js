@@ -17,7 +17,15 @@ function decreaseQuantNum() {
 
 function addToCart() {
     if (itemCount > 0) {
-        document.getElementById('cart').innerHTML = "cart " + itemCount;
+        var preCartNum = document.getElementById("cartNum").innerHTML;
+        
+        console.log(preCartNum);
+        
+        preCartNumParsed = parseInt(preCartNum);
+        
+        newNum = preCartNumParsed + itemCount;
+
+        document.getElementById('cartNum').innerHTML = newNum;
 
         //    How to change src with JS https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
         document.getElementById("cartIcon").src = "images/shoppingCartIconRed.svg";
@@ -62,16 +70,16 @@ function showOnly(element, select) {
 
     //-----Set arrays of all cards, and each heat level.
     //Selector info https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
-    
+
     //All sauces
     var all = document.getElementsByClassName('product-listing');
-    
+
     //By heat
     var mild = document.getElementsByClassName("mild-heat");
     var medium = document.getElementsByClassName("medium-heat");
     var hot = document.getElementsByClassName("hot-heat");
     var insane = document.getElementsByClassName("insane-heat");
-    
+
     //By brand
     var melindas = document.getElementsByClassName("melindas-brand");
     var daves = document.getElementsByClassName("daves-brand");
@@ -117,28 +125,28 @@ function showOnly(element, select) {
             insane[i].style.display = "flex";
         }
     }
-    
+
     //-----Change melindas back to flex
     if (select == 'melindas-brand') {
         for (var i = 0; i < melindas.length; i++) {
             melindas[i].style.display = "flex";
         }
     }
-    
+
     //-----Change daves back to flex
     if (select == 'daves-brand') {
         for (var i = 0; i < daves.length; i++) {
             daves[i].style.display = "flex";
         }
     }
-    
+
     //-----Change currie back to flex
     if (select == 'currie-brand') {
         for (var i = 0; i < currie.length; i++) {
             currie[i].style.display = "flex";
         }
     }
-    
+
     //-----Change tessemaes back to flex
     if (select == 'tessemaes-brand') {
         for (var i = 0; i < tessemaes.length; i++) {
