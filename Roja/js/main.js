@@ -1,7 +1,7 @@
 //JavaScript file
 
 //Product Page Stuff Start
-var itemCount = 0;
+var itemCount = 1;
 
 function increaseQuantNum() {
     itemCount++;
@@ -9,7 +9,7 @@ function increaseQuantNum() {
 }
 
 function decreaseQuantNum() {
-    if (itemCount > 0) {
+    if (itemCount > 1) {
         itemCount--;
         document.getElementById('numItems').innerHTML = itemCount;
     }
@@ -162,8 +162,9 @@ function showOnly(element, select) {
 //On page load to set the number of items in cart
 
 function setCartNumItems() {
-    if(isNaN(sessionStorage.getItem('cartNumItems'))){
-        sessionStorage.setItem("cartNumItems", 0);
+    //Setting the cart number to be 0 if nothing has been loaded into sessionstore yet.
+    if(sessionStorage.getItem('cartNumItems') == null){
+        sessionStorage.setItem('cartNumItems', 0);
     }
     document.getElementById("cartNum").innerHTML = sessionStorage.getItem('cartNumItems');
     
