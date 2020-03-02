@@ -12,22 +12,42 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
+    <script src="js/main.js"></script>
 </head>
 
 <body>
+    <!-- Start Navigtion bar-->
     <div class="top-nav-spread">
         <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
         <nav>
             <a class="main-nav-text" href=#>home</a>
-            <a class="main-nav-text" href=store.html>store</a>
+            <a class="main-nav-text" href="store.html">store</a>
             <a class="main-nav-text" href="about.html">about</a>
             <a class="main-nav-text" href="contact.html">contact</a>
             <div class="button-cart">
-                <img src="images/shoppingCartIcon.svg" alt="Shopping cart">
-                <a href="cart.html"><button class="button-cart">cart 0</button></a>
+                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+                <a href="cart.html"><button class="button-cart">cart <span id="cartNum">0</span></button></a>
             </div>
         </nav>
     </div>
+    
+    <div id="collapsedTopNav" class="collapsed-top-nav">
+        <a class="close-button" onclick="closeNav();">&times;</a>
+        <a class="collapsed-nav-text" href=index.html>home</a>
+        <a class="collapsed-nav-text" href="store.html">store</a>
+        <a class="collapsed-nav-text" href="about.html">about</a>
+        <a class="collapsed-nav-text" href="contact.html">contact</a>
+    </div>
+    
+    <div class="condensed-top-nav">
+        <button onclick ="openNav();">menu</button>
+        <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+        <div class="button-cart">
+                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+                <a href="cart.html"><button class="button-cart"><span id="cartNum">0</span></button></a>
+            </div>
+    </div>
+<!--    Top nav end-->
     
     <div class="main-container">
         <section style="text-align: center;">

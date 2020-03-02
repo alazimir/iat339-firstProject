@@ -1,5 +1,15 @@
 //JavaScript file
 
+//Collapsed Nav
+function openNav() {
+    document.getElementById("collapsedTopNav").style.width = "250px";
+    console.log("Clicked Open Nav");
+}
+
+function closeNav() {
+    document.getElementById("collapsedTopNav").style.width = "0";
+}
+
 //Product Page Stuff Start
 var itemCount = 1;
 

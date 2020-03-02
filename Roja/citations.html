@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Roja Hot Sauce</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,600|Hind:300,400,500,600&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="setCartNumItems();">
+    <!-- Alex's new navigtion bar-->
+    <div class="top-nav-spread">
+        <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+        <nav>
+            <a class="main-nav-text" href=#>home</a>
+            <a class="main-nav-text" href="store.html">store</a>
+            <a class="main-nav-text" href="about.html">about</a>
+            <a class="main-nav-text" href="contact.html">contact</a>
+            <div class="button-cart">
+                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+                <a href="cart.html"><button class="button-cart">cart <span id="cartNum">0</span></button></a>
+            </div>
+        </nav>
+    </div>
+    
+    <div id="collapsedTopNav" class="collapsed-top-nav">
+        <a class="close-button" onclick="closeNav();">&times;</a>
+        <a class="collapsed-nav-text" href=index.html>home</a>
+        <a class="collapsed-nav-text" href="store.html">store</a>
+        <a class="collapsed-nav-text" href="about.html">about</a>
+        <a class="collapsed-nav-text" href="contact.html">contact</a>
+    </div>
+    
+    <div class="condensed-top-nav">
+        <button onclick ="openNav();">menu</button>
+        <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+        <div class="button-cart">
+                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+                <a href="cart.html"><button class="button-cart"><span id="cartNum">0</span></button></a>
+            </div>
+    </div>
+<!--    Top nav end-->
+
+
+
+
+    <div class="main-container">
+    </div>
+    </body>
+</html>
