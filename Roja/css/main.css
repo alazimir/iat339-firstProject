@@ -53,10 +53,10 @@
 
             /*---------HERO START---------*/
 
+/* Old hero
             .hero {
                 margin: 1rem auto;
-                justify-content: center;
-                display: flex;
+                justify-content: center;display: flex;
 
                 overflow-x: hidden;
             }
@@ -64,6 +64,48 @@
             .hero img {
                 max-width: 1200px;
             }
+*/
+
+                .hero-div {
+/*                    Cropping an image resize friendly https://css-tricks.com/crop-top/*/
+                    background-image: url(../images/lineupOfSaucesRedBackground.jpg);
+                    width: 100vw;
+                    height: 500px;
+                    
+/*                    background-position: center top;*/
+                    background-position: 60% 10%;
+                    
+                    background-size: cover;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+/*                    justify-content: space-around;*/
+                }
+.hero-text {
+    padding-top: 1rem;
+}
+
+.hero-text h2 {
+    color: #eeeeee;
+    padding: 0rem 2rem;
+    margin: 0;
+}
+
+.hero-button h5 {
+    color: #eeeeee;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0rem 1rem;
+    
+}
+
+.hero-button h5:hover {
+    border-color: #DFBA2E;
+}
 
             /*---------HERO END---------*/
 
@@ -97,7 +139,7 @@
             .category-card-background {
                 background-color: white;
                 margin: 0rem 1rem 1rem 1rem;
-                padding: 0rem 1rem;
+                padding: 0rem;
                 text-align: center;
             }
 
@@ -167,6 +209,7 @@
             .side-menu {
                 padding: 1rem 1.5rem 0 2rem;
                 width: 20%;
+/*                min-width: 250px;*/
                 height: 100vh;
                 box-shadow: 6px 0px 10px -5px #888888;
                 /*Box Shaddow only on one side     https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element*/
@@ -987,10 +1030,12 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
 
                 }
 
+/*
                 .hero img {
-                    width: 100%;
+                    width: 100vw;
                     min-width: 900px;
                 }
+*/
 
                 .contact-label-container {
                     text-align: left;
