@@ -20,7 +20,7 @@
     <div class="top-nav-spread">
         <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
         <nav>
-            <a class="main-nav-text" href=#>home</a>
+            <a class="main-nav-text" href=index.html>home</a>
             <a class="main-nav-text" href="store.html">store</a>
             <a class="main-nav-text" href="about.html">about</a>
             <a class="main-nav-text" href="contact.html">contact</a>
@@ -56,7 +56,7 @@
                 <h2>Sauces</h2>
                 <h3 class="selected-side-nav" onclick="showOnly(this, 'all-heat');">All Sauces</h3>
                 <a href="#">
-                    <h3>On Sale</h3>
+                    <h3 onclick="showOnly(this, 'sale');">On Sale</h3>
                 </a>
 
                 <h2>Heat</h2>
@@ -90,12 +90,13 @@
             </div>
         </div>
         <div class="product-area-container">
-<!-- Adding top description areas for each heat level filter
-            <div class="mild-heat-description">
-                <h1>Mild Heat</h1>
-                <p>Great for adding a little flavor without the heat. </p>
+
+<!--            Changing header for current filter-->
+            <div class="store-top">
+                <h1 id="storeCurrentHeader">All Sauces</h1>
+                <p id="storeCurrentPara">Every single sauce we carry. We are confident you can find something you like. If you can't, <a class="red-bold-text" href="contact.html">send us a message</a> with any suggestions!</p>
             </div>
--->
+
             
             <div class="size1of4 product-listing hot-heat melindas-brand">
                 <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">

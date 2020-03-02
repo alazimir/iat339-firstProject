@@ -310,9 +310,17 @@
                 flex-wrap: wrap;
                 width: 80%;
                 padding: 3rem 3rem 0 3rem;
-
-
             }
+
+.store-top {
+    width: 100%;
+    padding-left: 4rem;
+}
+
+.store-top p {
+    padding-left: 0;
+    margin-left: 0;
+}
 
             .product-listing {
                 /*                width: 25%;*/
