@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Roja Hot Sauce</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Hind:400,500&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="setCartNumItems();">
+    <div class="top-nav-spread">
+        <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+        <nav>
+            <a class="main-nav-text" href="index.html">home</a>
+            <a class="main-nav-text" href="store.html">store</a>
+            <a class="main-nav-text" href="#">about</a>
+            <a class="main-nav-text" href="contact.html">contact</a>
+            <div class="button-cart">
+                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+                <a href="cart.html"><button class="button-cart">cart <span id="cartNum">0</span></button></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-container">
+        <!-- First & Last Name START-->
+        <section>
+            <div class="container">
+                <div class="size1of1" style="text-align: center;">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="size1of2 contact-label-container">
+                    <label class="contact-label" for="email">First Name</label>
+                </div>
+
+                <div class="size1of2 contact-field-container">
+                    <label class="contact-label" for="email">Last Name</label>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="size1of2 contact-label-container">
+                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Email" required>
+                </div>
+
+                <div class="size1of2 contact-field-container">
+                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Email" required>
+                </div>
+            </div>
+        </section>
+
+        <!-- First & Last Name END-->
+
+        <!-- Credit Card START -->
+        <section>
+            <div class="size1of2 contact-label-container">
+                <label class="contact-label" for="email">Credit Card</label>
+            </div>
+
+            <div class="container">
+                <div class="size1of1 contact-field-container">
+                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                </div>
+            </div>
+        </section>
+        <!-- Credit Card END -->
+
+        <!-- small input field START -->
+        <section>
+            <div class="container">
+                <div class="size1of2 contact-label-container">
+                    <label class="contact-label" for="email">Experiration Date</label>
+                </div>
+
+                <div class="size1of2 contact-field-container">
+                    <label class="contact-label" for="email">CVV</label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="size1of2 contact-field-container">
+                    <div class="container">
+                        <div class="size1of2">
+                            <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                        </div>
+                        <div class="size1of2">
+                            <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="size1of2">
+                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                </div>
+            </div>
+        </section>
+        <!-- small input field END -->
+
+        <!-- large input field START -->
+        <section>
+            <div class="container">
+                <div class="size1of1 contact-field-container">
+                    <a href="thank-you.html">Submit</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
