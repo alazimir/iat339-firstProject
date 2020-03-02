@@ -30,7 +30,7 @@
             </div>
         </nav>
     </div>
-    
+
     <div id="collapsedTopNav" class="collapsed-top-nav">
         <a class="close-button" onclick="closeNav();">&times;</a>
         <a class="collapsed-nav-text" href=index.html>home</a>
@@ -38,16 +38,16 @@
         <a class="collapsed-nav-text" href="about.html">about</a>
         <a class="collapsed-nav-text" href="contact.html">contact</a>
     </div>
-    
+
     <div class="condensed-top-nav">
-        <button onclick ="openNav();">menu</button>
+        <button onclick="openNav();">menu</button>
         <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
         <div class="button-cart">
-                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
-                <a href="cart.html"><button class="button-cart"><span id="cartNum">0</span></button></a>
-            </div>
+            <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+            <a href="cart.html"><button class="button-cart"><span id="cartNum">0</span></button></a>
+        </div>
     </div>
-<!--    Top nav end-->
+    <!--    Top nav end-->
 
     <!--    <section class="main-container">-->
     <div class="container store-container">
@@ -90,14 +90,98 @@
             </div>
         </div>
         <div class="product-area-container">
+            <div id="collapsedSideFilters" class="collapsed-side-filters">
+                <a class="close-button" onclick="closeFilters();">&times;</a>
+                <h2>Sauces</h2>
+                <h3 class="selected-side-nav" onclick="showOnly(this, 'all-heat');">All Sauces</h3>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'sale');">On Sale</h3>
+                </a>
 
-<!--            Changing header for current filter-->
+                <h2>Heat</h2>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'mild-heat');">Mild heat</h3>
+                </a>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'medium-heat');">Medium heat</h3>
+                </a>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'hot-heat');">Hot heat</h3>
+                </a>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'insane-heat');">Insane heat</h3>
+                </a>
+
+                <h2>Brands</h2>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'melindas-brand')">Melinda's</h3>
+                </a>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'daves-brand')">Dave's</h3>
+                </a>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'currie-brand')">Currie</h3>
+                </a>
+                <a href="#">
+                    <h3 onclick="showOnly(this, 'tessemaes-brand')">Tessemae's</h3>
+                </a>
+            </div>
+
+            <!--            Changing header for current filter-->
             <div class="store-top">
-                <h1 id="storeCurrentHeader">All Sauces</h1>
+                <h1 id="storeCurrentHeader">All Sauces</h1> <button id="filtersButton" class="filters-button" onclick="openFilters();">Filters</button>
                 <p id="storeCurrentPara">Every single sauce we carry. We are confident you can find something you like. If you can't, <a class="red-bold-text" href="contact.html">send us a message</a> with any suggestions!</p>
             </div>
 
-            
+
+            <div class="size1of4 product-listing hot-heat melindas-brand">
+                <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
+                <a href="product-1.html">
+                    <div class="card-overlay">
+                        <h1>Heat</h1>
+                        <h1>10/10</h1>
+                    </div>
+                </a>
+                <h3>Habanero | Melinda's</h3>
+                <h4><strong>$12</strong></h4>
+            </div>
+
+            <div class="size1of4 product-listing insane-heat daves-brand">
+                <img src="images/insaneHotSauce.jpg" alt="Hot Sauce Product">
+                <a href="product-1.html">
+                    <div class="card-overlay">
+                        <h1>Heat</h1>
+                        <h1>11/10</h1>
+                    </div>
+                </a>
+                <h3>Ultamte Insanity | Dave's</h3>
+                <h4><strong>$14</strong></h4>
+            </div>
+
+            <div class="size1of4 product-listing medium-heat currie-brand">
+                <img src="images/mediumHotSauce.jpg" alt="Hot Sauce Product">
+                <a href="product-1.html">
+                    <div class="card-overlay">
+                        <h1>Heat</h1>
+                        <h1>4/10</h1>
+                    </div>
+                </a>
+                <h3>Medium | Currie</h3>
+                <h4><strong>$10</strong></h4>
+            </div>
+
+            <div class="size1of4 product-listing mild-heat tessemaes-brand">
+                <img src="images/mildHotSauce.jpg" alt="Hot Sauce Product">
+                <a href="product-1.html">
+                    <div class="card-overlay">
+                        <h1>Heat</h1>
+                        <h1>2/10</h1>
+                    </div>
+                </a>
+                <h3>Buffalo Sauce | Tessemae's</h3>
+                <h4><strong>$9</strong></h4>
+            </div>
+
             <div class="size1of4 product-listing hot-heat melindas-brand">
                 <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
@@ -193,55 +277,7 @@
                 <h3>Buffalo Sauce | Tessemae's</h3>
                 <h4><strong>$9</strong></h4>
             </div>
-            
-            <div class="size1of4 product-listing hot-heat melindas-brand">
-                <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
-                <a href="product-1.html">
-                    <div class="card-overlay">
-                        <h1>Heat</h1>
-                        <h1>10/10</h1>
-                    </div>
-                </a>
-                <h3>Habanero | Melinda's</h3>
-                <h4><strong>$12</strong></h4>
-            </div>
 
-            <div class="size1of4 product-listing insane-heat daves-brand">
-                <img src="images/insaneHotSauce.jpg" alt="Hot Sauce Product">
-                <a href="product-1.html">
-                    <div class="card-overlay">
-                        <h1>Heat</h1>
-                        <h1>11/10</h1>
-                    </div>
-                </a>
-                <h3>Ultamte Insanity | Dave's</h3>
-                <h4><strong>$14</strong></h4>
-            </div>
-
-            <div class="size1of4 product-listing medium-heat currie-brand">
-                <img src="images/mediumHotSauce.jpg" alt="Hot Sauce Product">
-                <a href="product-1.html">
-                    <div class="card-overlay">
-                        <h1>Heat</h1>
-                        <h1>4/10</h1>
-                    </div>
-                </a>
-                <h3>Medium | Currie</h3>
-                <h4><strong>$10</strong></h4>
-            </div>
-
-            <div class="size1of4 product-listing mild-heat tessemaes-brand">
-                <img src="images/mildHotSauce.jpg" alt="Hot Sauce Product">
-                <a href="product-1.html">
-                    <div class="card-overlay">
-                        <h1>Heat</h1>
-                        <h1>2/10</h1>
-                    </div>
-                </a>
-                <h3>Buffalo Sauce | Tessemae's</h3>
-                <h4><strong>$9</strong></h4>
-            </div>
-            
             <div class="size1of4 product-listing hot-heat melindas-brand">
                 <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">

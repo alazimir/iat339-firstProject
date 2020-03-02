@@ -1,13 +1,21 @@
 //JavaScript file
 
-//Collapsed Nav
+//Collapsed Main Nav
 function openNav() {
     document.getElementById("collapsedTopNav").style.width = "250px";
-    console.log("Clicked Open Nav");
 }
 
 function closeNav() {
     document.getElementById("collapsedTopNav").style.width = "0";
+}
+
+//Collapsed Store Filters
+function openFilters() {
+    document.getElementById("collapsedSideFilters").style.width = "250px";
+}
+
+function closeFilters() {
+    document.getElementById("collapsedSideFilters").style.width = "0";
 }
 
 //Product Page Stuff Start

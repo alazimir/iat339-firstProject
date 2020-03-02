@@ -92,15 +92,15 @@
 
             /*Start condensed top nav for small screens. This has the button to show nav*/
             .condensed-top-nav {
-                display: none;              
+                display: none;
                 justify-content: space-between;
                 align-items: center;
-                
+
                 position: sticky;
-                top:0;
+                top: 0;
                 z-index: 9;
                 background: #fff;
-                
+
                 -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
                 -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
                 box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
@@ -264,12 +264,13 @@
 
             .side-menu-container {
                 width: 20%;
+                /*                flex: 0 0 250px;*/
             }
 
             .side-menu {
                 padding: 1rem 1.5rem 0 2rem;
                 width: 20%;
-                /*                min-width: 250px;*/
+                min-width: 250px;
                 height: 100vh;
                 box-shadow: 6px 0px 10px -5px #888888;
                 /*Box Shaddow only on one side     https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element*/
@@ -303,24 +304,26 @@
 
             .side-menu .selected-side-nav {
                 color: #FF220C;
+                cursor: pointer;
             }
 
             .product-area-container {
+                flex: 1 1 500px;
                 display: flex;
                 flex-wrap: wrap;
                 width: 80%;
                 padding: 3rem 3rem 0 3rem;
             }
 
-.store-top {
-    width: 100%;
-    padding-left: 4rem;
-}
+            .store-top {
+                width: 100%;
+                padding-left: 4rem;
+            }
 
-.store-top p {
-    padding-left: 0;
-    margin-left: 0;
-}
+            .store-top p {
+                padding-left: 0;
+                margin-left: 0;
+            }
 
             .product-listing {
                 /*                width: 25%;*/
@@ -328,6 +331,7 @@
                 display: flex;
                 flex-direction: column;
                 margin-top: 2rem;
+                padding: 1rem;
 
                 position: relative;
             }
@@ -364,6 +368,52 @@
 
             .product-listing:hover .card-overlay {
                 opacity: 1;
+            }
+
+            /*Start store small screen filter*/
+            .store-top button {
+                display: none;
+            }
+
+            .collapsed-side-filters {
+                display: flex;
+                flex-direction: column;
+
+                padding-top: 2rem;
+
+                height: 100%;
+                width: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #04292B;
+                overflow-x: hidden;
+                padding-top: 100px;
+                transition: 1s;
+                z-index: 10;
+            }
+
+            .collapsed-side-filters .close-button {
+                position: absolute;
+                color: #fff;
+                top: 3rem;
+                right: 3rem;
+                font-size: 2rem;
+                margin-left: 3rem;
+                cursor: pointer;
+            }
+
+            .collapsed-side-filters h2 {
+                color: #fff;
+                padding-left: 2rem;
+                margin-bottom: 0;
+            }
+
+            .collapsed-side-filters h3 {
+                color: #fff;
+                margin-top: 0rem;
+                margin-left: 5rem;
+                font-weight: 400;
             }
 
             /*Footer Start*/
@@ -553,11 +603,11 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             /*Image side*/
             .container-product-page .product-image {
                 display: flex;
-                justify-content: flex-end;
             }
 
             .product-image {
                 padding-right: 4rem;
+                padding-bottom: 2rem;
             }
 
             /*Info Side*/
@@ -1069,6 +1119,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 section nav {
                     max-width: 1200px;
                 }
+
             }
 
             @media(max-width:1000px) {
@@ -1118,12 +1169,42 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
 
                 }
 
-                /*
-                .hero img {
-                    width: 100vw;
-                    min-width: 900px;
+                .side-menu-container {
+                    display: none;
+                }
+
+                .store-top button {
+                    display: inline;
+                }
+                
+/*                Product page*/
+/* Trying to keep them on the same line. Not working
+                .product-image {
+                    padding-right: 0;
+                }
+                
+                .product-info {
+                    padding-right: 1rem;
                 }
 */
+                
+                .container-product-page {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .product-info {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .product-image {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 0 2rem 0;
+                }
 
                 .contact-label-container {
                     text-align: left;
@@ -1207,17 +1288,17 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                     width: 140px;
                     margin: 1rem;
                 }
-                
+
                 .button-cart {
                     width: 5.5rem;
-                    margin-right:1rem;
+                    margin-right: 1rem;
                 }
-                
+
                 .button-cart button {
                     width: 5.5rem;
-                    margin-right:0rem;
+                    margin-right: 0rem;
                     padding-left: 1.3rem;
-                    
+
                     border: none;
                     border-radius: 0;
                     border-bottom: 3px solid #FF220C;
