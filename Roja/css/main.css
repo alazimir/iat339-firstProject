@@ -591,10 +591,12 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
             }
             
             .contact-label {
-                background-color: #042A2B;
+                /*background-color: #042A2B;*/
                 padding: 0.5em 2em;
-                color: #FFF;
+                color: black;
                 text-align: right;
+                border: solid #042A2B 1px;
+                border-radius: 50px;
             }
             
             .contact-small-input {
