@@ -110,17 +110,6 @@
                 font-weight: 700;
                 font-size: 1.5rem;
             }
-            
-            .submit-button {
-                width: 100%;
-                text-align: center;
-            }
-            
-            .submit-button a {
-                background-color: red;
-                color: white;
-                padding: 1em 3em 1em 3em;
-            }
             /*End condensed top nav*/
             /*---------HERO START---------*/
             
@@ -644,7 +633,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 border: 2px solid #042A2B;
                 outline: none;
             }
-            
+            /*
             .contact-submit-button {
                 background-color: #FF220C;
                 border: none;
@@ -653,6 +642,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 color: #FFF;
                 width: 100%;
             }
+            */
             /*---------CONTACT FORM END---------*/
             /*---------CART START---------*/
             
@@ -671,14 +661,26 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             /*---------CART SUMMARY START---------*/
             
             .cart-summary {
-                background-color: #e6e6e6;
-                padding: 0;
+                padding: 2em;
                 margin: 0;
                 height: 100%;
             }
             
+            .cart-summary>section {
+                background-color: white;
+                border: 1px solid black;
+                width: 75%;
+                -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
+                -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
+            }
+            
             .cart-summary .container {
                 padding: 0.5em 1em;
+            }
+            
+            .cart-content {
+                padding: 2em;
             }
             
             .transaction-button a {
@@ -689,6 +691,40 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 text-align: center;
             }
             /*---------CART SUMNMARY END---------*/
+            /*---------CHECKOUT START---------*/
+            
+            .checkout {
+                padding: 2em;
+                margin: 0;
+                height: 100%;
+            }
+            
+            .checkout>section {
+                background-color: rgb(255, 224, 131);
+                width: 75%;
+                border: 1px solid black;
+                -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
+                -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
+            }
+            
+            .checkout-content {
+                padding: 2em;
+            }
+            /*---------CHECKOUT END---------*/
+            /*---------SUBMIT BUTTON END---------*/
+            
+            .submit-button {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .submit-button a {
+                background-color: #FF220C;
+                color: white;
+                padding: 1em 3em 1em 3em;
+            }
+            /*---------SUBMIT BUTTON END---------*/
             /*--------- CONTENT BANNER START---------*/
             
             .content-banner {
