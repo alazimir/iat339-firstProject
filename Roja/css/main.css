@@ -703,6 +703,8 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             .product-image {
                 padding-right: 4rem;
                 padding-bottom: 2rem;
+                display: flex;
+                justify-content: center;
             }
             /*Info Side*/
             
