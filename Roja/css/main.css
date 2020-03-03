@@ -691,7 +691,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             .container-product-page {
                 width: 80%;
                 margin: 0 auto;
-                padding-top: 6rem;
+                padding-top: 5rem;
                 display: flex;
             }
             /*Image side*/
@@ -829,6 +829,69 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 padding: 1rem 2.5rem;
                 margin: 0;
             }
+
+/*Start reivew section*/
+.reviews-header {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.reviews-header h1 {
+    font-size: 2rem;
+}
+
+.reviews {
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.reviews p {
+    margin:0;
+    padding:0;
+}
+
+.review-card {
+    border-top: 1px solid #333333;
+    display: flex;
+    
+    padding-bottom: 2rem;
+}
+
+.reviews img {
+    width: 180px;
+}
+
+.review-date-name {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    padding-top: 1.5rem;
+}
+
+.review-rate-copy {
+    flex: 3 3;
+}
+
+.review-rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1rem 0 2rem 0;
+}
+
+.review-heat {
+    display: flex;
+}
+
+.review-heat h6 {
+    margin: 1rem 1rem 0 0;
+/*
+    margin-left: 3rem;
+    margin-right: 1rem;
+*/
+}
             /*--------- PRODUCT PAGE END---------*/
             /*  INTERACTIVE ELEMENTS ------------------- */
             /* Styling for the navigation button */
