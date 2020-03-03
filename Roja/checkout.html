@@ -31,91 +31,155 @@
     </div>
 
     <div class="main-container">
-        <!-- First & Last Name START-->
-        <section>
-            <div class="container">
-                <div class="size1of1" style="text-align: center;">
-                    <h1>Checkout</h1>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="size1of2 contact-label-container">
-                    <label class="contact-label" for="email">First Name</label>
-                </div>
-
-                <div class="size1of2 contact-field-container">
-                    <label class="contact-label" for="email">Last Name</label>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="size1of2 contact-label-container">
-                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Email" required>
-                </div>
-
-                <div class="size1of2 contact-field-container">
-                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Email" required>
-                </div>
-            </div>
-        </section>
-
-        <!-- First & Last Name END-->
-
-        <!-- Credit Card START -->
-        <section>
-            <div class="size1of2 contact-label-container">
-                <label class="contact-label" for="email">Credit Card</label>
-            </div>
-
-            <div class="container">
-                <div class="size1of1 contact-field-container">
-                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
-                </div>
-            </div>
-        </section>
-        <!-- Credit Card END -->
-
-        <!-- small input field START -->
-        <section>
-            <div class="container">
-                <div class="size1of2 contact-label-container">
-                    <label class="contact-label" for="email">Experiration Date</label>
-                </div>
-
-                <div class="size1of2 contact-field-container">
-                    <label class="contact-label" for="email">CVV</label>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="size1of2 contact-field-container">
+        <div class="container">
+            <!-- Cart Summary START -->
+            <div class="size1of2 cart-summary">
+                <section>
                     <div class="container">
-                        <div class="size1of2">
-                            <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
-                        </div>
-                        <div class="size1of2">
-                            <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                        <div class="size1of1">
+                            <h2 style="text-align: center;">Your Order</h2>
                         </div>
                     </div>
-                </div>
-                <div class="size1of2">
-                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
-                </div>
+
+                    <div class="container">
+                        <div class="size1of2" style="text-align: left;">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="size1of2" style="text-align: right;">
+                            <p>Price</p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="size1of2" style="text-align: left;">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="size1of2" style="text-align: right;">
+                            <p>Price</p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="size1of2" style="text-align: left;">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="size1of2" style="text-align: right;">
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section style="background-color: #cccccc; margin: 0;">
+                    <div class="container">
+                        <div class="size1of1 transaction-button">
+                            <div class="container">
+                                <div class="size1of2" style="text-align: left;">
+                                    <p>Total</p>
+                                </div>
+                                <div class="size1of2" style="text-align: right;">
+                                    <p>Price</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <!-- small input field END -->
+            <!-- Cart Summary End-->
+
+            <!-- Checkout Form START-->
+
+            <div class="size1of2">
+                <section>
+                    <div class="container">
+                        <div class="size1of1">
+                            <h2 style="text-align: center;">Payment</h2>
+                        </div>
+                    </div>
+
+                    <!-- input field 2x2 START -->
+                    <section>
+                        <div class="container">
+                            <div class="size1of2">
+                                <label for="email">First Name</label>
+                            </div>
+
+                            <div class="size1of2">
+                                <label for="email">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="size1of2">
+                                <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                            </div>
+
+                            <div class="size1of2">
+                                <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- input field 2x2 END -->
+
+                    <!-- input field 1x1 START -->
+                    <section>
+                        <div class="container">
+                            <div class="size1of1">
+                                <label for="email">Credit Card</label>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="size1of1">
+                                <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- input field 1x1 END -->
+
+                    <!-- input field 2x2 START -->
+                    <section>
+                        <div class="container">
+                            <div class="size1of2">
+                                <label for="email">Expiration Date</label>
+                            </div>
+
+                            <div class="size1of2">
+                                <label for="email">CCV</label>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="size1of2">
+                                <div class="container">
+                                    <div class="size1of2">
+                                        <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                                    </div>
+                                    <div class="size1of2">
+                                        <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="size1of2">
+                                <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Name">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- input field 2x2 END -->
+                </section>
+
+                <section>
+                    <div class="container">
+                        <div class="size1of1 contact-field-container">
+                            <a href="thank-you.html">Submit</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Checkout Form END-->
+        </div>
 
         <!-- large input field START -->
-        <section>
-            <div class="container">
-                <div class="size1of1 contact-field-container">
-                    <a href="thank-you.html">Submit</a>
-                </div>
-            </div>
-        </section>
     </div>
 </body>
 

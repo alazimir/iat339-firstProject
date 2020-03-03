@@ -670,7 +670,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 padding: 0.5em 1em;
             }
             
-            .cart-summary a {
+            .transaction-button a {
                 width: 100%;
                 color: white;
                 background-color: red;
