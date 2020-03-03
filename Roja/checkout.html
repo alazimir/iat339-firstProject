@@ -38,7 +38,7 @@
                     <div class="cart-content">
                         <div class="container">
                             <div class="size1of1">
-                                <h2 style="text-align: center;">Your Order</h2>
+                                <h1 style="text-align: center;">Your Order</h1>
                             </div>
                         </div>
 
@@ -98,9 +98,30 @@
                     <div class="checkout-content">
                         <div class="container">
                             <div class="size1of1">
-                                <h2 style="text-align: center;">Payment</h2>
+                                <h1 style="text-align: center;">Payment</h1>
                             </div>
                         </div>
+
+                        <!-- input field 1x1 START -->
+                        <section>
+                            <div class="container">
+                                <div class="size1of1">
+                                    <label for="email">Payment Method</label>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="size1of1">
+                                    <select id="cars" name="cars" style="width: 100%; padding: 2em;">
+                                        <option value="volvo" selected>MasterCard Credit Cards</option>
+                                        <option value="saab">Visa Credit Cards</option>
+                                        <option value="fiat">Paypal</option>
+                                        <option value="audi">GiftCard</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- input field 1x1 END -->
 
                         <!-- input field 2x2 START -->
                         <section>
@@ -136,7 +157,7 @@
 
                             <div class="container">
                                 <div class="size1of1">
-                                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Credit Card">
+                                    <input class="contact-small-input" type="number" maxlength="16" id="lname" name="lname" value="" placeholder="Credit Card">
                                 </div>
                             </div>
                         </section>
@@ -158,16 +179,18 @@
                                 <div class="size1of2">
                                     <div class="container">
                                         <div class="size1of2">
-                                            <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Month">
+                                            <!--<input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Month">-->
+                                            <input class="contact-small-input" type="number" id="quantity" name="quantity" min="1" max="12">
                                         </div>
                                         <div class="size1of2">
-                                            <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Year">
+                                            <!--<input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="Year">-->
+                                            <input class="contact-small-input" type="number" id="quantity" name="quantity" min="2020" max="3000">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="size1of2">
-                                    <input class="contact-small-input" type="text" id="lname" name="lname" value="" placeholder="CCV">
+                                    <input class="contact-small-input" type="number" id="lname" maxlength="3" name="lname" value="" placeholder="CCV">
                                 </div>
                             </div>
                         </section>
