@@ -723,6 +723,14 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 background-color: #FF220C;
                 color: white;
                 padding: 1em 3em 1em 3em;
+                border-radius: 50px;
+                -webkit-transition: background-color 0.2s ease-in;
+                transition: background-color 0.2s ease-in;
+            }
+            
+            .submit-button a:hover,
+            .submit-button a:focus {
+                background-color: #F65659;
             }
             /*---------SUBMIT BUTTON END---------*/
             /*--------- CONTENT BANNER START---------*/
