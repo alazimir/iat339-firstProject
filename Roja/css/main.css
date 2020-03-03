@@ -256,6 +256,7 @@
                 width: 20%;
                 min-width: 250px;
                 height: 100vh;
+/*                background-color: white;*/
                 box-shadow: 6px 0px 10px -5px #888888;
                 /*Box Shaddow only on one side     https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element*/
                 position: fixed;
@@ -341,11 +342,13 @@
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
                 opacity: 0;
-                width: 100%;
+                width: 90%;
                 height: 80%;
                 position: absolute;
                 background-color: rgba(255, 255, 255, 0.7);
                 transition: opacity 0.3s ease;
+                
+                text-align: center;
             }
 
             .product-listing:hover .card-overlay {
@@ -356,6 +359,19 @@
 
             .store-top button {
                 display: none;
+            }
+
+.filters-button {
+                background-color: white;
+                border: 2px solid #333;
+                outline: none;
+                padding: 0rem 2rem;
+                margin: 0;
+                border-radius: 5px;
+                overflow: hidden;
+                height: 3rem;
+                transition: border-color, 0.4s;
+                cursor: pointer;
             }
 
             .collapsed-side-filters {
@@ -1035,7 +1051,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             }
 
             .review-leave .contact-small-input {
-                margin-right: 2rem;
+                margin-right: 1rem;
                 height: 2rem;
                 width: auto;
             }
@@ -1450,6 +1466,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                     justify-content: center;
                     position: sticky;
                     top: -8rem;
+                    z-index: 20;
                 }
 
                 .top-nav-spread nav {
@@ -1622,9 +1639,21 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .top-nav nav {
                     flex-direction: column;
                 }
+                
+                .top-logo {
+                    width: 100px;
+                }
 
                 .hero img {
                     min-width: 720px;
+                }
+                
+                .product-area-container {
+                    padding: 0;
+                }
+                
+                .filters-button {
+                    width: 100%;
                 }
 
                 .contact-label-container {
@@ -1635,6 +1664,14 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                     padding: 0;
                     width: 80%;
                     margin: 0 auto;
+                }
+                
+                .store-top {
+                    padding: 1rem 2rem;
+                }
+                
+                .store-top p {
+                    padding-right: 0;
                 }
                 
 

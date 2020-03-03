@@ -95,7 +95,13 @@ function showOnly(element, select) {
 
     //All sauces
     var all = document.getElementsByClassName('product-listing');
-
+    
+    //On Sale Sauces
+    var onSale = document.getElementsByClassName('on-sale');
+    
+    //New Items
+    var newItems = document.getElementsByClassName('new-item');
+    
     //By heat
     var mild = document.getElementsByClassName("mild-heat");
     var medium = document.getElementsByClassName("medium-heat");
@@ -124,13 +130,25 @@ function showOnly(element, select) {
         }
     }
     
+    //Change sale back to flex
     if (select == 'sale') {
         document.getElementById("storeCurrentHeader").innerHTML = "On Sale Now";
         document.getElementById("storeCurrentPara").innerHTML = "These sales won't last long! Grab yourself a discounted bottle today";
 
             
-        for (var i = 0; i < mild.length; i++) {
-            all[i].style.display = "flex";
+        for (var i = 0; i < onSale.length; i++) {
+            onSale[i].style.display = "flex";
+        }
+    }
+    
+    //Change sale back to flex
+    if (select == 'new') {
+        document.getElementById("storeCurrentHeader").innerHTML = "Brand New Additions";
+        document.getElementById("storeCurrentPara").innerHTML = "These are are most recently added sauces. Try them out and leave a review telling us what you think!";
+
+            
+        for (var i = 0; i < onSale.length; i++) {
+            onSale[i].style.display = "flex";
         }
     }
 
@@ -176,7 +194,7 @@ function showOnly(element, select) {
 
     //-----Change melindas back to flex
     if (select == 'melindas-brand') {
-        document.getElementById("storeCurrentHeader").innerHTML = "Melindas Sauces"
+        document.getElementById("storeCurrentHeader").innerHTML = "Melinda's Sauces"
         document.getElementById("storeCurrentPara").innerHTML = "";
             
         for (var i = 0; i < melindas.length; i++) {
@@ -206,7 +224,7 @@ function showOnly(element, select) {
 
     //-----Change tessemaes back to flex
     if (select == 'tessemaes-brand') {
-        document.getElementById("storeCurrentHeader").innerHTML = "Tessemaes Sauces"
+        document.getElementById("storeCurrentHeader").innerHTML = "Tessemae's Sauces"
         document.getElementById("storeCurrentPara").innerHTML = "";
             
         for (var i = 0; i < tessemaes.length; i++) {
