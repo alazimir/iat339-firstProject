@@ -339,9 +339,7 @@
                 text-decoration: line-through;
                 font-size: 1.3rem;
             }
-
             
-
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
                 opacity: 0;
@@ -952,7 +950,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 justify-content: space-between;
                 align-items: center;
             }
-
+            
             .reviews-header button {
                 background-color: white;
                 border: 2px solid #333;
@@ -964,8 +962,6 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 height: 3rem;
                 transition: border-color, 0.4s;
                 cursor: pointer;
-                
-
                 line-height: 45px;
             }
             
@@ -1420,6 +1416,12 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             }
             
             @media(max-width:1000px) {
+                .cart-product {
+                    text-align: center;
+                }
+                .cart-header {
+                    display: none;
+                }
                 nav {
                     justify-content: center;
                     padding-bottom: 0.5rem;
@@ -1464,15 +1466,12 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .side-menu-container {
                     display: none;
                 }
-                
                 .store-top {
                     padding-left: 0;
                 }
                 .store-top button {
                     display: inline;
                 }
-                
-
                 .container-product-page {
                     flex-direction: column-reverse;
                     align-items: center;
