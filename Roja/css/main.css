@@ -418,7 +418,7 @@
                 color: #fff;
                 margin-top: 0rem;
                 margin-left: 5rem;
-                font-weight:400;
+                font-weight: 400;
                 font-size: 1.2rem;
             }
 
@@ -945,6 +945,29 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 background-color: #eadc4a;
             }
 
+            .out-of-stock {
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+                padding-top: 1rem;
+                padding-bottom: 3rem;
+                border-top: 2px solid #777777;
+            }
+
+            .out-of-stock button {
+                background-color: #eeeeee;
+                border: 1px solid #888888;
+                outline: none;
+                font-family: 'Hind', sans-sarif;
+                font-weight: 700;
+                font-size: 1.2rem;
+
+                width: 100%;
+                padding: 0.6rem 1rem;
+                border-radius: 50px;
+                overflow: hidden;
+            }
+
 
             #added-tocart-popup {
                 opacity: 0;
@@ -1045,12 +1068,14 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             }
 
             .review-heat h6 {
-                margin: 1rem 1rem 0 0;
+                margin: 1rem 0 0 1rem;
+                font-size: 1rem;
             }
 
             /*Leaving a review*/
             .review-leave {
                 display: flex;
+                justify-content: space-between
             }
 
             .review-leave label {
@@ -1503,10 +1528,15 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .side-menu-container {
                     display: none;
                 }
+                
+                .store-top {
+                    padding-left: 0;
+                }
 
                 .store-top button {
                     display: inline;
                 }
+                
 
                 .container-product-page {
                     flex-direction: column-reverse;
