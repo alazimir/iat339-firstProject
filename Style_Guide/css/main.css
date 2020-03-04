@@ -58,6 +58,14 @@
             /* 
   INTERACTIVE ELEMENTS -------------------
 */
+            
+            .container {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+            }
             /* Styling for the navigation button */
             
             .button-nav {
@@ -79,6 +87,7 @@
             .submit-button {
                 width: 100%;
                 text-align: center;
+                margin-top: 2em;
             }
             
             .submit-button a {
@@ -112,6 +121,47 @@
                 background-color: #777;
             }
             */
+            
+            .store-cards {
+                padding: 0rem;
+                margin-top: 4rem;
+            }
+            
+            .store-cards h2 {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .store-cards a {
+                text-decoration: none;
+            }
+            
+            .category-card {
+                margin-bottom: 2rem;
+            }
+            
+            .category-card p {
+                padding-top: 0;
+            }
+            
+            .category-card-background {
+                background-color: white;
+                margin: 0rem 1rem 1rem 1rem;
+                padding: 0rem;
+                text-align: center;
+            }
+            
+            .category-card img {
+                position: relative;
+                margin: auto;
+                display: block;
+                /*                height: 300px;*/
+                width: 100%;
+            }
+            
+            .category-card h3 {
+                padding-bottom: 0.5rem;
+            }
             
             .intext-link {
                 color: #F43C40;
@@ -394,7 +444,15 @@
                 justify-content: space-between;
             }
             
-            .container div {
+            .container-style-guide {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .container-style-guide div {
                 box-sizing: border-box;
                 padding: 10px;
                 border: 10px solid #41354D;
