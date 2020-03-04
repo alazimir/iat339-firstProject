@@ -1,31 +1,32 @@
             /* Started from "Style Guide Template. Made by Paul Brokenshire at SFU for SFU-IAT339 */
-            
+
             * {
                 /*Set everything to use border-box model*/
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
             }
-            
+
             body {
                 overflow-x: hidden;
             }
-            
+
             body {
                 background-color: #FFF;
             }
-            
+
             .main-container {
                 margin: auto;
                 min-height: 100vh;
                 position: relative;
             }
-            
+
             html {
                 font-size: 16px;
             }
+
             /*---------Home Page---------*/
-            
+
             .top-nav-spread {
                 display: flex;
                 width: 100%;
@@ -37,20 +38,21 @@
                 -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
                 box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
             }
-            
+
             .top-nav-spread nav {
                 margin-right: 2em;
             }
-            
+
             .top-logo {
                 margin-left: 2rem;
                 margin-top: 0.5rem;
                 margin-top: 0.5rem;
             }
+
             /*Collapsed top nav for small screens */
             /*https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
             /*Start the hidden popup nav*/
-            
+
             .collapsed-top-nav {
                 display: flex;
                 flex-direction: column;
@@ -65,7 +67,7 @@
                 transition: 1s;
                 z-index: 10;
             }
-            
+
             a.collapsed-nav-text {
                 position: relative;
                 color: #fff;
@@ -78,7 +80,7 @@
                 z-index: 2;
                 transition: 0.4s;
             }
-            
+
             .collapsed-top-nav .close-button {
                 position: absolute;
                 color: #fff;
@@ -88,9 +90,10 @@
                 margin-left: 3rem;
                 cursor: pointer;
             }
+
             /*End hidden popup nav*/
             /*Start condensed top nav for small screens. This has the button to show nav*/
-            
+
             .condensed-top-nav {
                 display: none;
                 justify-content: space-between;
@@ -104,7 +107,7 @@
                 box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
                 overflow: hidden;
             }
-            
+
             .condensed-top-nav button {
                 font-size: 20px;
                 cursor: pointer;
@@ -115,9 +118,10 @@
                 font-weight: 700;
                 font-size: 1.5rem;
             }
+
             /*End condensed top nav*/
             /*---------HERO START---------*/
-            
+
             .hero-div {
                 /*                    Cropping an image resize friendly https://css-tricks.com/crop-top/*/
                 background-image: url(../images/lineupOfSaucesRedBackground.jpg);
@@ -133,17 +137,17 @@
                 justify-content: flex-start;
                 /*                    justify-content: space-around;*/
             }
-            
+
             .hero-text {
                 padding-top: 1rem;
             }
-            
+
             .hero-text h2 {
                 color: #eeeeee;
                 padding: 0rem 2rem;
                 margin: 0;
             }
-            
+
             .hero-button h5 {
                 color: #eeeeee;
                 border: 2px solid #ffffff;
@@ -152,44 +156,45 @@
                 margin-top: 0.5rem;
                 padding: 0.2rem 1.5rem;
             }
-            
+
             .hero-button h5:hover {
                 border-color: #DFBA2E;
             }
+
             /*---------HERO END---------*/
             /*---------HOME CARDS TO STORE START---------*/
             /*How to select text in other text: https://stackoverflow.com/questions/4622808/html-changing-colors-of-specific-words-in-a-string-of-text/4622818*/
-            
+
             .red-bold-text {
                 color: #FF220C;
                 font-weight: 600;
             }
-            
+
             .store-cards {
                 padding: 0rem;
                 margin-top: 4rem;
             }
-            
+
             .store-cards h2 {
                 margin-left: 1rem;
                 margin-right: 1rem;
             }
-            
+
             .category-card {
                 margin-bottom: 2rem;
             }
-            
+
             .category-card p {
                 padding-top: 0;
             }
-            
+
             .category-card-background {
                 background-color: white;
                 margin: 0rem 1rem 1rem 1rem;
                 padding: 0rem;
                 text-align: center;
             }
-            
+
             .category-card img {
                 position: relative;
                 margin: auto;
@@ -197,26 +202,27 @@
                 /*                height: 300px;*/
                 width: 100%;
             }
-            
+
             .category-card h3 {
                 padding-bottom: 0.5rem;
             }
-            
+
             .store-cards a {
                 text-decoration: none;
             }
+
             /*---------HOME CARDS TO STORE END---------*/
             /*---------OUR STORY BANNER START---------*/
-            
+
             .our-story-banner {}
-            
+
             .our-story-banner article {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 padding: 6rem 4rem;
             }
-            
+
             .our-story-banner button {
                 color: white;
                 background-color: Transparent;
@@ -229,26 +235,27 @@
                 -webkit-transition: border-color 0.1s ease-in;
                 transition: border-color 0.1s ease-in;
             }
-            
+
             .our-story-banner a {
                 margin-left: auto;
             }
-            
+
             .our-story-banner button:hover {
                 border-color: #FE210B;
             }
-            
+
             .our-story-banner img {
                 display: block;
             }
+
             /*---------OUR STORY BANNER END---------*/
             /*---------STORE START---------*/
-            
+
             .side-menu-container {
                 width: 20%;
                 /*                flex: 0 0 250px;*/
             }
-            
+
             .side-menu {
                 padding: 1rem 1.5rem 0 2rem;
                 width: 20%;
@@ -260,7 +267,7 @@
                 position: fixed;
                 z-index: 100;
             }
-            
+
             .side-menu h2 {
                 border-bottom: 2px solid #999;
                 /*                border-top: 2px solid #999;*/
@@ -271,7 +278,7 @@
                 margin-right: 1rem;
                 line-height: 2.5rem;
             }
-            
+
             .side-menu h3 {
                 color: #555;
                 padding-left: 1rem;
@@ -280,16 +287,16 @@
                 text-align: right;
                 font-size: 1.2rem;
             }
-            
+
             .side-menu h3:hover {
                 color: #FF220C;
             }
-            
+
             .side-menu .selected-side-nav {
                 color: #FF220C;
                 cursor: pointer;
             }
-            
+
             .product-area-container {
                 flex: 1 1 500px;
                 display: flex;
@@ -297,19 +304,19 @@
                 width: 80%;
                 padding: 3rem 3rem 0 3rem;
             }
-            
+
             .store-top {
                 width: 100%;
                 padding-left: 4rem;
                 display: flex;
                 flex-direction: column;
             }
-            
+
             .store-top p {
                 padding-left: 0;
                 margin-left: 0;
             }
-            
+
             .product-listing {
                 /*                width: 25%;*/
                 text-align: center;
@@ -319,32 +326,32 @@
                 padding: 1rem;
                 position: relative;
             }
-            
+
             .product-listing img {
                 width: 100%;
                 margin: 1rem 0 0 0;
                 padding: 0;
             }
-            
+
             .product-listing h3 {
                 margin-top: 0.3rem;
             }
-            
+
             .product-listing h4 {
                 margin-top: 0;
             }
-            
+
             .product-listing a {
                 position: absolute;
                 width: 100%;
                 height: 100%;
             }
-            
+
             .product-listing .strikethrough {
                 text-decoration: line-through;
                 font-size: 1.3rem;
             }
-            
+
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
                 opacity: 0;
@@ -355,16 +362,17 @@
                 transition: opacity 0.3s ease;
                 text-align: center;
             }
-            
+
             .product-listing:hover .card-overlay {
                 opacity: 1;
             }
+
             /*Start store small screen filter*/
-            
+
             .store-top button {
                 display: none;
             }
-            
+
             .filters-button {
                 background-color: white;
                 border: 2px solid #333;
@@ -377,7 +385,7 @@
                 transition: border-color, 0.4s;
                 cursor: pointer;
             }
-            
+
             .collapsed-side-filters {
                 display: flex;
                 flex-direction: column;
@@ -393,7 +401,7 @@
                 transition: 1s;
                 z-index: 10;
             }
-            
+
             .collapsed-side-filters .close-button {
                 position: absolute;
                 color: #fff;
@@ -403,13 +411,13 @@
                 margin-left: 3rem;
                 cursor: pointer;
             }
-            
+
             .collapsed-side-filters h2 {
                 color: #fff;
                 padding-left: 2rem;
                 margin-bottom: 0;
             }
-            
+
             .collapsed-side-filters h3 {
                 color: #fff;
                 margin-top: 0rem;
@@ -417,87 +425,92 @@
                 font-weight: 400;
                 font-size: 1.2rem;
             }
+
             /*Footer Start*/
-            
+
             #footer {
                 background-color: #F6F7EB;
                 width: 100%;
                 height: 100%;
                 padding-bottom: 1rem;
             }
-            
+
             #footer img {
                 width: 128px;
                 height: 128px;
             }
-            
+
             #footer section {
                 color: #212121;
                 padding: 0.6rem;
                 text-align: center;
             }
-            
+
             #footer p {
                 margin-bottom: 0;
                 padding-bottom: 0.5rem;
             }
-            
+
             #footer a {
                 text-decoration: none;
                 color: #04292B;
                 padding: 0rem 3rem;
             }
+
             /*
 Bolding text without changing the width hack, the shaddow sort of works, has a bit of not great blur
 https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changing-its-containers-size
 */
-            
+
             #footer a:hover {
                 text-shadow: 0px 0px 1px #04292B;
             }
+
             /* Footer END */
             /*--------Old Style Guide Stuff--------*/
-            
+
             section nav {
                 margin: 0rem;
                 width: 100%;
             }
-            
+
             section {
                 margin: 1rem auto;
                 padding: 0rem;
                 width: 100%;
             }
-            
+
             section h3 {
                 margin-bottom: 0.5rem;
             }
-            
+
             section p {
                 margin-top: 0;
             }
+
             /*---------TIMELINE START---------*/
             /* The actual timeline (the vertical ruler) */
-            
+
             .about-container h1 {
                 text-align: center;
             }
-            
+
             .timeline {
                 position: relative;
                 max-width: 1200px;
                 margin: 0 auto;
             }
-            
+
             .timeline img {
                 max-width: 400px;
             }
-            
+
             .timeline h2 {
                 text-align: center;
             }
+
             /* The actual timeline (the vertical ruler) */
-            
+
             .timeline::after {
                 content: '';
                 position: absolute;
@@ -508,16 +521,18 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 left: 50%;
                 margin-left: -3px;
             }
+
             /* Container around content */
-            
+
             .timeline-container {
                 padding: 10px 40px;
                 position: relative;
                 background-color: inherit;
                 width: 50%;
             }
+
             /* The circles on the timeline */
-            
+
             .timeline-container::after {
                 content: '';
                 position: absolute;
@@ -530,18 +545,21 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 border-radius: 50%;
                 z-index: 1;
             }
+
             /* Place the container to the left */
-            
+
             .left {
                 left: 0;
             }
+
             /* Place the container to the right */
-            
+
             .right {
                 left: 50%;
             }
+
             /* Add arrows to the left container (pointing right) */
-            
+
             .left::before {
                 content: " ";
                 height: 0;
@@ -554,8 +572,9 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 border-width: 10px 0 10px 10px;
                 border-color: transparent transparent transparent white;
             }
+
             /* Add arrows to the right container (pointing left) */
-            
+
             .right::before {
                 content: " ";
                 height: 0;
@@ -568,13 +587,15 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 border-width: 10px 10px 10px 0;
                 border-color: transparent white transparent transparent;
             }
+
             /* Fix the circle for containers on the right side */
-            
+
             .right::after {
                 left: -16px;
             }
+
             /* The actual content */
-            
+
             .timeline-content {
                 padding: 20px 30px;
                 background-color: white;
@@ -584,19 +605,23 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 flex-direction: column;
                 align-items: center;
             }
+
             /* Media queries - Responsive timeline on screens less than 600px wide */
-            
+
             @media screen and (max-width: 1000px) {
+
                 /* Place the timelime to the left */
                 .timeline::after {
                     left: 31px;
                 }
+
                 /* Full-width containers */
                 .timeline-container {
                     width: 100%;
                     padding-left: 70px;
                     padding-right: 25px;
                 }
+
                 /* Make sure that all arrows are pointing leftwards */
                 .timeline-container::before {
                     left: 60px;
@@ -604,37 +629,41 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                     border-width: 10px 10px 10px 0;
                     border-color: transparent white transparent transparent;
                 }
+
                 /* Make sure all circles are at the same spot */
                 .left::after,
                 .right::after {
                     left: 15px;
                 }
+
                 /* Make all right containers behave like the left ones */
                 .right {
                     left: 0%;
                 }
             }
-            
+
             @media screen and (max-width:600px) {
                 .timeline-content img {
                     max-width: 95%;
                 }
+
                 .timeline-content {
                     padding: 0;
                 }
             }
+
             /*---------TIMELINE END---------*/
             /*---------CONTACT FORM START---------*/
-            
+
             .contact-label-container {
                 text-align: right;
                 padding: 0.5em 0 0.5rem 2rem;
             }
-            
+
             .contact-field-container {
                 padding: 0 2rem 0 0.5rem;
             }
-            
+
             .contact-label {
                 /*background-color: #042A2B;*/
                 padding: 0.5em 2em;
@@ -643,31 +672,32 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 border: solid #042A2B 1px;
                 border-radius: 50px;
             }
-            
+
             .contact-small-input {
                 width: 100%;
                 height: 100%;
                 padding: 0.6rem;
                 border: 2px solid #BFBFBF;
             }
+
             /*
 How to change the input placeholder color 
 https://www.w3schools.com/howto/howto_css_placeholder.asp
 */
-            
+
             .contact-small-input::placeholder {
                 color: #fff;
             }
-            
+
             .contact-large-input::placeholder {
                 color: #fff;
             }
-            
+
             .contact-small-input:focus {
                 border: 2px solid #042A2B;
                 outline: none;
             }
-            
+
             .contact-large-input {
                 width: 100%;
                 height: 200px;
@@ -675,12 +705,12 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 border: 2px solid #BFBFBF;
                 resize: none;
             }
-            
+
             .contact-large-input:focus {
                 border: 2px solid #042A2B;
                 outline: none;
             }
-            
+
             .contact-submit-button {
                 background-color: #FF220C;
                 border: none;
@@ -689,30 +719,32 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 color: #FFF;
                 width: 100%;
             }
+
             /*---------CONTACT FORM END---------*/
             /*---------CART START---------*/
-            
+
             .cart-header {
                 border-bottom: 1px solid #ccc !important;
             }
-            
+
             .cart-product {
                 padding: 2em 0em;
             }
-            
+
             .cart-header h3 {
                 color: #b3b3b3;
             }
+
             /*---------CART END---------*/
             /*---------CART SUMMARY START---------*/
-            
+
             .cart-summary {
                 padding: 2em;
                 margin: 0;
                 height: 100%;
             }
-            
-            .cart-summary>section {
+
+            .cart-summary > section {
                 background-color: white;
                 border: 1px solid black;
                 width: 75%;
@@ -720,24 +752,24 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
                 box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
             }
-            
+
             .cart-summary .container {
                 padding: 0.5em 1em;
             }
-            
+
             .cart-content {
                 padding: 2em;
                 text-align: center;
             }
-            
+
             .cart-content-product-name {
                 font-weight: bold;
             }
-            
+
             .border-bottom {
                 border-bottom: 2px solid rgba(78, 78, 78, 0.288);
             }
-            
+
             .transaction-button a {
                 width: 100%;
                 color: white;
@@ -745,16 +777,17 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 padding: 1em;
                 text-align: center;
             }
+
             /*---------CART SUMNMARY END---------*/
             /*---------CHECKOUT START---------*/
-            
+
             .checkout {
                 padding: 2em;
                 margin: 0;
                 height: 100%;
             }
-            
-            .checkout>section {
+
+            .checkout > section {
                 background-color: rgb(255, 224, 131);
                 width: 75%;
                 border: 1px solid black;
@@ -762,18 +795,19 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
                 box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.27);
             }
-            
+
             .checkout-content {
                 padding: 2em;
             }
+
             /*---------CHECKOUT END---------*/
             /*---------SUBMIT BUTTON END---------*/
-            
+
             .submit-button {
                 width: 100%;
                 text-align: center;
             }
-            
+
             .submit-button a {
                 background-color: #FF220C;
                 color: white;
@@ -782,78 +816,83 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 -webkit-transition: background-color 0.2s ease-in;
                 transition: background-color 0.2s ease-in;
             }
-            
+
             .submit-button a:hover,
             .submit-button a:focus {
                 background-color: #F65659;
             }
+
             /*---------SUBMIT BUTTON END---------*/
             /*--------- CONTENT BANNER START---------*/
-            
+
             .content-banner {
                 background-color: #042A2B;
             }
-            
+
             .content-banner div {}
+
             /*--------- CONTENT BANNER END---------*/
             /*--------- PRODUCT PAGE START---------*/
-            
+
             .container-product-page {
                 width: 80%;
                 margin: 0 auto;
                 padding-top: 5rem;
                 display: flex;
             }
+
             /*Image side*/
-            
+
             .container-product-page .product-image {
                 display: flex;
             }
-            
+
             .product-image {
                 padding-right: 4rem;
                 padding-bottom: 2rem;
                 display: flex;
                 justify-content: center;
             }
+
             /*Info Side*/
-            
+
             .product-info {
                 padding-right: 5%;
                 padding-top: 3rem;
             }
-            
+
             .product-info p {
                 padding: 0;
             }
-            
+
             .product-info h1 {
                 margin-bottom: 0;
             }
-            
+
             .product-info h4 {
                 margin-top: 0;
             }
-            
+
             .product-info h5 {
                 margin: 0;
                 padding-right: 0.4rem;
             }
-            
+
             .product-info h6 {
                 margin: 0;
             }
-            
+
             .product-info .info-subheaders {
                 display: flex;
                 justify-content: space-between;
             }
+
             /*How to select last child https://css-tricks.com/almanac/selectors/l/last-child/*/
-            
+
             .product-info-description p:last-child {
                 padding-bottom: 3rem;
             }
-            
+
             .product-info-cart-area {
                 display: flex;
                 justify-content: space-between;
@@ -861,14 +900,15 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 padding-top: 0.5rem;
                 /*                border-top: 2px solid #777777;*/
             }
+
             /*Flex areas for the left aligned price and right aligned quanitity*/
-            
+
             .product-info-cart-area .price-quantity {
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
             }
-            
+
             .price-quantity .price {
                 display: flex;
                 align-items: center;
@@ -876,11 +916,11 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 flex-shrink: 1;
                 flex-basis: 10rem;
             }
-            
+
             .price-quantity .price h5 {
                 font-size: 2rem;
             }
-            
+
             .price-quantity .quantity {
                 display: flex;
                 justify-content: flex-end;
@@ -889,21 +929,21 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 flex-shrink: 2;
                 flex-basis: 10rem;
             }
-            
+
             .quantity img {
                 padding: 0.4rem;
             }
-            
+
             .quantity h6 {
                 padding-right: 1rem;
                 padding-left: 1rem;
             }
 
-div.quantity-buttons {
-    display: flex;
-}
+            div.quantity-buttons {
+                display: flex;
+            }
 
-            
+
             .add-to-cart {
                 display: flex;
                 width: 100%;
@@ -912,7 +952,7 @@ div.quantity-buttons {
                 padding-bottom: 3rem;
                 border-top: 2px solid #777777;
             }
-            
+
             .add-to-cart button {
                 background-color: #FFF06A;
                 border: 1px solid #888888;
@@ -925,11 +965,11 @@ div.quantity-buttons {
                 border-radius: 50px;
                 overflow: hidden;
             }
-            
+
             .add-to-cart button:active {
                 background-color: #eadc4a;
             }
-            
+
             .out-of-stock {
                 display: flex;
                 width: 100%;
@@ -938,7 +978,7 @@ div.quantity-buttons {
                 padding-bottom: 3rem;
                 border-top: 2px solid #777777;
             }
-            
+
             .out-of-stock button {
                 background-color: #eeeeee;
                 border: 1px solid #888888;
@@ -951,7 +991,7 @@ div.quantity-buttons {
                 border-radius: 50px;
                 overflow: hidden;
             }
-            
+
             #added-tocart-popup {
                 opacity: 0;
                 background-color: white;
@@ -963,13 +1003,14 @@ div.quantity-buttons {
                 transition: opacity, 0.5s;
                 box-shadow: 5px 5px 8px #888888;
             }
-            
+
             #added-tocart-popup h5 {
                 padding: 1rem 2.5rem;
                 margin: 0;
             }
+
             /*Start reivew section*/
-            
+
             .reviews-header {
                 width: 72%;
                 margin: 0 auto;
@@ -977,7 +1018,7 @@ div.quantity-buttons {
                 justify-content: space-between;
                 align-items: center;
             }
-            
+
             .reviews-header button {
                 background-color: white;
                 border: 2px solid #333;
@@ -991,75 +1032,76 @@ div.quantity-buttons {
                 cursor: pointer;
                 line-height: 45px;
             }
-            
+
             .reviews-header button:hover {
                 border-color: #FF220C;
             }
-            
+
             .reviews-header h3 {
                 margin: 0;
                 padding: 0;
                 font-size: 1.2rem;
             }
-            
+
             .reviews-header h1 {
                 font-size: 2rem;
             }
-            
+
             .reviews {
                 width: 72%;
                 margin: 0 auto;
                 padding-bottom: 3rem;
             }
-            
+
             .reviews p {
                 margin: 0;
                 padding: 0;
             }
-            
+
             .review-card {
                 border-top: 1px solid #333333;
                 display: flex;
                 padding-bottom: 2rem;
             }
-            
+
             .reviews img {
                 width: 180px;
             }
-            
+
             .review-date-name {
                 display: flex;
                 flex: 1 1;
                 flex-direction: column;
                 padding-top: 1.5rem;
             }
-            
+
             .review-rate-copy {
                 flex: 3 3;
             }
-            
+
             .review-rate {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 1rem 0 2rem 0;
             }
-            
+
             .review-heat {
                 display: flex;
             }
-            
+
             .review-heat h6 {
                 margin: 1rem 0 0 1rem;
                 font-size: 1rem;
             }
+
             /*Leaving a review*/
-            
+
             .review-leave {
                 display: flex;
                 justify-content: space-between
             }
-            
+
             .review-leave label {
                 background-color: transparent;
                 color: #222;
@@ -1068,17 +1110,17 @@ div.quantity-buttons {
                 border: none;
                 font-weight: 600;
             }
-            
+
             .review-leave .contact-small-input {
                 margin-right: 1rem;
                 height: 2rem;
                 width: auto;
             }
-            
+
             .review-leave .contact-large-input {
                 height: 16rem;
             }
-            
+
             .leave-name-rate {
                 flex: 1 1;
                 display: flex;
@@ -1086,10 +1128,11 @@ div.quantity-buttons {
                 justify-content: space-between;
                 align-items: flex-start;
             }
-            
+
             .leave-comment {
                 flex: 3 3;
             }
+
             /*--------- PRODUCT PAGE END---------*/
             /*  INTERACTIVE ELEMENTS ------------------- */
             /* Styling for the navigation button */
@@ -1100,11 +1143,11 @@ div.quantity-buttons {
 */
             /* Styling for buttons */
             /*Shopping Cart Button*/
-            
+
             div.button-cart {
                 position: relative;
             }
-            
+
             button.button-cart {
                 background: rgba(0, 0, 0, 0);
                 padding: 0 0 0rem 0.9rem;
@@ -1121,18 +1164,19 @@ div.quantity-buttons {
                 cursor: pointer;
                 position: relative;
             }
-            
+
             button.button-cart:hover {
                 color: #FF220C;
             }
-            
+
             .button-cart img {
                 right: 0.9rem;
                 top: 0.75rem;
                 position: absolute;
             }
+
             /*Go Shop Button*/
-            
+
             .button-shop {
                 display: inline-block;
                 padding: 0.7rem 1.5rem;
@@ -1143,14 +1187,15 @@ div.quantity-buttons {
                 -webkit-transition: background-color 0.2s ease-in;
                 transition: background-color 0.2s ease-in;
             }
-            
+
             .button-shop:hover,
             .button-shop:focus {
                 background-color: #F65659;
             }
+
             /*End Go Shop Button*/
             /*Submit Button*/
-            
+
             .button-submit {
                 display: inline-block;
                 padding: 0.5em 0.75em;
@@ -1161,41 +1206,44 @@ div.quantity-buttons {
                 -webkit-transition: background-color 0.5s ease-out;
                 transition: background-color 0.5s ease-out;
             }
-            
+
             .button-submit:hover,
             .button-submit:focus {
                 background-color: #777;
             }
+
             /*End Submit Button*/
-            
+
             .intext-link {
                 color: #F43C40;
                 text-decoration: none;
                 -webkit-transition: background-color 0.3s ease-out;
                 transition: background-color 0.3s ease-out;
             }
-            
+
             .intext-link:hover {
                 color: #FFF;
                 background-color: #F43C40;
                 padding: 0.1em 0.1em;
                 border-radius: 0.25em;
             }
+
             /* How to make forms https://www.w3schools.com/html/html_forms.asp */
-            
+
             .input-text {
                 width: 20%;
                 padding: 0.5rem;
                 border: 1px solid #9AB29A;
                 border-radius: 5px;
             }
-            
+
             .input-text:focus {
                 border: 2px solid #9AB29A;
                 outline: none;
             }
+
             /* ------------------- TEXT ELEMENTS -------------------*/
-            
+
             p,
             h1,
             h2,
@@ -1203,7 +1251,7 @@ div.quantity-buttons {
                 /*Changing the color of all text*/
                 color: #212121;
             }
-            
+
             p {
                 font-family: 'Hind', sans-sarif;
                 font-weight: 300;
@@ -1211,7 +1259,7 @@ div.quantity-buttons {
                 padding: 1rem;
                 /*16px*/
             }
-            
+
             em {
                 font-family: 'Hind', sans-sarif;
                 font-weight: 600;
@@ -1219,7 +1267,7 @@ div.quantity-buttons {
                 font-size: 1rem;
                 /*16px*/
             }
-            
+
             h1 {
                 font-family: 'Montserrat', sans-sarif;
                 font-weight: 900;
@@ -1228,7 +1276,7 @@ div.quantity-buttons {
                 margin-bottom: 1rem;
                 margin-top: 1rem;
             }
-            
+
             h2 {
                 font-family: 'Hind', sans-sarif;
                 font-weight: 500;
@@ -1237,7 +1285,7 @@ div.quantity-buttons {
                 margin-bottom: 1rem;
                 margin-top: 0.2rem;
             }
-            
+
             h3 {
                 font-family: 'Hind', sans-sarif;
                 font-weight: 500;
@@ -1245,39 +1293,41 @@ div.quantity-buttons {
                 /*24px*/
                 margin-bottom: 0.5rem;
             }
+
             /*Used on the product page*/
-            
+
             h4 {
                 font-family: 'Montserrat', sans-sarif;
                 font-weight: 700;
                 font-size: 1.5rem;
                 /*24px*/
             }
-            
+
             h5 {
                 font-family: 'Hind', sans-sarif;
                 font-weight: 600;
                 font-size: 1.5rem;
                 /*24px*/
             }
-            
+
             h6 {
                 font-family: 'Hind', sans-sarif;
                 font-weight: 300;
                 font-size: 1.5rem;
                 /*24px*/
             }
-            
+
             a {
                 text-decoration: none;
             }
-            
+
             .bullet-list {
                 list-style: none;
                 padding: 0 1rem;
             }
+
             /* How to color bullet points https://www.w3schools.com/howto/howto_css_bullet_color.asp*/
-            
+
             .bullet-list-item::before {
                 content: "\2022";
                 /* Unicode for bullet point */
@@ -1285,13 +1335,14 @@ div.quantity-buttons {
                 display: inline-block;
                 margin: 0.5rem 1rem 0 0;
             }
-            
+
             .numbered-list {
                 list-style: upper-roman
             }
+
             /* ------------------- COMBINED ELEMENTS ------------------- */
             /* How to make nav from https://www.w3docs.com/learn-html/html-nav-tag.html*/
-            
+
             nav {
                 display: flex;
                 flex-wrap: wrap;
@@ -1299,7 +1350,7 @@ div.quantity-buttons {
                 margin-left: auto;
                 align-items: center;
             }
-            
+
             nav a.main-nav-text {
                 position: relative;
                 color: #000000;
@@ -1313,13 +1364,14 @@ div.quantity-buttons {
                 transition: 0.4s;
                 /*https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
             }
-            
+
             nav a.main-nav-text:hover {
                 /*    background-color: #AAAAAA;*/
                 color: #fff;
             }
+
             /* Underline Animation Modified from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/*/
-            
+
             nav a.main-nav-text::before {
                 content: "";
                 position: absolute;
@@ -1336,27 +1388,29 @@ div.quantity-buttons {
                 transition: all 0.2s ease-in-out 0s;
                 z-index: -1;
             }
-            
+
             nav a.main-nav-text:hover::before {
                 visibility: visible;
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
                 z-index: -1;
             }
+
             /* Help on how to make product cards from https://www.w3schools.com/howto/howto_css_product_card.asp */
-            
+
             .product-card {
                 border: 2px solid #ccc;
                 max-width: 300px;
                 margin: auto;
                 box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
             }
-            
+
             .product-card img {
                 width: 100%;
             }
+
             /* Grid stuff */
-            
+
             .container {
                 box-sizing: border-box;
                 display: flex;
@@ -1364,50 +1418,51 @@ div.quantity-buttons {
                 width: 100%;
                 justify-content: space-between;
             }
-            
+
             .container div {}
+
             /*Sizes from MailChips style guide https://ux.mailchimp.com/patterns/grid*/
-            
+
             .size1of8 {
                 width: 12.5%;
             }
-            
+
             .size1of4,
             .size2of8 {
                 width: 25%;
             }
-            
+
             .size1of3 {
                 width: 33.33%;
             }
-            
+
             .size3of8 {
                 width: 37.5%;
             }
-            
+
             .size1of2,
             .size2of4,
             size4of8 {
                 width: 50%;
             }
-            
+
             .size5of8 {
                 width: 62.5%;
             }
-            
+
             .size2of3 {
                 width: 66.67%;
             }
-            
+
             .size3of4,
             size6of8 {
                 width: 75%;
             }
-            
+
             .size7of8 {
                 width: 87.5%;
             }
-            
+
             .size1of1,
             .size2of2,
             .size3of3,
@@ -1415,68 +1470,82 @@ div.quantity-buttons {
             .size8of8 {
                 width: 100%;
             }
+
             /* Underline color help https://www.w3schools.com/cssref/css3_pr_text-decoration-color.asp*/
-            
+
             .product-card h3 {
                 margin: 1rem;
                 display: inline-block;
                 text-decoration: underline;
                 text-decoration-color: red;
             }
-            
+
             .product-card p {
                 margin: 1rem;
             }
-            
+
             .product-price {
                 float: right;
             }
+
             /* Media queries */
-            
+
             @media(min-width:1200px) {
                 section {
                     max-width: 1200px;
                 }
+
                 section nav {
                     max-width: 1200px;
                 }
             }
-            
+
             @media(max-width:1000px) {
                 .checkout label {
                     display: none;
                 }
+
                 .checkout input::placeholder {
                     color: #042A2B;
                 }
+
                 .checkout section {
                     width: 100%;
                 }
+
                 .checkout {
                     padding: 0em;
                 }
+
                 .cart-summary {
                     padding: 0em;
                 }
+
                 .cart-summary section {
                     width: 100%;
                 }
+
                 .cart-content {
                     text-align: center;
                 }
+
                 .cart-product {
                     text-align: center;
                 }
-                .cart-product>div {
+
+                .cart-product > div {
                     display: inline-block;
                 }
+
                 .cart-header {
                     display: none;
                 }
+
                 nav {
                     justify-content: center;
                     padding-bottom: 0.5rem;
                 }
+
                 /* Old Nav
                 .top-nav {
                     flex-direction: column;
@@ -1492,6 +1561,7 @@ div.quantity-buttons {
                     display: flex;
                     justify-content: center;
                 }
+
                 .top-nav-spread {
                     flex-direction: column;
                     justify-content: center;
@@ -1499,66 +1569,82 @@ div.quantity-buttons {
                     top: -8rem;
                     z-index: 20;
                 }
+
                 .top-nav-spread nav {
                     justify-content: center;
                     display: flex;
                     margin: auto;
                 }
+
                 /* Reduce the spacing between the links on the smaller screen so they don't reflow as early. */
                 .main-nav-text {
                     margin: 0.5rem 0.5rem;
                 }
+
                 .top-logo {
                     width: 260px;
                     margin-right: 0;
                     margin-left: 0;
                 }
+
                 /*                Start product*/
                 .side-menu-container {
                     display: none;
                 }
+
                 .store-top {
                     padding-left: 0;
                 }
+
                 .store-top button {
                     display: inline;
                 }
+
                 .container-product-page {
                     flex-direction: column-reverse;
                     align-items: center;
                     justify-content: center;
                 }
+
                 .product-info {
                     margin: 0;
                     padding: 0;
                 }
+
                 .product-image {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding: 0 0 2rem 0;
                 }
+
                 .reviews {
                     width: 80%;
                 }
+
                 .reviews-header {
                     width: 80%;
                 }
+
                 .review-rate img {
                     width: 160px;
                 }
+
                 /*                Start contact*/
                 .contact-label-container {
                     text-align: left;
                     /*                    padding: 0.5em 0 0.5rem 2rem;*/
                     padding: 0.5rem 8rem 0.5rem 8rem;
                 }
+
                 .contact-field-container {
                     padding: 0 8rem 0 8rem;
                 }
+
                 .our-story-banner img {
                     display: none;
                 }
+
                 /*
                 .product-listing {
                     width: 50%;
@@ -1567,34 +1653,43 @@ div.quantity-buttons {
                 .size1of8 {
                     width: 25%;
                 }
+
                 .size1of4,
                 .size2of8 {
                     width: 50%;
                 }
+
                 .size1of3 {
                     width: 100%;
                 }
+
                 .size3of8 {
                     /*width:37.5%; Not sure what to do about this*/
                 }
+
                 .size1of2,
                 .size2of4,
                 size4of8 {
                     width: 100%;
                 }
+
                 .size5of8 {
                     width: 100%;
                 }
+
                 .size2of3 {
                     width: 100%;
                 }
+
                 .size3of4,
                 size6of8 {
                     width: 100%;
                 }
+
                 .size7of8 {
                     width: 100%;
                 }
+
                 .size1of1,
                 .size2of2,
                 .size3of3,
@@ -1603,25 +1698,30 @@ div.quantity-buttons {
                     width: 100%;
                 }
             }
-            
+
             @media(max-width:700px) {
                 .top-nav-spread {
                     display: none;
                 }
+
                 .condensed-top-nav {
                     display: flex;
                 }
+
                 .top-logo {
                     width: 140px;
                     margin: 1rem;
                 }
+
                 .close-button {
                     padding: 2rem;
                 }
+
                 .button-cart {
                     width: 5.5rem;
                     margin-right: 1rem;
                 }
+
                 .button-cart button {
                     width: 5.5rem;
                     margin-right: 0rem;
@@ -1630,108 +1730,127 @@ div.quantity-buttons {
                     border-radius: 0;
                     border-bottom: 3px solid #FF220C;
                 }
+
                 /*                Start product*/
                 .review-rate {
                     flex-direction: column;
                     align-items: flex-end;
                 }
+
                 .review-rate img {
                     width: 140px;
                     padding-top: 0.5rem;
                 }
             }
-            
+
             @media(max-width:640px) {
                 .top-nav nav {
                     flex-direction: column;
                 }
+
                 .top-logo {
                     width: 100px;
                 }
-                .hero-div{
+
+                .hero-div {
                     background-size: 1100px;
                 }
-                
+
                 .hero-text h2 {
                     font-size: 1.5rem;
                     text-align: center;
                 }
-                
+
                 .product-area-container {
                     padding: 0;
                 }
-                
-/*                Small screen price and quantity divs*/
+
+                /*                Small screen price and quantity divs*/
                 .price-quantity {
                     flex-direction: column;
                 }
+
                 .price-quantity .price {
                     flex-basis: auto;
                 }
-                
+
                 .price-quantity .quantity {
                     flex-basis: auto;
                     justify-content: space-between;
                 }
-                
+
                 .price-quantity .quantity h6:first-child {
                     padding-left: 0;
                 }
-                
+
                 .product-info-description p:last-child {
                     padding-bottom: 1rem;
                 }
-                
+
                 .filters-button {
                     width: 100%;
                 }
+
                 .contact-label-container {
                     display: none;
                 }
+
                 .contact-field-container {
                     padding: 0;
                     width: 80%;
                     margin: 0 auto;
                 }
+
                 .store-top {
                     padding: 1rem 2rem;
                 }
+
                 .store-top p {
                     padding-right: 0;
                 }
+
                 /*                This makes the placeholder text visible by changing the color from white. Bit of a hack but it's the only way*/
                 /*                https://www.w3schools.com/howto/howto_css_placeholder.asp*/
                 .contact-small-input::placeholder {
                     color: #042A2B;
                 }
+
                 .contact-large-input::placeholder {
                     color: #042A2B;
                 }
+
                 /*                Leaving a review*/
                 .review-leave {
                     flex-direction: column;
                 }
+
                 .review-leave label {
                     display: none;
                 }
+
                 .review-leave div {
                     margin-bottom: 1rem;
                     width: 100%;
                 }
+
                 .review-leave .contact-small-input {
                     width: 100%;
                     height: 3rem;
                 }
+
                 .review-leave .contact-large-input {
                     /*                   vertical-align: top;*/
                 }
+
                 .size1of4,
                 .size2of8 {
                     width: 100%;
                 }
+
                 .size1of8 {
                     width: 100%;
                 }
+
                 #top-nav a {
                     width: 100%;
                 }
