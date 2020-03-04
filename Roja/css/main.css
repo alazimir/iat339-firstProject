@@ -6,9 +6,10 @@
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
             }
-body {
-    overflow-x: hidden;
-}
+            
+            body {
+                overflow-x: hidden;
+            }
             
             body {
                 background-color: #FFF;
@@ -101,8 +102,7 @@ body {
                 -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
                 -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
                 box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
-                
-                overflow:hidden;
+                overflow: hidden;
             }
             
             .condensed-top-nav button {
@@ -478,9 +478,10 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
             }
             /*---------TIMELINE START---------*/
             /* The actual timeline (the vertical ruler) */
-.about-container h1 {
-    text-align: center;
-}
+            
+            .about-container h1 {
+                text-align: center;
+            }
             
             .timeline {
                 position: relative;
@@ -579,12 +580,10 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 background-color: white;
                 position: relative;
                 border-radius: 6px;
-                
                 display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                flex-direction: column;
+                align-items: center;
             }
-
             /* Media queries - Responsive timeline on screens less than 600px wide */
             
             @media screen and (max-width: 1000px) {
@@ -614,17 +613,16 @@ https://stackoverflow.com/questions/5687035/css-bolding-some-text-without-changi
                 .right {
                     left: 0%;
                 }
-
             }
-@media screen and (max-width:600px){
-                    
+            
+            @media screen and (max-width:600px) {
                 .timeline-content img {
                     max-width: 95%;
                 }
-    .timeline-content {
-        padding: 0;
-    }
-}
+                .timeline-content {
+                    padding: 0;
+                }
+            }
             /*---------TIMELINE END---------*/
             /*---------CONTACT FORM START---------*/
             
@@ -1454,6 +1452,18 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .checkout input::placeholder {
                     color: #042A2B;
                 }
+                .checkout section {
+                    width: 100%;
+                }
+                .checkout {
+                    padding: 0em;
+                }
+                .cart-summary {
+                    padding: 0em;
+                }
+                .cart-summary section {
+                    width: 100%;
+                }
                 .cart-content {
                     text-align: center;
                 }
@@ -1608,11 +1618,9 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                     width: 140px;
                     margin: 1rem;
                 }
-                
                 .close-button {
                     padding: 2rem;
                 }
-                
                 .button-cart {
                     width: 5.5rem;
                     margin-right: 1rem;
