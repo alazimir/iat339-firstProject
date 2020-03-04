@@ -348,7 +348,7 @@
                 font-size: 1.3rem;
             }
 
-            
+
 
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
@@ -999,7 +999,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 align-items: center;
             }
 
-            .reviews-header button {
+            .reviews-header .leave-a-review {
                 background-color: white;
                 border: 2px solid #333;
                 outline: none;
@@ -1010,6 +1010,9 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 height: 3rem;
                 transition: border-color, 0.4s;
                 cursor: pointer;
+                
+
+                line-height: 45px;
             }
 
             .reviews-header button:hover {
@@ -1531,7 +1534,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .side-menu-container {
                     display: none;
                 }
-                
+
                 .store-top {
                     padding-left: 0;
                 }
@@ -1539,7 +1542,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .store-top button {
                     display: inline;
                 }
-                
+
 
                 .container-product-page {
                     flex-direction: column-reverse;
