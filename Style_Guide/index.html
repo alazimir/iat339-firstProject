@@ -80,7 +80,11 @@
             <p>.submit-button</p>
 
             <h3>Sample code:</h3>
-            <code>&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;</code>
+            <code>
+                &lt;div class=&quot;submit-button&quot;&gt; <br>
+                &nbsp; &lt;a href=&quot;#&quot;&gt;Submit&lt;/a&gt; <br>
+                &lt;/div&gt; <br>
+            </code>
 
             <h3>Rendered element:</h3>
             <div class="submit-button">
@@ -198,13 +202,20 @@
 
             <h3>Sample code:</h3>
             <code>
-            &lt;nav&gt; <br>
-              &nbsp; &lt;a href="#"&gt;Home&lt;/a&gt; <br>
-              &nbsp; &lt;a href="#"&gt;Products&lt;/a&gt;<br> &nbsp;
-              &lt;a href="#"&gt;About&lt;/a&gt; <br> &nbsp;
-              &lt;a href="#"&gt;Support&lt;/a&gt; <br>
-          &lt;/nav&gt;
-          </code>
+            &lt;div class=&quot;top-nav-spread&quot;&gt; <br>
+            &nbsp;&lt;a href=&quot;index.html&quot;&gt;&lt;img class=&quot;top-logo&quot; src=&quot;img/logoNoUnderText.svg&quot; alt=&quot;Logo of company, Roja&quot;&gt; &lt;/a&gt; <br>
+            &nbsp;&lt;nav&gt; <br>
+            &nbsp;&lt;a class=&quot;main-nav-text&quot; href=index.html&gt;home&lt;/a&gt; <br>
+            &nbsp;&lt;a class=&quot;main-nav-text&quot; href=&quot;store.html&quot;&gt;store&lt;/a&gt; <br>
+            &nbsp; &lt;a class=&quot;main-nav-text&quot; href=&quot;about.html&quot;&gt;about&lt;/a&gt; <br>
+            &nbsp;&lt;a class=&quot;main-nav-text&quot; href=&quot;contact.html&quot;&gt;contact&lt;/a&gt;<br>
+            &nbsp;&lt;div class=&quot;button-cart&quot;&gt;<br>
+            &nbsp;&lt;img id=&quot;cartIcon&quot; src=&quot;img/shoppingCartIcon.svg&quot; alt=&quot;Shopping cart&quot;&gt;<br>
+            &nbsp;&lt;a href=&quot;cart.html&quot;&gt;&lt;button class=&quot;button-cart&quot;&gt;cart &lt;span id=&quot;cartNum&quot;&gt;0&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+            &nbsp;&lt;/nav&gt;<br>
+            &lt;/div&gt;<br>
+            </code>
 
             <h3>Rendered element:</h3>
             <div class="top-nav-spread">
@@ -230,9 +241,9 @@
 
             <h3>Sample code:</h3>
             <code>
-            &lt;div class="product-listing"&gt; <br> &nbsp;
-            &lt;img src="img/hot_sauce_1.png"&gt; <br> &nbsp;
-                &lt;a href="product_hot.html&gt; <br>
+            &lt;div class="size1of4 product-listing hot-heat new-item melindas-brand"&gt; <br> &nbsp;
+            &lt;img src="img/hot_sauce_1.png" alt="Hot Sauce Product"&gt; <br> &nbsp;
+                &lt;a href="product_hot.html"&gt; <br>
                     &lt;div class="card-overlay"&gt; <br> &nbsp;
                         &lt;h1&gt;Heat&lt;/h3&gt;<br> &nbsp;
                         &lt;h1&gt;9/10&lt;/h3&gt;<br> &nbsp;
@@ -241,21 +252,9 @@
                     &lt;h4&gt;$12&lt;/h4&gt;<br> &nbsp;
                 &lt;/a&gt; <br>
             &lt;/div&gt;
-            
           </code>
 
             <h3>Rendered element:</h3>
-
-            <!--
-            <div class="product-card">
-                <img src="img/hot_sauce_1.png">
-                <h3> Cajun Hot Sauce</h3>
-                <h3 class="product-price">12.00$</h3>
-
-                <p>Brief description of the product here. Talking about the composition and flavour notes.</p>
-
-            </div>
-            -->
 
             <div class="size1of4 product-listing hot-heat new-item melindas-brand">
                 <img src="img/hot_sauce_1.png" alt="Hot Sauce Product">
@@ -280,18 +279,20 @@
 
             <h3>Sample code:</h3>
             <code>
-            &lt;div class="product-listing"&gt; <br> &nbsp;
-            &lt;img src="img/hot_sauce_1.png"&gt; <br> &nbsp;
-                &lt;a href="product_hot.html&gt; <br>
-                    &lt;div class="card-overlay"&gt; <br> &nbsp;
-                        &lt;h1&gt;Heat&lt;/h3&gt;<br> &nbsp;
-                        &lt;h1&gt;9/10&lt;/h3&gt;<br> &nbsp;
-                    &lt;/div&gt; <br>
-                    &lt;h3&gt;Habanero | Melinda's&lt;/h3&gt;<br> &nbsp;
-                    &lt;h4&gt;$12&lt;/h4&gt;<br> &nbsp;
-                &lt;/a&gt; <br>
-            &lt;/div&gt;
-            
+                &lt;section class=&quot;store-cards&quot;&gt; <br>
+                &lt;div class=&quot;container&quot;&gt; <br>
+                    &lt;div class=&quot;category-card size1of4&quot;&gt;<br>
+                        &lt;div class=&quot;category-card-background&quot;&gt;<br>
+                            &lt;img src=&quot;img/hot_sauce_1.png&quot; alt=&quot;Mild hot sauce&quot;&gt;<br>
+                            &lt;h3&gt; Mild Spice&lt;/h3&gt;<br>
+                            &lt;p&gt;<br>
+                                For those who like a lot of flavor without the heat. Try a new mild sauce like a tangy green chile sauce from Inthisorn Food's, or mild buffalo. &lt;/p&gt;
+                            &lt;div class=&quot;submit-button&quot;&gt;<br>
+                                &lt;a href=&quot;#&quot;&gt;Shop&lt;/a&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                &lt;/section&gt;<br>
           </code>
 
             <h3>Rendered element:</h3>
@@ -359,18 +360,16 @@
 
             <h3>Sample code:</h3>
             <code>
-            &lt;div class="product-listing"&gt; <br> &nbsp;
-            &lt;img src="img/hot_sauce_1.png"&gt; <br> &nbsp;
-                &lt;a href="product_hot.html&gt; <br>
-                    &lt;div class="card-overlay"&gt; <br> &nbsp;
-                        &lt;h1&gt;Heat&lt;/h3&gt;<br> &nbsp;
-                        &lt;h1&gt;9/10&lt;/h3&gt;<br> &nbsp;
-                    &lt;/div&gt; <br>
-                    &lt;h3&gt;Habanero | Melinda's&lt;/h3&gt;<br> &nbsp;
-                    &lt;h4&gt;$12&lt;/h4&gt;<br> &nbsp;
-                &lt;/a&gt; <br>
-            &lt;/div&gt;
-            
+                &lt;div class=&quot;hero-div&quot;&gt; <br>
+                &lt;div class=&quot;hero-text&quot;&gt;<br>
+                    &lt;h2&gt;Big sale on mild sauces right now!&lt;/h2&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class=&quot;hero-button&quot;&gt;<br>
+                    &lt;a href=&quot;store.html&quot;&gt;<br>
+                        &lt;h5&gt;Shop the sale&lt;/h5&gt;<br>
+                    &lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
           </code>
 
             <h3>Rendered element:</h3>
@@ -397,18 +396,46 @@
 
             <h3>Sample code:</h3>
             <code>
-            &lt;div class="product-listing"&gt; <br> &nbsp;
-            &lt;img src="img/hot_sauce_1.png"&gt; <br> &nbsp;
-                &lt;a href="product_hot.html&gt; <br>
-                    &lt;div class="card-overlay"&gt; <br> &nbsp;
-                        &lt;h1&gt;Heat&lt;/h3&gt;<br> &nbsp;
-                        &lt;h1&gt;9/10&lt;/h3&gt;<br> &nbsp;
+            &lt;div class=&quot;size1of1&quot;&gt; <br>
+                &lt;div class=&quot;container cart-header&quot;&gt; <br>
+                    &lt;div class=&quot;size5of8&quot;&gt; <br>
+                        &lt;h3&gt;Product&lt;/h3&gt; <br>
                     &lt;/div&gt; <br>
-                    &lt;h3&gt;Habanero | Melinda's&lt;/h3&gt;<br> &nbsp;
-                    &lt;h4&gt;$12&lt;/h4&gt;<br> &nbsp;
-                &lt;/a&gt; <br>
-            &lt;/div&gt;
-            
+                    &lt;div class=&quot;size1of8&quot;&gt; <br>
+                        &lt;h3&gt;Price&lt;/h3&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class=&quot;size1of8&quot;&gt; <br>
+                        &lt;h3&gt;Quantity&lt;/h3&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class=&quot;size1of8&quot;&gt; <br>
+                        &lt;h3&gt;Total&lt;/h3&gt; <br>
+                    &lt;/div&gt; <br>
+                &lt;/div&gt; <br>
+            &lt;/div&gt; <br>
+
+            &lt;div class=&quot;size1of1&quot;&gt; <br>
+                &lt;div class=&quot;container cart-product&quot;&gt; <br>
+                    &lt;div class=&quot;size5of8&quot;&gt; <br>
+                        &lt;div class=&quot;container&quot;&gt; <br>
+                            &lt;div class=&quot;size1of3&quot;&gt; <br>
+                                &lt;img src=&quot;img/hot_sauce_1.png&quot; style=&quot;width: 50%;&quot; alt=&quot;Insane hot sauce product image&quot;&gt; <br>
+                            &lt;/div&gt; <br>
+                            &lt;div class=&quot;size2of3&quot;&gt; <br>
+                                &lt;h3&gt;Ultimate Insanity&lt;/h3&gt; <br>
+                            &lt;/div&gt; <br>
+                        &lt;/div&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class=&quot;size1of8&quot;&gt; <br>
+                        &lt;h3&gt;$14&lt;/h3&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class=&quot;size1of8&quot;&gt; <br>
+                        &lt;h3&gt;1&lt;/h3&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;div class=&quot;size1of8&quot;&gt; <br>
+                        &lt;h3&gt;$14&lt;/h3&gt; <br>
+                    &lt;/div&gt; <br>
+                &lt;/div&gt; <br>
+            &lt;/div&gt; <br>
           </code>
 
             <h3>Rendered element:</h3>
@@ -460,8 +487,66 @@
                 </div>
                 <!-- SINGLE PRODUCT END -->
             </div>
+        </section>
+        <!-- CART END-->
+
+
+        <section>
+            <h2>Review</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.reviews</p>
+            <p>.review-card</p>
+
+            <h3>Sample code:</h3>
+            <code>
+                &lt;div class=&quot;reviews&quot;&gt; <br>
+                &lt;div class=&quot;review-card&quot;&gt; <br>
+                    &lt;div class=&quot;review-date-name&quot;&gt;<br>
+                        &lt;p&gt;1/21/2020&lt;/p&gt;<br>
+                        &lt;p&gt;&lt;strong&gt;Sarah Smith&lt;/strong&gt;&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class=&quot;review-rate-copy&quot;&gt;<br>
+                        &lt;div class=&quot;review-rate&quot;&gt;<br>
+                            &lt;img src=&quot;img/ratingStars/star3.svg&quot; alt=&quot;Three star review&quot;&gt;<br>
+                            &lt;div class=&quot;review-heat&quot;&gt;<br>
+                                &lt;img src=&quot;img/ratingHeat/heat4.svg&quot; alt=&quot;Four heat level review&quot;&gt;<br>
+                                &lt;h6&gt;Heat&lt;/h6&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;div class=&quot;review-copy&quot;&gt;<br>
+                            &lt;p&gt;Pretty tasty but not quite as hot as I was expecting. Still an okay addition to the collection.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+          </code>
+
+            <h3>Rendered element:</h3>
+
+            <div class="reviews">
+                <div class="review-card">
+                    <div class="review-date-name">
+                        <p>1/21/2020</p>
+                        <p><strong>Sarah Smith</strong></p>
+                    </div>
+                    <div class="review-rate-copy">
+                        <div class="review-rate">
+                            <img src="img/ratingStars/star3.svg" alt="Three star review">
+                            <div class="review-heat">
+                                <img src="img/ratingHeat/heat4.svg" alt="Four heat level review">
+                                <h6>Heat</h6>
+                            </div>
+                        </div>
+                        <div class="review-copy">
+                            <p>Pretty tasty but not quite as hot as I was expecting. Still an okay addition to the collection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
+
 
 
         <section>

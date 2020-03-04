@@ -473,6 +473,56 @@
                 color: #b3b3b3;
             }
             /*---------CART END---------*/
+            /* */
+            
+            .reviews {
+                width: 72%;
+                margin: 0 auto;
+                padding-bottom: 3rem;
+            }
+            
+            .reviews p {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .review-card {
+                border-top: 1px solid #333333;
+                display: flex;
+                padding-bottom: 2rem;
+            }
+            
+            .reviews img {
+                width: 180px;
+            }
+            
+            .review-date-name {
+                display: flex;
+                flex: 1 1;
+                flex-direction: column;
+                padding-top: 1.5rem;
+            }
+            
+            .review-rate-copy {
+                flex: 3 3;
+            }
+            
+            .review-rate {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 0 2rem 0;
+            }
+            
+            .review-heat {
+                display: flex;
+            }
+            
+            .review-heat h6 {
+                margin: 1rem 0 0 1rem;
+                font-size: 1rem;
+            }
+            /* */
             /*---------HERO START---------*/
             
             .hero-div {
