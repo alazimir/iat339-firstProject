@@ -76,6 +76,26 @@
                 background-color: #ec686c;
             }
             
+            .submit-button {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .submit-button a {
+                background-color: #FF220C;
+                color: white;
+                padding: 1em 3em 1em 3em;
+                border-radius: 50px;
+                -webkit-transition: background-color 0.2s ease-in;
+                transition: background-color 0.2s ease-in;
+                text-decoration: none;
+            }
+            
+            .submit-button a:hover,
+            .submit-button a:focus {
+                background-color: #F65659;
+            }
+            /*
             .button-submit {
                 display: inline-block;
                 padding: 0.5em 0.75em;
@@ -91,6 +111,7 @@
             .button-submit:focus {
                 background-color: #777;
             }
+            */
             
             .intext-link {
                 color: #F43C40;
@@ -242,6 +263,63 @@
             nav {
                 display: flex;
                 flex-wrap: wrap;
+            }
+            
+            .top-nav-spread {
+                display: flex;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+                background-color: white;
+                -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+                -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+            }
+            
+            .top-nav-spread nav {
+                margin-right: 2em;
+            }
+            
+            .top-logo {
+                margin-left: 2rem;
+                margin-top: 0.5rem;
+                margin-top: 0.5rem;
+            }
+            
+            .main-nav-text {
+                margin: 0.5rem 0.5rem;
+            }
+            
+            div.button-cart {
+                position: relative;
+            }
+            
+            button.button-cart {
+                background: rgba(0, 0, 0, 0);
+                padding: 0 0 0rem 0.9rem;
+                border: 1px solid #FF220C;
+                border-radius: 5px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: #121212;
+                vertical-align: middle;
+                text-align: left;
+                height: 2.75rem;
+                width: 7.5rem;
+                cursor: pointer;
+                position: relative;
+            }
+            
+            button.button-cart:hover {
+                color: #FF220C;
+            }
+            
+            .button-cart img {
+                right: 0.9rem;
+                top: 0.75rem;
+                position: absolute;
             }
             /* Help on how to make product cards from https://www.w3schools.com/howto/howto_css_product_card.asp */
             

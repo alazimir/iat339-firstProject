@@ -37,7 +37,6 @@
             <a class="intext-link" href="#interactive_elements">Interactive Elements</a>,
             <a class="intext-link" href="#text_elements">Text Elements</a>,
             <a class="intext-link" href="#combined_elements">Combined Elements</a>,
-
         </p>
 
     </section>
@@ -78,13 +77,15 @@
             <h2>Submit/Reset Buttons</h2>
 
             <h3>CSS selector:</h3>
-            <p>.button-submit</p>
+            <p>.submit-button</p>
 
             <h3>Sample code:</h3>
             <code>&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;</code>
 
             <h3>Rendered element:</h3>
-            <a class="button-submit" href="#">Submit</a>
+            <div class="submit-button">
+                <a href="#">Submit</a>
+            </div>
         </section>
 
         <section>
@@ -206,13 +207,19 @@
           </code>
 
             <h3>Rendered element:</h3>
-            <nav>
-                <a href="#">home</a>
-                <a href="#">products</a>
-                <a href="#">about</a>
-                <a href="#">support</a>
-            </nav>
-
+            <div class="top-nav-spread">
+                <a href="index.html"><img class="top-logo" src="img/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+                <nav>
+                    <a class="main-nav-text" href=index.html>home</a>
+                    <a class="main-nav-text" href="store.html">store</a>
+                    <a class="main-nav-text" href="about.html">about</a>
+                    <a class="main-nav-text" href="contact.html">contact</a>
+                    <div class="button-cart">
+                        <img id="cartIcon" src="img/shoppingCartIcon.svg" alt="Shopping cart">
+                        <a href="cart.html"><button class="button-cart">cart <span id="cartNum">0</span></button></a>
+                    </div>
+                </nav>
+            </div>
         </section>
 
         <section>
