@@ -37,11 +37,11 @@
             <a class="intext-link" href="#interactive_elements">Interactive Elements</a>,
             <a class="intext-link" href="#text_elements">Text Elements</a>,
             <a class="intext-link" href="#combined_elements">Combined Elements</a>,
-            
+
         </p>
 
     </section>
-    
+
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
 
@@ -219,22 +219,27 @@
             <h2>Product Listing</h2>
 
             <h3>CSS selector:</h3>
-            <p>.product-card</p>
+            <p>.product-listing</p>
 
             <h3>Sample code:</h3>
             <code>
-            &lt;div class="product-card"&gt; <br> &nbsp;
+            &lt;div class="product-listing"&gt; <br> &nbsp;
             &lt;img src="img/hot_sauce_1.png"&gt; <br> &nbsp;
-            &lt;h3&gt; Title&lt;/h3&gt;
-              &lt;h3 class="product-price"&gt;price$&lt;/h3&gt;<br> &nbsp;
-              
-            &lt;p>Description&lt;/p&gt; <br>
-              &lt;/div&gt;
+                &lt;a href="product_hot.html&gt; <br>
+                    &lt;div class="card-overlay"&gt; <br> &nbsp;
+                        &lt;h1&gt;Heat&lt;/h3&gt;<br> &nbsp;
+                        &lt;h1&gt;9/10&lt;/h3&gt;<br> &nbsp;
+                    &lt;/div&gt; <br>
+                    &lt;h3&gt;Habanero | Melinda's&lt;/h3&gt;<br> &nbsp;
+                    &lt;h4&gt;$12&lt;/h4&gt;<br> &nbsp;
+                &lt;/a&gt; <br>
+            &lt;/div&gt;
             
           </code>
 
             <h3>Rendered element:</h3>
 
+            <!--
             <div class="product-card">
                 <img src="img/hot_sauce_1.png">
                 <h3> Cajun Hot Sauce</h3>
@@ -242,6 +247,19 @@
 
                 <p>Brief description of the product here. Talking about the composition and flavour notes.</p>
 
+            </div>
+            -->
+
+            <div class="size1of4 product-listing hot-heat new-item melindas-brand">
+                <img src="img/hot_sauce_1.png" alt="Hot Sauce Product">
+                <a href="product_hot.html">
+                    <div class="card-overlay">
+                        <h1>Heat</h1>
+                        <h1>9/10</h1>
+                    </div>
+                </a>
+                <h3>Habanero | Melinda's</h3>
+                <h4><strong>$12</strong></h4>
             </div>
 
         </section>
@@ -363,15 +381,15 @@
         <img src="svg/pastel-red.svg" alt="Light Red Circle">
         <h3>Pastel Red</h3>
         <p>#F66366 <br> rgb (246,99,102) <br> Outline color.</p>
-        
+
         <img src="svg/dark-green.svg" alt="Green Circle">
         <h3>Dark Green</h3>
         <p>#042A2B <br> rgb (252, 249, 249) <br>Outline Color.</p>
-        
+
         <img src="svg/selective-yellow.svg" alt="Yellow Circle">
         <h3>Selective Yellow</h3>
         <p>#F3B700 <br> rgb (252, 249, 249) <br>Color.</p>
-            
+
         <img src="svg/off-white.svg" alt="White Circle">
         <h3>Off White</h3>
         <p>#F6F7EB <br> rgb (252, 249, 249) <br>Accent Color.</p>
@@ -379,7 +397,7 @@
         <img src="svg/black.svg" alt="Black Circle">
         <h3>Charcole</h3>
         <p>#212121 <br> rgb (33,33,33) <br> Text color.</p>
-        
+
     </section>
 
     <!-- Inspo Pictures -->
