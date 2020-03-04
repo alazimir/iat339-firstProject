@@ -1134,6 +1134,17 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             }
 
             /*--------- PRODUCT PAGE END---------*/
+
+            /*----------Thank you page start-----*/
+            .thankyou-section {
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .thankyou-section h2 {
+                padding-bottom: 2rem;
+            }
+
             /*  INTERACTIVE ELEMENTS ------------------- */
             /* Styling for the navigation button */
             /*.button-nav {
@@ -1761,8 +1772,17 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                     text-align: center;
                 }
 
+/*                Start Product Page*/
+                .container-product-page {
+                    padding-top: 2rem;
+                }
+                
                 .product-area-container {
                     padding: 0;
+                }
+                
+                .product-info h1 {
+                    padding-bottom: 0.6rem;
                 }
 
                 /*                Small screen price and quantity divs*/

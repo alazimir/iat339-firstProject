@@ -35,13 +35,16 @@ function decreaseQuantNum() {
 
 function addToCart() {
     if (itemCount > 0) {
-        var preCartNum = document.getElementById("cartNum").innerHTML;
+        var preCartNums = document.getElementsByClassName('cartNum');
+        console.log(preCartNums);
 
-        preCartNumParsed = parseInt(preCartNum);
+        preCartNumParsed = parseInt(preCartNums[0].innerHTML);
 
         newNum = preCartNumParsed + itemCount;
 
-        document.getElementById('cartNum').innerHTML = newNum;
+        var cartNums = document.getElementsByClassName('cartNum').innerHTML;
+        preCartNums[0].innerHTML = newNum;
+        preCartNums[1].innerHTML = newNum;
 
         //    How to change src with JS https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
         var cartImg = document.getElementsByClassName("cartIcon");
@@ -242,7 +245,9 @@ function setCartNumItems() {
     if(sessionStorage.getItem('cartNumItems') == null){
         sessionStorage.setItem('cartNumItems', 0);
     }
-    document.getElementById("cartNum").innerHTML = sessionStorage.getItem('cartNumItems');
+    var cartNumsSet = document.getElementsByClassName("cartNum");
+    cartNumsSet[0].innerHTML = sessionStorage.getItem('cartNumItems');
+    cartNumsSet[1].innerHTML = sessionStorage.getItem('cartNumItems');
     
     if(parseInt(sessionStorage.getItem('cartNumItems')) > 0){
         var cartImg = document.getElementsByClassName("cartIcon");

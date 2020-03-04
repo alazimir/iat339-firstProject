@@ -1,0 +1,719 @@
+            /*
+  Started from "Style Guide Template. Made by Paul Brokenshire at SFU for SFU-IAT339
+*/
+            
+            * {
+                /*Set everything to use border-box model*/
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+            
+            body {
+                background-color: #F8FAA4;
+                padding: 1rem 2rem;
+                margin: auto;
+            }
+            
+            html {
+                font-size: 16px;
+            }
+            
+            #top-nav a {
+                width: 20%;
+                text-align: center;
+            }
+            
+            section nav {
+                margin: 2rem auto;
+                width: 100%;
+            }
+            
+            section:not([id]) {
+                margin: 2rem auto;
+                padding: 2rem;
+                border: 3px solid #555;
+                background: #FFF;
+                width: 100%;
+            }
+            
+            section h3 {
+                margin-bottom: 0.5rem;
+            }
+            
+            section p {
+                margin-top: 0;
+            }
+            
+            section code {
+                background-color: #EEE;
+                padding: 0.5rem 0.75rem;
+                margin: 0.5rem;
+                display: block;
+            }
+            
+            .sitemap-image {
+                width: 100%;
+            }
+            /* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+            
+            .container {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+            }
+            /* Styling for the navigation button */
+            
+            .button-nav {
+                display: inline-block;
+                padding: 0.5em 0.75em;
+                color: #FFF;
+                background-color: #F43C40;
+                border-radius: 0.25em;
+                text-decoration: none;
+                -webkit-transition: background-color 0.5s ease-out;
+                transition: background-color 0.5s ease-out;
+            }
+            
+            .button-nav:hover,
+            .button-nav:focus {
+                background-color: #ec686c;
+            }
+            
+            .submit-button {
+                width: 100%;
+                text-align: center;
+                margin-top: 2em;
+            }
+            
+            .submit-button a {
+                background-color: #FF220C;
+                color: white;
+                padding: 1em 3em 1em 3em;
+                border-radius: 50px;
+                -webkit-transition: background-color 0.2s ease-in;
+                transition: background-color 0.2s ease-in;
+                text-decoration: none;
+            }
+            
+            .submit-button a:hover,
+            .submit-button a:focus {
+                background-color: #F65659;
+            }
+            /*
+            .button-submit {
+                display: inline-block;
+                padding: 0.5em 0.75em;
+                color: #FFF;
+                background-color: #333;
+                border-radius: 0.25em;
+                text-decoration: none;
+                -webkit-transition: background-color 0.5s ease-out;
+                transition: background-color 0.5s ease-out;
+            }
+            
+            .button-submit:hover,
+            .button-submit:focus {
+                background-color: #777;
+            }
+            */
+            
+            .store-cards {
+                padding: 0rem;
+                margin-top: 4rem;
+            }
+            
+            .store-cards h2 {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .store-cards a {
+                text-decoration: none;
+            }
+            
+            .category-card {
+                margin-bottom: 2rem;
+            }
+            
+            .category-card p {
+                padding-top: 0;
+            }
+            
+            .category-card-background {
+                background-color: white;
+                margin: 0rem 1rem 1rem 1rem;
+                padding: 0rem;
+                text-align: center;
+            }
+            
+            .category-card img {
+                position: relative;
+                margin: auto;
+                display: block;
+                /*                height: 300px;*/
+                width: 100%;
+            }
+            
+            .category-card h3 {
+                padding-bottom: 0.5rem;
+            }
+            
+            .intext-link {
+                color: #F43C40;
+                text-decoration: none;
+                -webkit-transition: background-color 0.3s ease-out;
+                transition: background-color 0.3s ease-out;
+            }
+            
+            .intext-link:hover {
+                color: #FFF;
+                background-color: #F43C40;
+                padding: 0.1em 0.1em;
+                border-radius: 0.25em;
+            }
+            /* How to make forms https://www.w3schools.com/html/html_forms.asp */
+            
+            .input-text {
+                width: 20%;
+                padding: 0.5rem;
+                border: 1px solid #9AB29A;
+                border-radius: 5px;
+            }
+            
+            .input-text:focus {
+                border: 2px solid #9AB29A;
+                outline: none;
+            }
+            /* 
+  TEXT ELEMENTS -------------------
+*/
+            
+            p,
+            h1,
+            h2,
+            h3 {
+                /*Changing the color of all text*/
+                color: #212121;
+            }
+            
+            p {
+                font-family: 'Hind', sans-sarif;
+                font-weight: 400;
+                font-size: 1rem;
+                /*16px*/
+            }
+            
+            em {
+                font-family: 'Hind', sans-sarif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 1rem;
+                /*16px*/
+            }
+            
+            h1 {
+                font-family: 'Montserrat', sans-sarif;
+                font-weight: 700;
+                font-size: 2.875rem;
+                /*46px*/
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+            
+            h2 {
+                font-family: 'Hind', sans-sarif;
+                font-weight: 500;
+                font-size: 2.125rem;
+                /*34px*/
+                margin-bottom: 1rem;
+                margin-top: 0.2rem;
+            }
+            
+            h3 {
+                font-family: 'Hind', sans-sarif;
+                font-weight: 500;
+                font-size: 1.25rem;
+                /*24px*/
+                margin-bottom: 0.5rem;
+            }
+            
+            .bullet-list {
+                list-style: none;
+                padding: 0 1rem;
+            }
+            /* How to color bullet points https://www.w3schools.com/howto/howto_css_bullet_color.asp
+*/
+            
+            .bullet-list-item::before {
+                content: "\2022";
+                /* Unicode for bullet point */
+                color: #F43C40;
+                display: inline-block;
+                margin: 0.5rem 1rem 0 0;
+            }
+            
+            .numbered-list {
+                list-style: upper-roman
+            }
+            /* 
+  COMBINED ELEMENTS -------------------
+*/
+            /* How to make nav from https://www.w3docs.com/learn-html/html-nav-tag.html
+*/
+            
+            nav a {
+                background-color: #FFFFFF;
+                position: relative;
+                color: #000000;
+                padding: 0.8rem 1.5rem;
+                display: inline;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 1.4rem;
+                z-index: 2;
+            }
+            
+            nav a:hover {
+                /*    background-color: #AAAAAA;*/
+                color: #000;
+            }
+            /* Underline Animation Modified from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+        */
+            
+            nav a::before {
+                content: "";
+                position: absolute;
+                margin-left: 25%;
+                width: 50%;
+                height: 3px;
+                bottom: 18px;
+                left: 0;
+                background-color: #FF3637;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0s ease-in-out 0s;
+                transition: all 0.2s ease-in-out 0s;
+                z-index: -1;
+            }
+            
+            nav a:hover::before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                z-index: -1;
+            }
+            
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            .top-nav-spread {
+                display: flex;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+                background-color: white;
+                -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+                -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+            }
+            
+            .top-nav-spread nav {
+                margin-right: 2em;
+            }
+            
+            .top-logo {
+                margin-left: 2rem;
+                margin-top: 0.5rem;
+                margin-top: 0.5rem;
+            }
+            
+            .main-nav-text {
+                margin: 0.5rem 0.5rem;
+            }
+            
+            div.button-cart {
+                position: relative;
+            }
+            
+            button.button-cart {
+                background: rgba(0, 0, 0, 0);
+                padding: 0 0 0rem 0.9rem;
+                border: 1px solid #FF220C;
+                border-radius: 5px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: #121212;
+                vertical-align: middle;
+                text-align: left;
+                height: 2.75rem;
+                width: 7.5rem;
+                cursor: pointer;
+                position: relative;
+            }
+            
+            button.button-cart:hover {
+                color: #FF220C;
+            }
+            
+            .button-cart img {
+                right: 0.9rem;
+                top: 0.75rem;
+                position: absolute;
+            }
+            /* Help on how to make product cards from https://www.w3schools.com/howto/howto_css_product_card.asp */
+            
+            .product-card {
+                border: 2px solid #ccc;
+                max-width: 300px;
+                margin: auto;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            }
+            
+            .product-card img {
+                width: 100%;
+            }
+            /* Product Listing */
+            
+            .product-listing {
+                /*                width: 25%;*/
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                margin-top: 2rem;
+                padding: 1rem;
+                position: relative;
+            }
+            
+            .product-listing img {
+                width: 100%;
+                margin: 1rem 0 0 0;
+                padding: 0;
+            }
+            
+            .product-listing h3 {
+                margin-top: 0.3rem;
+            }
+            
+            .product-listing h4 {
+                margin-top: 0;
+            }
+            
+            .product-listing a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .product-listing .strikethrough {
+                text-decoration: line-through;
+                font-size: 1.3rem;
+            }
+            
+            .card-overlay {
+                /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
+                opacity: 0;
+                width: 90%;
+                height: 80%;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+                transition: opacity 0.3s ease;
+                text-align: center;
+            }
+            
+            .product-listing:hover .card-overlay {
+                opacity: 1;
+            }
+            /* Grid stuff */
+            
+            .container {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .container-style-guide {
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .container-style-guide div {
+                box-sizing: border-box;
+                padding: 10px;
+                border: 10px solid #41354D;
+                margin: 1rem 0rem;
+                background-color: #FFD195;
+            }
+            /*---------CART START---------*/
+            
+            .cart-header {
+                border-bottom: 1px solid #ccc !important;
+            }
+            
+            .cart-product {
+                padding: 2em 0em;
+            }
+            
+            .cart-header h3 {
+                color: #b3b3b3;
+            }
+            /*---------CART END---------*/
+            /* */
+            
+            .reviews {
+                width: 72%;
+                margin: 0 auto;
+                padding-bottom: 3rem;
+            }
+            
+            .reviews p {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .review-card {
+                border-top: 1px solid #333333;
+                display: flex;
+                padding-bottom: 2rem;
+            }
+            
+            .reviews img {
+                width: 180px;
+            }
+            
+            .review-date-name {
+                display: flex;
+                flex: 1 1;
+                flex-direction: column;
+                padding-top: 1.5rem;
+            }
+            
+            .review-rate-copy {
+                flex: 3 3;
+            }
+            
+            .review-rate {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 0 2rem 0;
+            }
+            
+            .review-heat {
+                display: flex;
+            }
+            
+            .review-heat h6 {
+                margin: 1rem 0 0 1rem;
+                font-size: 1rem;
+            }
+            /* */
+            /*---------HERO START---------*/
+            
+            .hero-div {
+                /*                    Cropping an image resize friendly https://css-tricks.com/crop-top/*/
+                background-image: url(../img/lineupOfSaucesRedBackground.jpg);
+                overflow-x: hidden;
+                width: 100%;
+                height: 500px;
+                /*                    background-position: center top;*/
+                background-position: 60% 10%;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                /*                    justify-content: space-around;*/
+            }
+            
+            .hero-text {
+                padding-top: 1rem;
+            }
+            
+            .hero-text h2 {
+                color: #eeeeee;
+                padding: 0rem 2rem;
+                margin: 0;
+            }
+            
+            .hero-button h5 {
+                color: #eeeeee;
+                border: 2px solid #ffffff;
+                border-radius: 50px;
+                margin: 0;
+                margin-top: 0.5rem;
+                padding: 0.2rem 1.5rem;
+            }
+            
+            .hero-button h5:hover {
+                border-color: #DFBA2E;
+            }
+            /*---------HERO END---------*/
+            /*Sizes from MailChips style guide https://ux.mailchimp.com/patterns/grid*/
+            
+            .size1of8 {
+                width: 12.5%;
+            }
+            
+            .size1of4,
+            .size2of8 {
+                width: 25%;
+            }
+            
+            .size1of3 {
+                width: 33.33%;
+            }
+            
+            .size3of8 {
+                width: 37.5%;
+            }
+            
+            .size1of2,
+            .size2of4,
+            size4of8 {
+                width: 50%;
+            }
+            
+            .size5of8 {
+                width: 62.5%;
+            }
+            
+            .size2of3 {
+                width: 66.67%;
+            }
+            
+            .size3of4,
+            size6of8 {
+                width: 75%;
+            }
+            
+            .size7of8 {
+                width: 87.5%;
+            }
+            
+            .size1of1,
+            .size2of2,
+            .size3of3,
+            .size4of4,
+            .size8of8 {
+                width: 100%;
+            }
+            /* Underline color help https://www.w3schools.com/cssref/css3_pr_text-decoration-color.asp
+*/
+            
+            .product-card h3 {
+                margin: 1rem;
+                display: inline-block;
+                text-decoration: underline;
+                text-decoration-color: red;
+            }
+            
+            .product-card p {
+                margin: 1rem;
+            }
+            
+            .product-price {
+                float: right;
+            }
+            
+            #grid_img {
+                width: 100%;
+            }
+            
+            .greybox-wireframe {
+                overflow: auto;
+            }
+            
+            .greybox-wireframe img {
+                width: 50%;
+            }
+            
+            .float-right {
+                float: right;
+            }
+            /* Brand Direction */
+            
+            .brand-direction img {
+                width: 49%;
+                margin: 0;
+                padding: 0;
+            }
+            /* Media queries */
+            
+            @media(min-width:1200px) {
+                section:not([id]) {
+                    max-width: 1200px;
+                }
+                section nav {
+                    max-width: 1200px;
+                }
+            }
+            
+            @media(max-width:1000px) {
+                .size1of8 {
+                    width: 25%;
+                }
+                .size1of4,
+                .size2of8 {
+                    width: 50%;
+                }
+                .size1of3 {
+                    width: 100%;
+                }
+                .size3of8 {
+                    /*    width:37.5%; Not sure what to do about this*/
+                }
+                .size1of2,
+                .size2of4,
+                size4of8 {
+                    width: 100%;
+                }
+                .size5of8 {
+                    width: 100%;
+                }
+                .size2of3 {
+                    width: 100%;
+                }
+                .size3of4,
+                size6of8 {
+                    width: 100%;
+                }
+                .size7of8 {
+                    width: 100%;
+                }
+                .size1of1,
+                .size2of2,
+                .size3of3,
+                .size4of4,
+                .size8of8 {
+                    width: 100%;
+                }
+            }
+            
+            @media(max-width:600px) {
+                .size1of4,
+                .size2of8 {
+                    width: 100%;
+                }
+                .size1of8 {
+                    width: 100%;
+                }
+                #top-nav a {
+                    width: 100%;
+                }
+            }
