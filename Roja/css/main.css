@@ -347,6 +347,8 @@
                 text-decoration: line-through;
             }
 
+            
+
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
                 opacity: 0;

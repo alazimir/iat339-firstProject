@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Roja Hot Sauce</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900,700|Hind:300,500,600&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="setCartNumItems();">
+    <!-- Start Navigtion bar-->
+    <div class="top-nav-spread">
+        <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+        <nav>
+            <a class="main-nav-text" href=index.html>home</a>
+            <a class="main-nav-text" href="store.html">store</a>
+            <a class="main-nav-text" href="about.html">about</a>
+            <a class="main-nav-text" href="contact.html">contact</a>
+            <div class="button-cart">
+                <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+                <a href="cart.html"><button class="button-cart">cart <span id="cartNum">0</span></button></a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="collapsedTopNav" class="collapsed-top-nav">
+        <a class="close-button" onclick="closeNav();">&times;</a>
+        <a class="collapsed-nav-text" href=index.html>home</a>
+        <a class="collapsed-nav-text" href="store.html">store</a>
+        <a class="collapsed-nav-text" href="about.html">about</a>
+        <a class="collapsed-nav-text" href="contact.html">contact</a>
+    </div>
+
+    <div class="condensed-top-nav">
+        <button onclick="openNav();">menu</button>
+        <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
+        <div class="button-cart">
+            <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+            <a href="cart.html"><button class="button-cart"><span id="cartNum">0</span></button></a>
+        </div>
+    </div>
+    <!--    Top nav end-->
+
+    <div id="added-tocart-popup">
+        <h5>Added to cart!</h5>
+    </div>
+
+    <div class="container-product-page">
+        <div class="product-image size1of2">
+            <img src="images/sauces/mediumHotSauce_Large.jpg">
+        </div>
+        <div class="product-info size1of2">
+            <div class="product-info-header">
+                <h1>Medium</h1>
+                <div class="info-subheaders">
+                    <h4>Currie</h4>
+                    <h4>Heat 4/10</h4>
+                </div>
+            </div>
+
+            <div class="product-info-description">
+                <p>Good food that does your body good - USDA certified organic hot sauce with turmeric. Ideal for keto diets with 0 carbs 0 sugar.</p>
+                <p>Made in Canada.</p>
+            </div>
+
+            <div class="product-info-cart-area">
+                <div class="price-quantity">
+                    <div class="price">
+                        <h5>10$</h5>
+                        <h6>CAD</h6>
+                    </div>
+                    
+                </div>
+                <div class="out-of-stock">
+                    <button>Sorry this product is out of stock</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews-header">
+        <h1> Reviews</h1>
+        <a href="#leaveAReview"><button><h3>Leave a Review</h3></button></a>
+    </div>
+    <div class="reviews">
+
+        <div class="review-card">
+            <div class="review-date-name">
+                <p>1/21/2020</p>
+                <p><strong>Sarah Smith</strong></p>
+            </div>
+
+            <div class="review-rate-copy">
+                <div class="review-rate">
+                    <img src="images/ratingStars/star3.svg" alt="Three star review">
+                    <div class="review-heat">
+                        <img src="images/ratingHeat/heat4.svg" alt="Four heat level review">
+                        <h6>Heat</h6>
+                    </div>
+                </div>
+                <div class="review-copy">
+                    <p>Pretty tasty but not quite as hot as I was expecting. Still an okay addition to the collection.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-date-name">
+                <p>1/17/2020</p>
+                <p><strong>Beth Janson</strong></p>
+            </div>
+
+            <div class="review-rate-copy">
+                <div class="review-rate">
+                    <img src="images/ratingStars/star5.svg" alt="Three star review">
+                    <div class="review-heat">
+<!--                        <h6>Heat : </h6>-->
+                        <img src="images/ratingHeat/heat5.svg" alt="Four heat level review">
+                    </div>
+                </div>
+                <div class="review-copy">
+                    <p>Wow thats hot. Deep intense flavor that really enhanced my meal! I always know when a sauce is going to be real hot when my dog Rover won't touch it! He normally eats everything. Last week after I got back from mom's house I had some leftovers. Lord knows she loves to cook and always sends me home with extra! Shes been like that ever since I was young. Anyways where was I, oh yes Rover got right into the leftover pie before I could think twice about leaving it on the counter. But this sauce oooo noooo he says mama I don't like that one too spicy for me. Good sauce yum.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="review-card">
+            <div class="review-date-name">
+                <p>12/20/2019</p>
+                <p><strong>Gary Tuft</strong></p>
+            </div>
+
+            <div class="review-rate-copy">
+                <div class="review-rate">
+                    <img src="images/ratingStars/star0.svg" alt="Zero star review">
+                    <div class="review-heat">
+<!--                        <h6>Heat : </h6>-->
+                        <img src="images/ratingHeat/heat0.svg" alt="Zero heat level review">
+                    </div>
+                </div>
+                <div class="review-copy">
+                    <p>didnt like it not for me</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-date-name">
+                <p>11/15/2019</p>
+                <p><strong>Tyler Barlow</strong></p>
+            </div>
+
+            <div class="review-rate-copy">
+                <div class="review-rate">
+                    <img src="images/ratingStars/star4.svg" alt="Four star review">
+                    <div class="review-heat">
+<!--                        <h6>Heat : </h6>-->
+                        <img src="images/ratingHeat/heat5.svg" alt="Five heat level review">
+                    </div>
+                </div>
+                <div class="review-copy">
+                    <p>I'm down for this hot sauce. This isn't the kind of sauce you can put on everything, but it's a fun treat when you cravin that heat.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-info-header" id="leaveAReview">
+                <h1>Leave a Review</h1>
+        </div>
+        <div class="review-leave">
+            <div class="leave-name-rate">
+                <div>
+                    <label class="contact-label" for="name">Name</label>
+                    <input class="contact-small-input" type="text" id="name" name="name" value="" placeholder="Name">
+                </div>
+                
+                <div>
+                    <label class="contact-label" for="email">Email</label>
+                    <input class="contact-small-input" type="text" id="email" name="email" value="" placeholder="Email">
+                </div>
+                
+                <div>
+                    <label class="contact-label" for="rating">Rating</label>
+                    <input class="contact-small-input" type="text" id="rating" name="rating" value="" placeholder="Rating">
+                </div>
+                
+                <div>
+                    <label class="contact-label" for="heat">Heat</label>
+                    <input class="contact-small-input" type="text" id="heat" name="heat" value="" placeholder="Heat">
+                </div>
+            </div>
+            <div class="leave-comment">
+                <label class="contact-label" for="comment">Comment</label>
+                <input class="contact-large-input" type="text" id="comment" name="comment" value="" placeholder="Comment">
+            </div>
+        </div>
+        <input class="contact-submit-button" type="submit" value="Submit">
+
+    </div>
+
+    <div id="footer">
+        <section style="margin: 0 auto;">
+            <img src="images/logo-icon.png" alt="Roja Logo Icon">
+            <p><strong>© 2020 Roja Hot Sauce, Inc. All Rights Reserved.</strong></p>
+            <a href="citations.html">citations</a>
+            <a href="about.html">about us</a>
+            <a href="contact.html">contact us</a>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
