@@ -96,9 +96,9 @@
             <div id="collapsedSideFilters" class="collapsed-side-filters">
                 <a class="close-button" onclick="closeFilters();">&times;</a>
                 <h2>Sauces</h2>
-                <h3 class="selected-side-nav" onclick="showOnly(this, 'all-heat');">All Sauces</h3>
+                <h3 class="selected-side-nav" onclick="showOnly(this, 'all-heat'); closeFilters();">All Sauces</h3>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'sale');">On Sale</h3>
+                    <h3 onclick="showOnly(this, 'sale'); closeFilters();">On Sale</h3>
                 </a>
                 <a href="#">
                     <h3 onclick="showOnly(this, 'new');">New Items</h3>
@@ -106,30 +106,30 @@
 
                 <h2>Heat</h2>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'mild-heat');">Mild heat</h3>
+                    <h3 onclick="showOnly(this, 'mild-heat'); closeFilters();">Mild heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'medium-heat');">Medium heat</h3>
+                    <h3 onclick="showOnly(this, 'medium-heat'); closeFilters();">Medium heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'hot-heat');">Hot heat</h3>
+                    <h3 onclick="showOnly(this, 'hot-heat'); closeFilters();">Hot heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'insane-heat');">Insane heat</h3>
+                    <h3 onclick="showOnly(this, 'insane-heat'); closeFilters();">Insane heat</h3>
                 </a>
 
                 <h2>Brands</h2>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'melindas-brand')">Melinda's</h3>
+                    <h3 onclick="showOnly(this, 'melindas-brand'); closeFilters();">Melinda's</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'daves-brand')">Dave's</h3>
+                    <h3 onclick="showOnly(this, 'daves-brand'); closeFilters();">Dave's</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'currie-brand')">Currie</h3>
+                    <h3 onclick="showOnly(this, 'currie-brand'); closeFilters();">Currie</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'tessemaes-brand')">Tessemae's</h3>
+                    <h3 onclick="showOnly(this, 'tessemaes-brand'); closeFilters();">Tessemae's</h3>
                 </a>
             </div>
 
@@ -188,7 +188,7 @@
                 <h4><strong>$9</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing hot-heat melindas-brand">
+            <div class="size1of4 product-listing hot-heat on-sale melindas-brand">
                 <img src="images/hotHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">
@@ -197,7 +197,7 @@
                     </div>
                 </a>
                 <h3>Habanero | Melinda's</h3>
-                <h4><strong>$12</strong></h4>
+                <h4><span class="strikethrough"><strong>$12</strong></span> $7</h4>
             </div>
 
             <div class="size1of4 product-listing insane-heat daves-brand">
@@ -212,7 +212,7 @@
                 <h4><strong>$14</strong></h4>
             </div>
 
-            <div class="size1of4 product-listing medium-heat currie-brand">
+            <div class="size1of4 product-listing medium-heat new-item currie-brand">
                 <img src="images/mediumHotSauce.jpg" alt="Hot Sauce Product">
                 <a href="product-1.html">
                     <div class="card-overlay">

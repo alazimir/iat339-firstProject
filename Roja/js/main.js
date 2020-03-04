@@ -147,8 +147,8 @@ function showOnly(element, select) {
         document.getElementById("storeCurrentPara").innerHTML = "These are are most recently added sauces. Try them out and leave a review telling us what you think!";
 
             
-        for (var i = 0; i < onSale.length; i++) {
-            onSale[i].style.display = "flex";
+        for (var i = 0; i < newItems.length; i++) {
+            newItems[i].style.display = "flex";
         }
     }
 
