@@ -729,6 +729,15 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             
             .cart-content {
                 padding: 2em;
+                text-align: center;
+            }
+            
+            .cart-content-product-name {
+                font-weight: bold;
+            }
+            
+            .border-bottom {
+                border-bottom: 2px solid rgba(78, 78, 78, 0.288);
             }
             
             .transaction-button a {
@@ -1439,8 +1448,20 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             }
             
             @media(max-width:1000px) {
+                .checkout label {
+                    display: none;
+                }
+                .checkout input::placeholder {
+                    color: #042A2B;
+                }
+                .cart-content {
+                    text-align: center;
+                }
                 .cart-product {
                     text-align: center;
+                }
+                .cart-product>div {
+                    display: inline-block;
                 }
                 .cart-header {
                     display: none;
