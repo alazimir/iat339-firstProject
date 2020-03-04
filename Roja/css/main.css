@@ -64,7 +64,7 @@
                 background-color: #04292B;
                 overflow-x: hidden;
                 padding-top: 100px;
-                transition: 1s;
+                transition: 0.5s;
                 z-index: 10;
             }
 
@@ -84,10 +84,10 @@
             .collapsed-top-nav .close-button {
                 position: absolute;
                 color: #fff;
-                top: 0;
                 right: 25px;
-                font-size: 2rem;
-                margin-left: 3rem;
+                font-size: 3rem;
+                top: 1rem;
+                right: 1rem;
                 cursor: pointer;
             }
 
@@ -344,7 +344,7 @@
 
             .product-listing a {
                 position: absolute;
-                width: 100%;
+                width: 97%;
                 height: 100%;
             }
 
@@ -399,16 +399,16 @@
                 background-color: #04292B;
                 overflow-x: hidden;
                 padding-top: 100px;
-                transition: 1s;
+                transition: 0.5s;
                 z-index: 10;
             }
 
             .collapsed-side-filters .close-button {
                 position: absolute;
                 color: #fff;
-                top: 3rem;
-                right: 3rem;
-                font-size: 2rem;
+                top: 1rem;
+                right: 1rem;
+                font-size: 3rem;
                 margin-left: 3rem;
                 cursor: pointer;
             }
@@ -422,7 +422,7 @@
             .collapsed-side-filters h3 {
                 color: #fff;
                 margin-top: 0rem;
-                margin-left: 5rem;
+                margin-left: 6rem;
                 font-weight: 400;
                 font-size: 1.2rem;
             }
@@ -1020,9 +1020,9 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 align-items: center;
             }
 
-            .reviews-header button {
+            .leave-a-review {
                 background-color: white;
-                border: 2px solid #333;
+                border: 2px solid #555;
                 outline: none;
                 padding: 0rem 1rem;
                 margin: 0;
@@ -1034,7 +1034,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 line-height: 45px;
             }
 
-            .reviews-header button:hover {
+            .leave-a-review:hover {
                 border-color: #FF220C;
             }
 
@@ -1145,6 +1145,22 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             .thankyou-section h2 {
                 padding-bottom: 2rem;
             }
+
+            /*-----Citation page start-----*/
+            .main-container-citations {
+                width: 80%;
+                margin: auto;
+            }
+
+.main-container-citations p {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.main-container-citations h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
             /*  INTERACTIVE ELEMENTS ------------------- */
             /* Styling for the navigation button */
@@ -1762,6 +1778,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
 
                 .top-logo {
                     width: 100px;
+                    margin-left: 0.4rem;
                 }
 
                 .hero-div {
@@ -1773,15 +1790,15 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                     text-align: center;
                 }
 
-/*                Start Product Page*/
+                /*                Start Product Page*/
                 .container-product-page {
                     padding-top: 2rem;
                 }
-                
+
                 .product-area-container {
                     padding: 0;
                 }
-                
+
                 .product-info h1 {
                     padding-bottom: 0.6rem;
                 }
