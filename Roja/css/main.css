@@ -898,14 +898,11 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 padding-right: 1rem;
                 padding-left: 1rem;
             }
-            
-            .quantity button:active {
-                background-color: #dddddd;
-            }
-            
-            .quantity button:last-child {
-                margin-right: 0;
-            }
+
+div.quantity-buttons {
+    display: flex;
+}
+
             
             .add-to-cart {
                 display: flex;
@@ -1651,12 +1648,40 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .top-logo {
                     width: 100px;
                 }
-                .hero img {
-                    min-width: 720px;
+                .hero-div{
+                    background-size: 1100px;
                 }
+                
+                .hero-text h2 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                
                 .product-area-container {
                     padding: 0;
                 }
+                
+/*                Small screen price and quantity divs*/
+                .price-quantity {
+                    flex-direction: column;
+                }
+                .price-quantity .price {
+                    flex-basis: auto;
+                }
+                
+                .price-quantity .quantity {
+                    flex-basis: auto;
+                    justify-content: space-between;
+                }
+                
+                .price-quantity .quantity h6:first-child {
+                    padding-left: 0;
+                }
+                
+                .product-info-description p:last-child {
+                    padding-bottom: 1rem;
+                }
+                
                 .filters-button {
                     width: 100%;
                 }

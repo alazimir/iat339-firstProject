@@ -80,11 +80,13 @@
                     <div class="quantity">
 
                         <h6>Quantity</h6>
-                        <img src="images/minusIcon.svg" onclick="decreaseQuantNum();" alt="Decrease quantity">
+                        <div class="quantity-buttons">
+                            <img src="images/minusIcon.svg" onclick="decreaseQuantNum();" alt="Decrease quantity">
 
-                        <h6 id="numItems">1</h6>
+                            <h6 id="numItems">1</h6>
 
-                        <img src="images/plusIcon.svg" onclick="increaseQuantNum();" alt="Increase quantity">
+                            <img src="images/plusIcon.svg" onclick="increaseQuantNum();" alt="Increase quantity">
+                        </div>
                     </div>
                 </div>
                 <div class="add-to-cart">
@@ -96,7 +98,9 @@
 
     <div class="reviews-header">
         <h1> Reviews</h1>
-        <a href="#leaveAReview" class="leave-a-review"><h3>Leave a Review</h3></a>
+        <a href="#leaveAReview" class="leave-a-review">
+            <h3>Leave a Review</h3>
+        </a>
     </div>
     <div class="reviews">
 
@@ -129,7 +133,7 @@
                 <div class="review-rate">
                     <img src="images/ratingStars/star5.svg" alt="Three star review">
                     <div class="review-heat">
-<!--                        <h6>Heat : </h6>-->
+                        <!--                        <h6>Heat : </h6>-->
                         <img src="images/ratingHeat/heat5.svg" alt="Four heat level review">
                     </div>
                 </div>
@@ -150,7 +154,7 @@
                 <div class="review-rate">
                     <img src="images/ratingStars/star0.svg" alt="Zero star review">
                     <div class="review-heat">
-<!--                        <h6>Heat : </h6>-->
+                        <!--                        <h6>Heat : </h6>-->
                         <img src="images/ratingHeat/heat0.svg" alt="Zero heat level review">
                     </div>
                 </div>
@@ -170,7 +174,7 @@
                 <div class="review-rate">
                     <img src="images/ratingStars/star4.svg" alt="Four star review">
                     <div class="review-heat">
-<!--                        <h6>Heat : </h6>-->
+                        <!--                        <h6>Heat : </h6>-->
                         <img src="images/ratingHeat/heat5.svg" alt="Five heat level review">
                     </div>
                 </div>
@@ -179,9 +183,9 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="product-info-header" id="leaveAReview">
-                <h1>Leave a Review</h1>
+            <h1>Leave a Review</h1>
         </div>
         <div class="review-leave">
             <div class="leave-name-rate">
@@ -189,17 +193,17 @@
                     <label class="contact-label" for="name">Name</label>
                     <input class="contact-small-input" type="text" id="name" name="name" value="" placeholder="Name">
                 </div>
-                
+
                 <div>
                     <label class="contact-label" for="email">Email</label>
                     <input class="contact-small-input" type="text" id="email" name="email" value="" placeholder="Email">
                 </div>
-                
+
                 <div>
                     <label class="contact-label" for="rating">Rating</label>
                     <input class="contact-small-input" type="text" id="rating" name="rating" value="" placeholder="Rating">
                 </div>
-                
+
                 <div>
                     <label class="contact-label" for="heat">Heat</label>
                     <input class="contact-small-input" type="text" id="heat" name="heat" value="" placeholder="Heat">
