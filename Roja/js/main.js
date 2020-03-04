@@ -133,7 +133,7 @@ function showOnly(element, select) {
     //Change sale back to flex
     if (select == 'sale') {
         document.getElementById("storeCurrentHeader").innerHTML = "On Sale Now";
-        document.getElementById("storeCurrentPara").innerHTML = "These sales won't last long! Grab yourself a discounted bottle today";
+        document.getElementById("storeCurrentPara").innerHTML = "These sales won't last long! Grab yourself a discounted bottle today.";
 
             
         for (var i = 0; i < onSale.length; i++) {
