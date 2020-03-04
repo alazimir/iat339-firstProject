@@ -44,7 +44,9 @@ function addToCart() {
         document.getElementById('cartNum').innerHTML = newNum;
 
         //    How to change src with JS https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
-        document.getElementById("cartIcon").src = "images/shoppingCartIconRed.svg";
+        var cartImg = document.getElementsByClassName("cartIcon");
+        cartImg[0].src = "images/shoppingCartIconRed.svg";
+        cartImg[1].src = "images/shoppingCartIconRed.svg";
 
         showDiv();
 
@@ -243,6 +245,8 @@ function setCartNumItems() {
     document.getElementById("cartNum").innerHTML = sessionStorage.getItem('cartNumItems');
     
     if(parseInt(sessionStorage.getItem('cartNumItems')) > 0){
-        document.getElementById("cartIcon").src = "images/shoppingCartIconRed.svg";
+        var cartImg = document.getElementsByClassName("cartIcon");
+        cartImg[0].src = "images/shoppingCartIconRed.svg";
+        cartImg[1].src = "images/shoppingCartIconRed.svg";
     }
 }
