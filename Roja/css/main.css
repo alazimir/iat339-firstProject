@@ -353,6 +353,11 @@
                 font-size: 1.3rem;
             }
 
+.product-listing span {
+    color: #555;
+    font-weight: 400;
+}
+
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
                 opacity: 0;
