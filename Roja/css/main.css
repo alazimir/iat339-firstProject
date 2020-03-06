@@ -178,6 +178,7 @@
             .store-cards h2 {
                 margin-left: 1rem;
                 margin-right: 1rem;
+                text-align: center;
             }
 
             .category-card {
@@ -246,6 +247,16 @@
 
             .our-story-banner img {
                 display: block;
+                width: 80%;
+            }
+
+            .our-story-banner h1 {
+                color: #fff;
+            }
+
+            .our-story-banner p {
+                color: #fff;
+                padding: 0;
             }
 
             /*---------OUR STORY BANNER END---------*/
@@ -353,10 +364,10 @@
                 font-size: 1.3rem;
             }
 
-.product-listing span {
-    color: #555;
-    font-weight: 400;
-}
+            .product-listing span {
+                color: #555;
+                font-weight: 400;
+            }
 
             .card-overlay {
                 /*Using opacity instead of display for transitions https://gist.github.com/richardscarrott/6457438*/
@@ -735,6 +746,10 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 width: 100%;
             }
 
+            .contact-us {
+                text-align: center;
+            }
+
             /*---------CONTACT FORM END---------*/
             /*---------CART START---------*/
 
@@ -746,8 +761,16 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 padding: 2em 0em;
             }
 
+            .cart-product img {
+                width: 50%;
+            }
+
             .cart-header h3 {
                 color: #b3b3b3;
+            }
+
+            .total-price {
+                text-align: center;
             }
 
             /*---------CART END---------*/
@@ -781,6 +804,18 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 font-weight: bold;
             }
 
+            .cart-content h1 {
+                text-align: center;
+            }
+
+            .cart-content h2 {
+                color: red;
+            }
+
+            .checkout-content h1 {
+                text-align: center;
+            }
+
             .border-bottom {
                 border-bottom: 2px solid rgba(78, 78, 78, 0.288);
             }
@@ -791,6 +826,11 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 background-color: red;
                 padding: 1em;
                 text-align: center;
+            }
+
+            .payment-types {
+                width: 100%;
+                padding 2rem;
             }
 
             /*---------CART SUMNMARY END---------*/
@@ -821,6 +861,8 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             .submit-button {
                 width: 100%;
                 text-align: center;
+                /*                margin-top: 2rem;*/
+                margin: 2rem 0rem;
             }
 
             .submit-button a {
@@ -843,8 +885,6 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
             .content-banner {
                 background-color: #042A2B;
             }
-
-            .content-banner div {}
 
             /*--------- CONTENT BANNER END---------*/
             /*--------- PRODUCT PAGE START---------*/
@@ -1686,6 +1726,7 @@ https://www.w3schools.com/howto/howto_css_placeholder.asp
                 .our-story-banner img {
                     display: none;
                 }
+
 
                 /* Footer*/
 
