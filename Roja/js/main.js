@@ -21,6 +21,24 @@ function closeFilters() {
 //Product Page Stuff Start
 var itemCount = 1;
 
+
+//Setting the current filter
+function setFilter(newFilter) {
+    console.log(newFilter);
+    
+    sessionStorage.setItem("currentFilter", newFilter);
+}
+
+function loadFilter(){
+    if(sessionStorage.getItem("currentFilter") != null){
+    showOnly(sessionStorage.getItem("currentFilter"));
+    }else{
+        showOnly('all-heat');
+    }
+    
+    sessionStorage.setItem("currentFilter", "all-heat");
+}
+
 function increaseQuantNum() {
     itemCount++;
     document.getElementById('numItems').innerHTML = itemCount;
@@ -57,9 +75,7 @@ function addToCart() {
 
     //How to store values across pages
     //https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
-    console.log(newNum);
     sessionStorage.setItem("cartNumItems", newNum);
-    console.log(sessionStorage.getItem("cartNumItems"));
 }
 
 //Popup Added to cart message
@@ -83,7 +99,7 @@ function doHide() {
 
 //Store stuff start
 
-function showOnly(element, select) {
+function showOnly(select) {
     //-----Get all side buttons
     var allFilterText = document.getElementById("sideMenu").querySelectorAll("h3");
 
@@ -93,7 +109,8 @@ function showOnly(element, select) {
     }
 
     //-----Set the button that called the function to selected class
-    element.classList.add("selected-side-nav");
+//    element.classList.add("selected-side-nav");
+   
 
     //-----Set arrays of all cards, and each heat level.
     //Selector info https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
@@ -126,6 +143,8 @@ function showOnly(element, select) {
 
     //-----Change all back to flex
     if (select == 'all-heat') {
+        document.getElementById("allSauces").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "All Sauces";
         document.getElementById("storeCurrentPara").innerHTML = "Every single sauce we carry. We are confident you can find something you like. If you can't, <a class=\"red-bold-text\" href=\"contact.html\">send us a message</a> with any suggestions!";
 
@@ -137,6 +156,8 @@ function showOnly(element, select) {
     
     //Change sale back to flex
     if (select == 'sale') {
+        document.getElementById("onSale").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "On Sale Now";
         document.getElementById("storeCurrentPara").innerHTML = "These sales won't last long! Grab yourself a discounted bottle today.";
 
@@ -148,6 +169,8 @@ function showOnly(element, select) {
     
     //Change sale back to flex
     if (select == 'new') {
+        document.getElementById("newItems").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Brand New Additions";
         document.getElementById("storeCurrentPara").innerHTML = "These are are most recently added sauces. Try them out and leave a review telling us what you think!";
 
@@ -159,6 +182,8 @@ function showOnly(element, select) {
 
     //-----Change mild classes back to flex
     if (select == 'mild-heat') {
+        document.getElementById("mildHeat").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Mild Sauces";
         document.getElementById("storeCurrentPara").innerHTML = "For those who like a lot of flavor without the heat. Try a new mild sauce like a tangy green chile sauce from Inthisorn Food's, or mild buffalo.";
         
@@ -169,6 +194,8 @@ function showOnly(element, select) {
 
       //-----Change medium classes back to flex
     if (select == 'medium-heat') {
+        document.getElementById("mediumHeat").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Medium Sauces";
         document.getElementById("storeCurrentPara").innerHTML = "While these sauces aren't going to burn your tounge off their flavour is nothing to scoff at. If you're craving a little kick with your food this is the place for you.";
         
@@ -179,6 +206,8 @@ function showOnly(element, select) {
 
     //-----Change hot classes back to flex
     if (select == 'hot-heat') {
+        document.getElementById("hotHeat").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Hot Sauces";
         document.getElementById("storeCurrentPara").innerHTML = "Now were bringing the heat. If you're here for the name of the game, jump into the hot sauces. Theres nothing quite like the burn of a habanero sauce.";
         
@@ -189,6 +218,8 @@ function showOnly(element, select) {
 
     //-----Change insane classes back to flex
     if (select == 'insane-heat') {
+        document.getElementById("insaneHeat").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Insane Sauces";
         document.getElementById("storeCurrentPara").innerHTML = "Only for the most extreme hot sauce fanatics. Caution required when testing a new ultra spicy ghost pepper sauce. It won't be an experience you soon forget.";
         
@@ -199,6 +230,8 @@ function showOnly(element, select) {
 
     //-----Change melindas back to flex
     if (select == 'melindas-brand') {
+        document.getElementById("melindas").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Melinda's Sauces"
         document.getElementById("storeCurrentPara").innerHTML = "";
             
@@ -209,6 +242,8 @@ function showOnly(element, select) {
 
     //-----Change daves back to flex
     if (select == 'daves-brand') {
+        document.getElementById("daves").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Dave's Sauces"
         document.getElementById("storeCurrentPara").innerHTML = "";
     
@@ -219,6 +254,8 @@ function showOnly(element, select) {
 
     //-----Change currie back to flex
     if (select == 'currie-brand') {
+        document.getElementById("currie").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Currie Sauces"
         document.getElementById("storeCurrentPara").innerHTML = "";
             
@@ -229,6 +266,8 @@ function showOnly(element, select) {
 
     //-----Change tessemaes back to flex
     if (select == 'tessemaes-brand') {
+        document.getElementById("tessemaes").classList.add("selected-side-nav");
+        
         document.getElementById("storeCurrentHeader").innerHTML = "Tessemae's Sauces"
         document.getElementById("storeCurrentPara").innerHTML = "";
             

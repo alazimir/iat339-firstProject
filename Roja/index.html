@@ -46,7 +46,7 @@
         <button onclick="openNav();">menu</button>
         <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
         <div class="button-cart">
-            <img id="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
+            <img class="cartIcon" src="images/shoppingCartIcon.svg" alt="Shopping cart">
             <a href="cart.html"><button class="button-cart"><span class="cartNum">0</span></button></a>
         </div>
     </div>
@@ -61,7 +61,7 @@
                 <h2>Big sale on mild sauces right now!</h2>
             </div>
             <div class="hero-button">
-                <a href="store.html">
+                <a onclick="setFilter('sale');" href="store.html">
                     <h5>Shop the sale</h5>
                 </a>
             </div>
@@ -77,7 +77,7 @@
                         <h3> Mild Spice</h3>
                         <p>
                             For those who like a lot of flavor without the heat. Try a new mild sauce like a tangy green chile sauce from Inthisorn Food's, or mild buffalo. </p>
-                        <a class="button-shop" href="store.html">Shop</a>
+                        <a class="button-shop" href="store.html" onclick="setFilter('mild-heat');">Shop</a>
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
                         <h3> Medium Spice</h3>
                         <p>
                             While these sauces aren't going to burn your tounge off their flavour is nothing to scoff at. If you're craving a little kick with your food this is the place for you.</p>
-                        <a class="button-shop" href="store.html">Shop</a>
+                        <a class="button-shop" href="store.html" onclick="setFilter('medium-heat');">Shop</a>
                     </div>
                 </div>
 
@@ -97,7 +97,7 @@
                         <h3> Hot Spice</h3>
                         <p>
                             Now were bringing the heat. If you're here for the name of the game, jump into the hot sauces. Theres nothing quite like the burn of a habanero sauce. </p>
-                        <a class="button-shop" href="store.html">Shop</a>
+                        <a class="button-shop" href="store.html" onclick="setFilter('hot-heat');">Shop</a>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
                         <h3> Insane Spice</h3>
                         <p>
                             Only for the most extreme hot sauce fanatics. Caution required when testing a new ultra spicy ghost pepper sauce. It won't be an experience you soon forget. </p>
-                        <a class="button-shop" href="store.html">Shop</a>
+                        <a class="button-shop" href="store.html" onclick="setFilter('insane-heat');">Shop</a>
                     </div>
                 </div>
             </div>

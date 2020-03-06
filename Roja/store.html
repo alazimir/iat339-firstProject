@@ -15,7 +15,7 @@
     <script src="js/main.js"></script>
 </head>
 
-<body onload="setCartNumItems();">
+<body onload="setCartNumItems(); loadFilter();">
     <!-- Start Navigtion bar-->
     <div class="top-nav-spread">
         <a href="index.html"><img class="top-logo" src="images/logoNoUnderText.svg" alt="Logo of company, Roja"> </a>
@@ -49,45 +49,44 @@
     </div>
     <!--    Top nav end-->
 
-    <!--    <section class="main-container">-->
     <div class="container store-container">
         <div class="side-menu-container">
             <div class="side-menu" id="sideMenu">
                 <h2>Sauces</h2>
-                <h3 class="selected-side-nav" onclick="showOnly(this, 'all-heat');">All Sauces</h3>
+                <h3 id="allSauces" class="selected-side-nav" onclick="showOnly('all-heat');">All Sauces</h3>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'sale');">On Sale</h3>
+                    <h3 id="onSale" onclick="showOnly('sale');">On Sale</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'new');">New Items</h3>
+                    <h3 id="newItems" onclick="showOnly('new');">New Items</h3>
                 </a>
 
                 <h2>Heat</h2>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'mild-heat');">Mild heat</h3>
+                    <h3 id="mildHeat" onclick="showOnly('mild-heat');">Mild heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'medium-heat');">Medium heat</h3>
+                    <h3 id="mediumHeat" onclick="showOnly('medium-heat');">Medium heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'hot-heat');">Hot heat</h3>
+                    <h3 id="hotHeat" onclick="showOnly('hot-heat');">Hot heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'insane-heat');">Insane heat</h3>
+                    <h3 id="insaneHeat" onclick="showOnly('insane-heat');">Insane heat</h3>
                 </a>
 
                 <h2>Brands</h2>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'melindas-brand')">Melinda's</h3>
+                    <h3 id="melindas" onclick="showOnly('melindas-brand')">Melinda's</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'daves-brand')">Dave's</h3>
+                    <h3 id="daves" onclick="showOnly('daves-brand')">Dave's</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'currie-brand')">Currie</h3>
+                    <h3 id="currie" onclick="showOnly('currie-brand')">Currie</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'tessemaes-brand')">Tessemae's</h3>
+                    <h3 id="tessemaes" onclick="showOnly('tessemaes-brand')">Tessemae's</h3>
                 </a>
 
             </div>
@@ -96,40 +95,40 @@
             <div id="collapsedSideFilters" class="collapsed-side-filters">
                 <a class="close-button" onclick="closeFilters();">&times;</a>
                 <h2>Sauces</h2>
-                <h3 class="selected-side-nav" onclick="showOnly(this, 'all-heat'); closeFilters();">All Sauces</h3>
+                <h3 class="selected-side-nav" onclick="showOnly('all-heat'); closeFilters();">All Sauces</h3>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'sale'); closeFilters();">On Sale</h3>
+                    <h3 onclick="showOnly('sale'); closeFilters();">On Sale</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'new');">New Items</h3>
+                    <h3 onclick="showOnly('new');">New Items</h3>
                 </a>
 
                 <h2>Heat</h2>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'mild-heat'); closeFilters();">Mild heat</h3>
+                    <h3 onclick="showOnly('mild-heat'); closeFilters();">Mild heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'medium-heat'); closeFilters();">Medium heat</h3>
+                    <h3 onclick="showOnly('medium-heat'); closeFilters();">Medium heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'hot-heat'); closeFilters();">Hot heat</h3>
+                    <h3 onclick="showOnly('hot-heat'); closeFilters();">Hot heat</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'insane-heat'); closeFilters();">Insane heat</h3>
+                    <h3 onclick="showOnly('insane-heat'); closeFilters();">Insane heat</h3>
                 </a>
 
                 <h2>Brands</h2>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'melindas-brand'); closeFilters();">Melinda's</h3>
+                    <h3 onclick="showOnly('melindas-brand'); closeFilters();">Melinda's</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'daves-brand'); closeFilters();">Dave's</h3>
+                    <h3 onclick="showOnly('daves-brand'); closeFilters();">Dave's</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'currie-brand'); closeFilters();">Currie</h3>
+                    <h3 onclick="showOnly('currie-brand'); closeFilters();">Currie</h3>
                 </a>
                 <a href="#">
-                    <h3 onclick="showOnly(this, 'tessemaes-brand'); closeFilters();">Tessemae's</h3>
+                    <h3 onclick="showOnly('tessemaes-brand'); closeFilters();">Tessemae's</h3>
                 </a>
             </div>
 
